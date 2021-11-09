@@ -1,5 +1,6 @@
 import React from 'react';
-import { Container, Navbar } from 'react-bootstrap';
+import { Link } from 'gatsby';
+import { Nav, Container, Navbar } from 'react-bootstrap';
 
 export default function Header() {
   return (
@@ -15,6 +16,25 @@ export default function Header() {
           {``}
           Thomas Hayner
         </Navbar.Brand>
+        <Navbar.Toggle aria-controls="navbarResponsive"/>
+        <Navbar.Collapse id="navbarResponsive">
+          <Nav as="ul">
+            <Nav.Item as="li">
+              <Link to ="/">Home</Link>
+            </Nav.Item>
+            <Nav.Item as="li">
+              <Link to ="/contact">Contact</Link>
+            </Nav.Item>
+            <Nav.Item as="li">
+              <Link to ="/">Portfolio</Link>
+            </Nav.Item>
+          </Nav>
+        </Navbar.Collapse>
+        {/* <Nav className="me-auto">
+          <Nav.Link href="/">Home</Nav.Link>
+          <Nav.Link href="/contact">Contacts</Nav.Link>
+          <Nav.Link href="/">Portfolio</Nav.Link>
+        </Nav> */}
       </Container>
     </Navbar>
   )
