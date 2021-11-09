@@ -1,8 +1,9 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import Layout from "../components/layout";
-import TechStackDisplayCase from "../components/TechStackDisplayCase";
+import TechStackCatalog from "../components/TechStackCatalog";
 import ServicesPamphlet from "../components/ServicesPamphlet";
+import ProjectDisplayCase from "../components/ProjectDisplayCase";
 
 export default function PortfolioPage() {
   return (
@@ -12,11 +13,11 @@ export default function PortfolioPage() {
       </Container>
       <hr/>
       <Container id="techStack" className="">
-        <TechStackDisplayCase/>
+        <TechStackCatalog/>
       </Container>
       <hr/>
       <Container id="projects" className="">
-        {/* data and then map the data */}
+        <ProjectDisplayCase/>
       </Container>
     </Layout>
   )
