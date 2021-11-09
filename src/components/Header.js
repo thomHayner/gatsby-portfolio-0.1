@@ -9,15 +9,15 @@ const links = [
   },
   {
     text: "Blog",
-    to: "/",
+    to: "/blog",
   },
   {
     text: "Portfolio",
-    to: "/",
+    to: "/portfolio",
   },
   {
     text: "Contact",
-    to: "/",
+    to: "/contact",
   },
 ]
 
@@ -37,43 +37,17 @@ export default function Header() {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarResponsive"/>
         <Navbar.Collapse id="navbarResponsive">
-          <Nav as="ul">
-            <Nav.Item as="li">
-              <Link 
-                to ="/" 
-                className="nav-link" 
-                activeClassName="active"
-              >
-                Home
-              </Link>
-            </Nav.Item>
-            <Nav.Item as="li">
-              <Link 
-                to ="/blog" 
-                className="nav-link" 
-                activeClassName="active"
-              >
-                Blog
-              </Link>
-            </Nav.Item>
-            <Nav.Item as="li">
-              <Link 
-                to ="/portfolio" 
-                className="nav-link" 
-                activeClassName="active"
-              >
-                Portfolio
-              </Link>
-            </Nav.Item>
-            <Nav.Item as="li">
-              <Link 
-                to ="/contact" 
-                className="nav-link" 
-                activeClassName="active"
-              >
-                Contact
-              </Link>
-            </Nav.Item>
+          <Nav>
+            {links.map(link=> (
+              <Nav.Item as="li">
+                <Link 
+                  to={link.to}
+                  className="nav-link" 
+                  activeClassName="active"
+                >
+                  {link.text}
+                </Link>
+              </Nav.Item>))}
           </Nav>
         </Navbar.Collapse>
       </Container>
