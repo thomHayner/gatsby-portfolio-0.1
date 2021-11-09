@@ -57,7 +57,7 @@ function ContactPage() {
                   required 
                 />
               </FloatingLabel>
-              <Button variant="primary" type="submit">
+              <Button variant="primary" type="submit" className="mb-3">
                 Submit
               </Button>
             </Form>
