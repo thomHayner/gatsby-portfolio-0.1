@@ -25,7 +25,7 @@ function ContactPage() {
           <Col>
             <Form>
               <FloatingLabel
-                controlId="floatingInput"
+                controlId="floatingInputContactName"
                 label="Name"
                 className="mb-3"
               >
@@ -36,7 +36,7 @@ function ContactPage() {
                 />
               </FloatingLabel>
               <FloatingLabel
-                controlId="floatingInput"
+                controlId="floatingInputContactEmail"
                 label="Email"
                 className="mb-3"
               >
@@ -47,7 +47,7 @@ function ContactPage() {
                 />
               </FloatingLabel>
               <FloatingLabel
-                controlId="floatingInput"
+                controlId="floatingInputContactSubject"
                 label="Subject"
                 className="mb-3"
               >
@@ -57,7 +57,7 @@ function ContactPage() {
                 />
               </FloatingLabel>
               <FloatingLabel
-                controlId="floatingTextarea"
+                controlId="floatingTextareaContactMessage"
                 label="Message"
                 className="mb-3"
               >
