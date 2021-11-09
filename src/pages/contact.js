@@ -7,7 +7,7 @@ import Layout from "../components/layout";
 // Dark Primary #1F1B24
 
 const addressArea = {
-  minWidth: "70px",
+  minWidth: "160px",
 }
 
 function ContactPage() {
@@ -41,7 +41,7 @@ function ContactPage() {
               </Button>
             </Form>
           </Col>
-          <Col xs={2}>
+          <Col xs={2} style={addressArea}>
             <address>
                 1023 Walnut St<br/>
                 Boulder, CO<br/>
