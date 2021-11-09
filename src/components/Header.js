@@ -36,7 +36,7 @@ export default function Header() {
           Thomas Hayner
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarResponsive"/>
-        <Navbar.Collapse id="navbarResponsive">
+        <Navbar.Collapse id="navbarResponsive"  className="justify-content-end">
           <Nav as="ul">
             {links.map(link=> (
               <Nav.Item as="li">
