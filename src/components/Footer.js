@@ -2,10 +2,15 @@ import React from 'react';
 
 import { Container, Navbar } from 'react-bootstrap';
 
+const footer={
+  alignSelf: "end"
+}
+
 export default function Footer() {
   return (
+    <footer>
     <Navbar bg="dark" variant="dark">
-      <Container>
+      <Container style={footer}>
         <Navbar.Brand href="#home">
           <img 
             alt=""
@@ -18,5 +23,6 @@ export default function Footer() {
         </Navbar.Brand>
       </Container>
     </Navbar>
+    </footer>
   )
 }
