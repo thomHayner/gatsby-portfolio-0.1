@@ -17,6 +17,7 @@ function ContactPage() {
         <Row>
           <h1>Contact Us</h1>
         </Row>
+        <hr/>
         <Row>
           <Col>
             <Form>
