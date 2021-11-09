@@ -22,7 +22,7 @@ const logoBadgeIcons = [
   },
 ]
 
-export default function TechStackDisplayCase() {
+export default function TechStackCatalog() {
   return (
     <Container>
       <Row>
