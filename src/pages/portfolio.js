@@ -8,6 +8,7 @@ export default function PortfolioPage() {
   return (
     <Layout>
       <Container id="services" className="">
+        <ServicesPamphlet/>
       </Container>
       <hr/>
       <Container id="techStack" className="">
