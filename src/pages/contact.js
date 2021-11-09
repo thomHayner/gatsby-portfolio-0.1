@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Form, Button, Row, Col } from 'react-bootstrap'
+import { Container, Form, Button, Row, Col, FloatingLabel } from 'react-bootstrap'
 import Layout from "../components/layout";
 
 // https://material.io/design/color/dark-theme.html#properties
@@ -14,29 +14,43 @@ function ContactPage() {
   return (
     <Layout>
       <Container>
+        <Row><hr/></Row>
+        <Row><hr/></Row>
         <Row>
           <h1>Contact Us</h1>
         </Row>
-        <hr/>
+        <Row><hr/></Row>
         <Row>
           <Col>
             <Form>
-              <Form.Group className="" controlId="">
-                <Form.Label>Name</Form.Label>
+              <FloatingLabel
+                controlId="floatingInput"
+                label="Name"
+                className="mb-3"
+              >
                 <Form.Control type="name" placeholder="Enter your name..."/>
-              </Form.Group>
-              <Form.Group className="" controlId="">
-                <Form.Label>Email</Form.Label>
+              </FloatingLabel>
+              <FloatingLabel
+                controlId="floatingInput"
+                label="Email"
+                className="mb-3"
+              >
                 <Form.Control type="email" placeholder="Enter your email address..."/>
-              </Form.Group>
-              <Form.Group className="" controlId="">
-                <Form.Label>Subject</Form.Label>
+              </FloatingLabel>
+              <FloatingLabel
+                controlId="floatingInput"
+                label="Subject"
+                className="mb-3"
+              >
                 <Form.Control type="name" placeholder="What is this about..."/>
-              </Form.Group>
-              <Form.Group className="" controlId="">
-                <Form.Label>Message</Form.Label>
-                <Form.Control as="textarea" rows={3} placeholder="What would you like to tell us..."/>
-              </Form.Group>
+              </FloatingLabel>
+              <FloatingLabel
+                controlId="floatingInput"
+                label="Message"
+                className="mb-3"
+              >
+                <Form.Control as="textarea" rows={5} placeholder="What would you like to tell us..."/>
+              </FloatingLabel>
               <Button variant="primary" type="submit">
                 Submit
               </Button>
