@@ -84,6 +84,7 @@ function ContactPage() {
                 variant="primary" 
                 type="submit" 
                 className="mb-3"
+                handleSubmit={()=>{}}
               >
                 Submit
               </Button>
