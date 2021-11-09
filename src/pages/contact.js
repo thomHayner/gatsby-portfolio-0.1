@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from 'react-bootstrap'
+import { Container, Form, Button, Row, Col } from 'react-bootstrap'
 import Layout from "../components/layout";
 
 // https://material.io/design/color/dark-theme.html#properties
@@ -58,7 +58,7 @@ function ContactPage() {
               Contact Page Placeholder
             </div>
             <div className="form-and-address-container" style={formAndAddressContainer}>
-              <div className="form" style={form}>
+              {/* <div className="form" style={form}>
                 <div className="form-row" style={formRow}>
                   <label for="name">Name</label>
                   <input 
@@ -108,7 +108,28 @@ function ContactPage() {
                     value="Submit" 
                     onClick={()=>{}}/>
                 </div>
-              </div>
+              </div> */}
+              <Form>
+                <Form.Group className="" controlId="">
+                  <Form.Label>Name</Form.Label>
+                  <Form.Control type="name" placeholder="Enter your name..."/>
+                </Form.Group>
+                <Form.Group className="" controlId="">
+                  <Form.Label>Email</Form.Label>
+                  <Form.Control type="email" placeholder="Enter your email address..."/>
+                </Form.Group>
+                <Form.Group className="" controlId="">
+                  <Form.Label>Subject</Form.Label>
+                  <Form.Control type="name" placeholder="What is this about..."/>
+                </Form.Group>
+                <Form.Group className="" controlId="">
+                  <Form.Label>Message</Form.Label>
+                  <Form.Control as="textarea" rows={3} placeholder="What would you like to tell us..."/>
+                </Form.Group>
+                <Button variant="primary" type="submit">
+                  Submit
+                </Button>
+              </Form>
               <div className="address-area" style={addressArea}>
                 <h3>Contact Us</h3>
                 <address>
