@@ -28,28 +28,28 @@ function ContactPage() {
                 label="Name"
                 className="mb-3"
               >
-                <Form.Control type="name" placeholder="Enter your name..."/>
+                <Form.Control type="name" placeholder="Name" required/>
               </FloatingLabel>
               <FloatingLabel
                 controlId="floatingInput"
                 label="Email"
                 className="mb-3"
               >
-                <Form.Control type="email" placeholder="Enter your email address..."/>
+                <Form.Control type="email" placeholder="Email" required/>
               </FloatingLabel>
               <FloatingLabel
                 controlId="floatingInput"
                 label="Subject"
                 className="mb-3"
               >
-                <Form.Control type="name" placeholder="What is this about..."/>
+                <Form.Control type="subject" placeholder="Subject"/>
               </FloatingLabel>
               <FloatingLabel
                 controlId="floatingInput"
                 label="Message"
                 className="mb-3"
               >
-                <Form.Control as="textarea" rows={5} placeholder="What would you like to tell us..."/>
+                <Form.Control as="textarea" rows={5} placeholder="Message" required />
               </FloatingLabel>
               <Button variant="primary" type="submit">
                 Submit
