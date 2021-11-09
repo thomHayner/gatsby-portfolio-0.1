@@ -20,13 +20,40 @@ export default function Header() {
         <Navbar.Collapse id="navbarResponsive">
           <Nav as="ul">
             <Nav.Item as="li">
-              <Link to ="/">Home</Link>
+              <Link 
+                to ="/" 
+                className="nav-link" 
+                activeClassName="active"
+              >
+                Home
+              </Link>
             </Nav.Item>
             <Nav.Item as="li">
-              <Link to ="/contact">Contact</Link>
+              <Link 
+                to ="/blog" 
+                className="nav-link" 
+                activeClassName="active"
+              >
+                Blog
+              </Link>
             </Nav.Item>
             <Nav.Item as="li">
-              <Link to ="/">Portfolio</Link>
+              <Link 
+                to ="/portfolio" 
+                className="nav-link" 
+                activeClassName="active"
+              >
+                Portfolio
+              </Link>
+            </Nav.Item>
+            <Nav.Item as="li">
+              <Link 
+                to ="/contact" 
+                className="nav-link" 
+                activeClassName="active"
+              >
+                Contact
+              </Link>
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>
