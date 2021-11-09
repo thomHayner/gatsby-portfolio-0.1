@@ -29,21 +29,32 @@ function ContactPage() {
                 label="Name"
                 className="mb-3"
               >
-                <Form.Control type="name" placeholder="Name" required/>
+                <Form.Control 
+                  type="name" 
+                  placeholder="Name" 
+                  required
+                />
               </FloatingLabel>
               <FloatingLabel
                 controlId="floatingInput"
                 label="Email"
                 className="mb-3"
               >
-                <Form.Control type="email" placeholder="Email" required/>
+                <Form.Control 
+                  type="email" 
+                  placeholder="Email" 
+                  required
+                />
               </FloatingLabel>
               <FloatingLabel
                 controlId="floatingInput"
                 label="Subject"
                 className="mb-3"
               >
-                <Form.Control type="subject" placeholder="Subject"/>
+                <Form.Control 
+                  type="subject" 
+                  placeholder="Subject"
+                />
               </FloatingLabel>
               <FloatingLabel
                 controlId="floatingTextarea"
@@ -57,7 +68,11 @@ function ContactPage() {
                   required 
                 />
               </FloatingLabel>
-              <Button variant="primary" type="submit" className="mb-3">
+              <Button 
+                variant="primary" 
+                type="submit" 
+                className="mb-3"
+              >
                 Submit
               </Button>
             </Form>
