@@ -1,4 +1,5 @@
 import React from "react";
+import { graphQL } from 'gatsby';
 import { Container, Form, Button, Row, Col, FloatingLabel } from 'react-bootstrap'
 import Layout from "../components/layout";
 
@@ -45,11 +46,16 @@ function ContactPage() {
                 <Form.Control type="subject" placeholder="Subject"/>
               </FloatingLabel>
               <FloatingLabel
-                controlId="floatingInput"
+                controlId="floatingTextarea"
                 label="Message"
                 className="mb-3"
               >
-                <Form.Control as="textarea" rows={5} placeholder="Message" required />
+                <Form.Control 
+                  as="textarea" 
+                  style={{ height: '100px'}} 
+                  placeholder="Message" 
+                  required 
+                />
               </FloatingLabel>
               <Button variant="primary" type="submit">
                 Submit
