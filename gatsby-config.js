@@ -3,5 +3,15 @@ module.exports = {
     siteUrl: "https://www.yourdomain.tld",
     title: "gatsby-portfolio-0.0.1",
   },
-  plugins: [],
+  plugins: [
+    {
+      resolve: `gatsby-source-strapi`,
+      options: {
+        apiURL: `http://localhost:1337`,
+        queryLimit: 1000, // Defaults to 100
+        collectionTypes: [`article`, 'category', `user`],
+        singleTypes: [],
+      },
+    },
+  ],
 };
