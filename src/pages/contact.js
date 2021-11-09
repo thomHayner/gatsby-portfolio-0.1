@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { graphQL } from 'gatsby';
 import { Container, Form, Button, Row, Col, FloatingLabel } from 'react-bootstrap'
 import Layout from "../components/layout";
 
