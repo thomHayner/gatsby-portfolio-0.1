@@ -2,6 +2,25 @@ import React from 'react';
 import { Link } from 'gatsby';
 import { Nav, Container, Navbar } from 'react-bootstrap';
 
+const links = [
+  {
+    text: "Home",
+    to: "/",
+  },
+  {
+    text: "Blog",
+    to: "/",
+  },
+  {
+    text: "Portfolio",
+    to: "/",
+  },
+  {
+    text: "Contact",
+    to: "/",
+  },
+]
+
 export default function Header() {
   return (
     <Navbar bg="dark" variant="dark">
