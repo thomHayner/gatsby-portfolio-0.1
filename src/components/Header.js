@@ -76,11 +76,6 @@ export default function Header() {
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>
-        {/* <Nav className="me-auto">
-          <Nav.Link href="/">Home</Nav.Link>
-          <Nav.Link href="/contact">Contacts</Nav.Link>
-          <Nav.Link href="/">Portfolio</Nav.Link>
-        </Nav> */}
       </Container>
     </Navbar>
   )
