@@ -37,7 +37,7 @@ export default function Header() {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarResponsive"/>
         <Navbar.Collapse id="navbarResponsive">
-          <Nav>
+          <Nav as="ul">
             {links.map(link=> (
               <Nav.Item as="li">
                 <Link 
