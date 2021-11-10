@@ -48,7 +48,7 @@ import { Container } from 'react-bootstrap';
 export default function ServicesPamphlet() {
   return (
     <Container>
-      Services Pamphlet Placeholder
+      <h1>Services Pamphlet Placeholder</h1>
     </Container>
   )
 }
