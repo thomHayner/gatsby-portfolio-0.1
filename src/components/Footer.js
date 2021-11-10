@@ -8,7 +8,6 @@ const footer={
 
 export default function Footer() {
   return (
-    <footer>
     <Navbar bg="dark" variant="dark">
       <Container style={footer}>
         <Navbar.Brand href="#home">
@@ -23,6 +22,5 @@ export default function Footer() {
         </Navbar.Brand>
       </Container>
     </Navbar>
-    </footer>
   )
 }
