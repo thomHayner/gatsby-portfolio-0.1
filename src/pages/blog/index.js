@@ -18,12 +18,12 @@ export default function BlogPage() {
           }
         }
       `} 
-      
+
       render={data => (
         <Layout>
           <Container>
-            {data.allStrapiArticle.nodes.map(res => (
-              <Link to={`/blog/${res.title.split(' ').join('-')}`}>
+            {data.allStrapiArticle.nodes.map((res, i) => (
+              <Link to={`/blog/${res.title.split(' ').join('-')}`} key={i}>
                 <h4>{res.title}</h4>
                 <div style={{ display: "flex", flexDirection: "row" }}>
                   <h5>{res.author}</h5>
