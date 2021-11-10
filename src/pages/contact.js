@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { /* useState */ } from "react";
 import { Container, Form, Button, Row, Col, FloatingLabel } from 'react-bootstrap'
 import Layout from "../components/layout";
 
@@ -11,17 +11,17 @@ const addressArea = {
 }
 
 function ContactPage() {
-  const [validated, setValidated] = useState(false);
+  // const [validated, setValidated] = useState(false);
 
-  const handleSubmit = (event) => {
-    const form = event.currentTarget;
-    if (form.checkValidity() === false) {
-      event.preventDefault();
-      event.stopPropagation();
-    }
+  // const handleSubmit = (event) => {
+  //   const form = event.currentTarget;
+  //   if (form.checkValidity() === false) {
+  //     event.preventDefault();
+  //     event.stopPropagation();
+  //   }
 
-    setValidated(true);
-  };
+  //   setValidated(true);
+  // };
 
   return (
     <Layout>
