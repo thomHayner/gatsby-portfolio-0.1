@@ -9,11 +9,11 @@ module.exports = {
       options: {
         apiURL: `http://localhost:1337`,
         queryLimit: 1000, // Defaults to 100
-        collectionTypes: [`article`],
+        collectionTypes: [`article`, `category`],
         singleTypes: [],
         // loginData: {
-        //   identifier: 'reader@strapi.io',
-        //   password: 'strapi',
+        //   identifier: `reader@strapi.io`,
+        //   password: `strapi`,
         // },
       },
     },
