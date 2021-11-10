@@ -18,6 +18,7 @@ export default function BlogPage() {
           }
         }
       `} 
+      
       render={data => (
         <Layout>
           <Container>
