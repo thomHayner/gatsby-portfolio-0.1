@@ -1,5 +1,5 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import Layout from "../components/layout";
 import TechStackCatalog from "../components/TechStackCatalog";
 import ServicesPamphlet from "../components/ServicesPamphlet";
@@ -9,15 +9,15 @@ export default function PortfolioPage() {
   return (
     <Layout>
       <Container id="services" className="">
-        <ServicesPamphlet/>
-      </Container>
-      <hr/>
-      <Container id="techStack" className="">
-        <TechStackCatalog/>
-      </Container>
-      <hr/>
-      <Container id="projects" className="">
-        <ProjectDisplayCase/>
+        <Row><hr/></Row>
+        <Row><hr/></Row>
+        <Row><ServicesPamphlet/></Row>
+        <Row><hr/></Row>
+        <Row><TechStackCatalog/></Row>
+        {/* {certifications could possibly go here} */}
+        <Row><hr/></Row>
+        <Row><ProjectDisplayCase/></Row>
+        {/* {testimonials could possibly go here} */}
       </Container>
     </Layout>
   )
