@@ -39,8 +39,8 @@ export default function Header() {
         <Navbar.Toggle aria-controls="navbarResponsive" />
         <Navbar.Collapse id="navbarResponsive"  className="justify-content-end" >
           <Nav as="ul" >
-            {links.map(link=> (
-              <Nav.Item as="li" >
+            {links.map((link, i) => (
+              <Nav.Item as="li" key={i}>
                 <Link 
                   to={link.to} 
                   className="nav-link" 
