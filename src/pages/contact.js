@@ -28,9 +28,7 @@ function ContactPage() {
       <Container>
         <Row><hr/></Row>
         <Row><hr/></Row>
-        <Row>
-          <h1>Contact Us</h1>
-        </Row>
+        <Row><h1>Contact Us</h1></Row>
         <Row><hr/></Row>
         <Row>
           <Col>
