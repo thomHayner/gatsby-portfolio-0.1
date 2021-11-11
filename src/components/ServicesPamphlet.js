@@ -8,7 +8,7 @@ export default function ServicesPamphlet() {
     <StaticQuery
       query={graphql`
         query skillCardDeck { 
-          allStrapiSkill { 
+          allStrapiSkill(sort: {fields: displayOrder, order: ASC}) { 
             nodes { 
               id 
               name 
