@@ -1,11 +1,28 @@
 import React from 'react';
-import { Container, Row } from 'react-bootstrap';
+import { StaticQuery, graphql } from 'gatsby';
+import { Container } from 'react-bootstrap';
+import ServicesCard from '../components/ServicesCard';
 
 export default function ServicesPamphlet() {
   return (
-    <Container>
-      <h1>Services Pamphlet Placeholder</h1>
-      {/* 6-8 cards mapped out */}
-    </Container>
+    <StaticQuery
+      query={graphql`
+        query skillCardDeck { 
+          allStrapiSkill { 
+            nodes {
+              id 
+            } 
+          }
+        }
+      `}
+
+      render={data => (
+        <Container>
+          {data.allStrapiSkill.nodes.map(node => (
+            <ServicesCard id={node.id} />
+          ))}
+        </Container>
+      )}
+    />
   )
 }
