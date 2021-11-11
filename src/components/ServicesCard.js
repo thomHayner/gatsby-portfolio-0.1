@@ -23,17 +23,16 @@ export default function ServicesCard() {
 
       render={data=> (
         <Container>
-          {data.allStrapiSkill.nodes.map(node => (
-            <Card>
+            <Card style={{ width: "256px", height: "400px", alignItems: "center" }} >
+              <br/>
               <Card.Title>
-                {node.name}
+                {data.strapiSkill.name}
               </Card.Title>
-              {/* <Card.Img/> */}
+              <Card.Img src={data.strapiSkill.img.localFile.url} style={{ width: "200px", height: "200px" }} />
               <Card.Body>
-                {node.description}
+                {data.strapiSkill.description}
               </Card.Body>
             </Card>
-          ))}
         </Container>
       )}
     />
