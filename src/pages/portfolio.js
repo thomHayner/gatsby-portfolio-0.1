@@ -9,7 +9,8 @@ export default function PortfolioPage() {
   return (
     <Layout>
       <Container id="services" className="">
-        <Row><hr/></Row>
+        <Row><br/></Row>
+        <Row><br/></Row>
         <Row><hr/></Row>
         <Row><ServicesPamphlet/></Row>
         <Row><hr/></Row>
@@ -18,6 +19,9 @@ export default function PortfolioPage() {
         <Row><hr/></Row>
         <Row><ProjectDisplayCase/></Row>
         {/* {testimonials could possibly go here} */}
+        <Row><br/></Row>
+        <Row><br/></Row>
+        <Row><br/></Row>
       </Container>
     </Layout>
   )
