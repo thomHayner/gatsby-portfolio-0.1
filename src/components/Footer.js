@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'gatsby';
 import { Container, Navbar } from 'react-bootstrap';
 import Logo from '../images/icon.png';
 
