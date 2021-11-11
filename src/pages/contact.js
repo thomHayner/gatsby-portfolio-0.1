@@ -26,9 +26,6 @@ function ContactPage() {
   return (
     <Layout>
       <Container>
-        <Row><br/></Row>
-        <Row><br/></Row>
-        <Row><hr/></Row>
         <Row><h1>Contact Us</h1></Row>
         <Row><hr/></Row>
         <Row><br/></Row>
@@ -97,9 +94,6 @@ function ContactPage() {
             </address>
           </Col>
         </Row>
-        <Row><br/></Row>
-        <Row><br/></Row>
-        <Row><br/></Row>
       </Container>
     </Layout>
   )

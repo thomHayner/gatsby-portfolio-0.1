@@ -22,16 +22,10 @@ const IndexPage = () => {
     <main>
       <Layout>
         <Container>
-          <Row><br/></Row>
-          <Row><br/></Row>
-          <Row><hr/></Row>
           <Row><h1>WELCOME TO THE SITE!!!!!!</h1></Row>
           <Row><hr/></Row>
           <Row><br/></Row>
           {/* some content would go here */}
-          <Row><br/></Row>
-          <Row><br/></Row>
-          <Row><br/></Row>
         </Container>
       </Layout>
     </main>

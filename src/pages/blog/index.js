@@ -22,15 +22,13 @@ export default function BlogPage() {
       render={data => (
         <Layout>
           <Container>
-            <Row><br/></Row>
-            <Row><br/></Row>
-            <Row><hr/></Row>
             <Row><h1>Latest Posts</h1></Row>
             <Row><hr/></Row>
             <Row><br/></Row>
             <Row>
               {data.allStrapiArticle.nodes.map((res, i) => (
               <Container>
+                <Row><br/></Row>
                 <Row>
                   <Link to={`/blog/${res.title.split(' ').join('-')}`} key={i}>
                     <h4>{res.title}</h4>
@@ -42,13 +40,11 @@ export default function BlogPage() {
                     <p>{res.abstract}</p>
                   </Link>
                 </Row>
+                <Row><br/></Row>
                 <Row><hr/></Row>
               </Container>
               ))}
             </Row>
-            <Row><br/></Row>
-            <Row><br/></Row>
-            <Row><br/></Row>
           </Container>
         </Layout>
       )}
