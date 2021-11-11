@@ -1,6 +1,6 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
-import { Container } from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
 import Layout from '../components/layout';
 
 export default function BlogArticle(props) {
@@ -22,11 +22,19 @@ export default function BlogArticle(props) {
       render={data=> (
         <Layout>
           <Container data={props.data}>
-            <h3>{data.strapiArticle.title}</h3>
-            <h5>{data.strapiArticle.author}</h5>
-            <h5>{data.strapiArticle.publishedDate}</h5>
-            <h5>{data.strapiArticle.updated_at}</h5>
-            <p>{data.strapiArticle.body}</p>
+            <Row><br/></Row>
+            <Row><br/></Row>
+            <Row><hr/></Row>
+            <Row><h1>{data.strapiArticle.title}</h1></Row>
+            <Row><hr/></Row>
+            <Row><br/></Row>
+            <Row>{data.strapiArticle.author}</Row>
+            <Row>{data.strapiArticle.publishedDate}</Row>
+            <Row>{data.strapiArticle.updated_at}</Row>
+            <Row>{data.strapiArticle.body}</Row>
+            <Row><br/></Row>
+            <Row><br/></Row>
+            <Row><br/></Row>
           </Container>
         </Layout>
       )}
