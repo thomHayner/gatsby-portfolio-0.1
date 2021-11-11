@@ -7,8 +7,8 @@ export default function BlogArticle(props) {
   return (
     <StaticQuery 
       query={graphql`
-        query blogPostQuery($id: Int) {
-          strapiArticle(id: {eq: "$id"}) {
+        query blogPostQuery {
+          strapiArticle {
             author
             body
             title
