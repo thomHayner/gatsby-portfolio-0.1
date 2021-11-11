@@ -12,10 +12,11 @@ exports.createPages = async ({ graphql, actions }) => {
   `)
 
   data.allStrapiArticle.nodes.forEach(node => {
+    const slug = node.title.split(' ').join('-')
     actions.createPage({
-      path: '/blog/' + node.title.split(' ').join('-'),
-      component: path.resolve('./src/templates/blogPost.js'),
-      context: { slug: node.title.split(' ').join('-') },
+      path: '/blog/' + slug,
+      component: path.resolve('./src/templates/blog-post.js'),
+      context: { slug: slug },
     })
   })
 
