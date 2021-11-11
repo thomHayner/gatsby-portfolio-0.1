@@ -24,7 +24,7 @@ export default function TechStackCatalog() {
       render={data => (
         <Container>
           <Row>
-            <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example" className="mb-3">
+            <Tabs defaultActiveKey="profile" id="uncontrolled-tab" className="mb-3">
               {data.allStrapiTechnology.nodes.map((node, i) => (
                 <Tab eventKey={node.name} title={ <img alt="" src={node.img.localFile.url} width="60" height="60" /> }>
                   {node.description}
