@@ -4,25 +4,26 @@ import { Container, Card } from "react-bootstrap";
 
 export default function ServicesCard() {
   return(
-    <StaticQuery
-      query={graphql`
-        query skillsCards {
-          allStrapiSkills {
-            nodes {
-              name
-              description
-            }
-          }
-        }
-      `}
+    <div/>
+    // <StaticQuery
+    //   query={graphql`
+    //     query portfolioCards {
+    //       allStrapiSkills {
+    //         nodes {
+    //           name
+    //           description
+    //         }
+    //       }
+    //     }
+    //   `}
 
-      render={data=> (
-        <Container>
-          <Card>
-            
-          </Card>
-        </Container>
-      )}
-    />
+    //   render={data=> (
+    //     <Container>
+    //       <Card>
+
+    //       </Card>
+    //     </Container>
+    //   )}
+    // />
   )
 }
