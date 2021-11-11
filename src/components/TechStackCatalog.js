@@ -1,6 +1,6 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
-import { Container, Row } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 
 // const logoBadgeIcons = [
 //   {
@@ -44,12 +44,14 @@ export default function TechStackCatalog() {
     <Container>
       <Row>
         {data.allStrapiTechnology.nodes.map((node, i) => (
-          <img 
-            alt="" 
-            src={node.img.localFile.url} 
-            width="60" 
-            height="60" 
-          />
+          <Col>
+            <img 
+              alt="" 
+              src={node.img.localFile.url} 
+              width="60" 
+              height="60" 
+            />
+          </Col>
         ))}
       </Row>
     </Container>
