@@ -6,18 +6,19 @@ export default function ServicesCard() {
   return(
     <StaticQuery
       query={graphql`
-      query skillCard {
-        strapiSkill {
-          id
-          name
-          description
-          img {
-            localFile {
-              url
-            }
-          }
+        query skillCard { 
+          strapiSkill(id: {eq: "Skill_2"}) { 
+            id 
+            name 
+            description 
+            img { 
+              localFile { 
+                url 
+              } 
+            } 
+            strapiId 
+          } 
         }
-      }
       `}
 
       render={data=> (
