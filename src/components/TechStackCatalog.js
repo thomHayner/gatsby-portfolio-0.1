@@ -1,30 +1,107 @@
 import React from 'react';
+import { StaticQuery, graphql } from 'gatsby';
 import { Container, Row } from 'react-bootstrap';
 
-const logoBadgeIcons = [
-  {
-    name: "Company Name #1",
-  },
-  {
-    name: "Company Name #2",
-  },
-  {
-    name: "Company Name #3",
-  },
-  {
-    name: "Company Name #4",
-  },
-  {
-    name: "Company Name #5",
-  },
-  {
-    name: "Company Name #6",
-  },
-]
+// const logoBadgeIcons = [
+//   {
+//     name: "Company Name #1",
+//   },
+//   {
+//     name: "Company Name #2",
+//   },
+//   {
+//     name: "Company Name #3",
+//   },
+//   {
+//     name: "Company Name #4",
+//   },
+//   {
+//     name: "Company Name #5",
+//   },
+//   {
+//     name: "Company Name #6",
+//   },
+// ]
 
 export default function TechStackCatalog() {
   return (
+    <StaticQuery
+  query={graphql`
+    query techStackBadges {
+      allStrapiTechnology {
+        nodes {
+          img {
+            localFile {
+              url
+            }
+          }
+        }
+      }
+    }
+  `} 
+
+  render={data => (
     <Container>
+      <Row>
+        {data.allStrapiTechnology.nodes.map((node, i) => (
+          <img 
+            alt="" 
+            src={node.img.localFile.url} 
+            width="60" 
+            height="60" 
+          />
+        ))}
+      </Row>
+    </Container>
+  )}
+/>
+  )
+}
+
+
+/* 
+
+row of clickable buttons
+description box (generic placeholder)
+
+
+
+
+
+<StaticQuery
+  query={graphql`
+    query techStackBadges {
+      allStrapiTechnology {
+        nodes {
+          img {
+            url
+          }
+        }
+      }
+    }
+  `} 
+
+  render={data => (
+    <Container>
+      <Row>
+        {data.allStrapiTechnology.nodes.img.url.map((url, i) => (
+          <img 
+            alt="" 
+            src=url 
+            width="60" 
+            height="60" 
+          />
+        ))}
+      </Row>
+    </Container>
+  )}
+/>
+
+
+
+
+
+<Container>
       <Row>
       {logoBadgeIcons.map(logo => (
         <Container>
@@ -38,5 +115,9 @@ export default function TechStackCatalog() {
       ))}
       </Row>
     </Container>
-  )
-}
+
+
+
+
+
+*/
