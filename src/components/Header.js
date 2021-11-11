@@ -25,7 +25,7 @@ const links = [
 
 export default function Header() {
   return (
-    <Navbar fixed="top" bg="dark" variant="dark" expand="md">
+    <Navbar fixed="top" style={{ backgroundColor: "#181818", borderBottom: "solid 1px", borderColor: "#000000" }} variant="dark" expand="md">
       <Container>
         <Navbar.Brand href="#">
           <img 
@@ -35,7 +35,7 @@ export default function Header() {
             height="30" 
           />
           {``}
-          Thomas Hayner
+          ThomasHayner
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarResponsive" />
         <Navbar.Collapse id="navbarResponsive"  className="justify-content-end" >
