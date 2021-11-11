@@ -25,7 +25,7 @@ const links = [
 
 export default function Header() {
   return (
-    <Navbar sticky="top" bg="dark" variant="dark" expand="md">
+    <Navbar fixed="top" bg="dark" variant="dark" expand="md">
       <Container>
         <Navbar.Brand href="#">
           <img 
