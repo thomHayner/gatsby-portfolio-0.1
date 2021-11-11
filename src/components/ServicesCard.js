@@ -7,7 +7,7 @@ export default function ServicesCard() {
     <StaticQuery
       query={graphql`
         query skillsCards {
-          allStrapiSkills {
+          allStrapiSkill {
             nodes {
               name
               description
