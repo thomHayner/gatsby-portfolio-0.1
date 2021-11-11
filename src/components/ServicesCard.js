@@ -22,9 +22,17 @@ export default function ServicesCard() {
 
       render={data=> (
         <Container>
-          <Card>
-            
-          </Card>
+          {data.allStrapiSkill.nodes.map(node => (
+            <Card>
+              <Card.Title>
+                {node.name}
+              </Card.Title>
+              {/* <Card.Img/> */}
+              <Card.Body>
+                {node.description}
+              </Card.Body>
+            </Card>
+          ))}
         </Container>
       )}
     />
