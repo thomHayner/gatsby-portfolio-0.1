@@ -7,8 +7,9 @@ export default function TechStackCatalog() {
     <StaticQuery
       query={graphql`
         query techStackBadges {
-          allStrapiTechnology {
+          allStrapiTechnology(sort: {fields: displayOrder, order: ASC}, limit: 8) {
             nodes {
+              id
               name
               description
               img {
@@ -23,15 +24,15 @@ export default function TechStackCatalog() {
 
       render={data => (
         <Container>
-          <Row>
-            <Tabs defaultActiveKey="profile" id="uncontrolled-tab" className="mb-3">
+          
+            <Tabs defaultActiveKey="profile" id="uncontrolled-tab" className="mb-3" variant="pills" >
               {data.allStrapiTechnology.nodes.map((node, i) => (
-                <Tab eventKey={node.name} title={ <img alt="" src={node.img.localFile.url} width="60" height="60" /> }>
+                <Tab key={node.id} eventKey={node.name} title={ <img alt="" src={node.img.localFile.url} width="60" height="60" /> }>
                   {node.description}
                 </Tab>
               ))}
             </Tabs>
-          </Row>
+          
         </Container>
       )}
     />
