@@ -11,10 +11,13 @@ export default function BlogPage() {
         query blogListQuery {
           allStrapiArticle(limit: 10, sort: {fields: id, order: DESC}) {
             nodes {
+              id
               abstract
               author
+              body
               publishedDate
               title
+              updated_at
             }
           }
         }
