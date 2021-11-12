@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { StaticQuery, graphql } from 'gatsby';
 import { Container, Carousel } from 'react-bootstrap';
 import ServicesCard from './ServicesCard';
 
