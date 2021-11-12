@@ -25,27 +25,32 @@ export default function TechStackCatalog() {
       render={data => (
         <Container>
           
-            <Tabs defaultActiveKey="profile" id="uncontrolled-tab" className="mb-3" variant="pills" >
+            {/* <Tabs defaultActiveKey="profile" id="uncontrolled-tab" className="mb-3" variant="pills" >
               {data.allStrapiTechnology.nodes.map((node, i) => (
                 <TabPane key={node.id} eventKey={node.name} title={ <img alt="" src={node.img.localFile.url} width="60" height="60" /> }>
                   {node.description}
                 </TabPane>
               ))}
-            </Tabs>
-          {/* // */}
-            <Tab.Container>
-              <Nav variant="pills" className="flex-row">
-              {data.allStrapiTechnology.nodes.map((node, i) => (
-                <Nav.Item>
-                  <Nav.Link eventKey={node.name}>
-                    <img alt="" src={node.img.localFile.url} width="60" height="60" />
-                  </Nav.Link>
-                </Nav.Item>
-              ))}
-              </Nav>
-            </Tab.Container>
-          {/* // */}
-            <Tab.Container id="left-tabs-example" defaultActiveKey="first">
+            </Tabs> */}
+          
+          
+            <Col className="d-flex justify-content-center" >
+              <Tab.Container>
+                <Nav variant="pills" className="flex-row mb-3">
+                {data.allStrapiTechnology.nodes.map((node, i) => (
+                  <Nav.Item>
+                    <Nav.Link eventKey={node.name}>
+                      <img alt="" src={node.img.localFile.url} width="60" height="60" />
+                    </Nav.Link>
+                  </Nav.Item>
+                ))}
+                </Nav>
+              </Tab.Container>
+            </Col>
+          
+          
+
+            {/* <Tab.Container id="left-tabs-example" defaultActiveKey="first">
               <Row>
                 <Col>
                 
@@ -71,7 +76,7 @@ export default function TechStackCatalog() {
                     </Nav.Item>
                   </Nav>
                 </Col>
-                {/* <Col sm={9}>
+                <Col sm={9}>
                   <Tab.Content>
                     <Tab.Pane eventKey="first">
                       What 1
@@ -86,7 +91,7 @@ export default function TechStackCatalog() {
                       Where 4
                     </Tab.Pane>
                   </Tab.Content>
-                </Col> */}
+                </Col>
                 <Col sm={3}>
                   <Nav variant="pills" className="flex-column">
                     <Nav.Item>
@@ -98,7 +103,7 @@ export default function TechStackCatalog() {
                   </Nav>
                 </Col>
               </Row>
-            </Tab.Container>
+            </Tab.Container> */}
 
         </Container>
       )}
