@@ -41,7 +41,7 @@ export default function Header() {
         <Navbar.Collapse id="navbarResponsive"  className="justify-content-end" >
           <Nav as="ul" >
             {links.map((link, i) => (
-              <Nav.Item as="li" key={i}>
+              <Nav.Item as="li" key={"Link_"+ i}>
                 <Link 
                   to={link.to} 
                   className="nav-link" 
