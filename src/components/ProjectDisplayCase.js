@@ -1,9 +1,30 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
+import { StaticQuery, graphql } from 'gatsby';
 import CardCarousel from './Carousel';
 
 export default function ProjectDisplayCase() {
   return (
-    <CardCarousel/>
+    <StaticQuery
+      query={graphql`
+        query projectCardDeck { 
+          allStrapiSkill(sort: {fields: displayOrder, order: ASC}) { 
+            nodes { 
+              id 
+              name 
+              description 
+              img { 
+                localFile { 
+                  url 
+                } 
+              } 
+            } 
+          } 
+        } 
+      `} 
+
+      render={data => (
+        <CardCarousel data={data} />
+      )}
+    />
   )
 }
