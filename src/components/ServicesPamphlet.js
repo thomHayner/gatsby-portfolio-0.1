@@ -1,6 +1,6 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
-import { Container, Col, CardGroup } from 'react-bootstrap';
+import { Container, Row, Col, CardGroup } from 'react-bootstrap';
 import ServicesCard from '../components/ServicesCard';
 
 export default function ServicesPamphlet() {
@@ -24,7 +24,7 @@ export default function ServicesPamphlet() {
       `} 
 
       render={data => (
-        <Container>
+        <Col className="d-flex justify-content-center" >
           <CardGroup>
             {data.allStrapiSkill.nodes.map(node => (
               <Col key={node.id} >
@@ -32,7 +32,7 @@ export default function ServicesPamphlet() {
               </Col>
             ))}
           </CardGroup>
-        </Container>
+        </Col>
       )}
     />
   )
