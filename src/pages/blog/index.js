@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row } from "react-bootstrap";
 import { Link, StaticQuery, graphql } from 'gatsby';
 import Layout from "../../components/layout";
+import BlogCard from "../../templates/blogCard";
 
 export default function BlogPage() {
   return (
