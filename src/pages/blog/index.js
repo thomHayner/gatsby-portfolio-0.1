@@ -35,13 +35,7 @@ export default function BlogPage() {
                 <Row><br/></Row>
                 <Row>
                   <Link to={`/blog/${res.title.split(' ').join('-')}`} key={i}>
-                    <h4>{res.title}</h4>
-                    <div style={{ display: "flex", flexDirection: "row" }}>
-                      <h5>{res.author}</h5>
-                      <h5>. . . . . . . . . . .</h5>
-                      <h5>{res.publishedDate}</h5>
-                    </div>
-                    <p>{res.abstract}</p>
+                    <BlogCard data={res}/>
                   </Link>
                 </Row>
                 <Row><br/></Row>
