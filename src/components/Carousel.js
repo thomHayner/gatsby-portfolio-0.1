@@ -12,7 +12,7 @@ export default function CardCarousel({ data }) {
 
   return (
     <Container>
-      <Carousel activeIndex={index} controls="false" onSelect={handleSelect()} fade >
+      <Carousel activeIndex={index} controls="false" onSelect={handleSelect} fade >
         {data.allStrapiSkill.nodes.map(node => (
           <Carousel.Item>
             <ServicesCard data={node} />
