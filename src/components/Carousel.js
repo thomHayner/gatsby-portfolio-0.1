@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Carousel, Col, Row } from 'react-bootstrap';
-import ServicesCard from './ServicesCard';
+import PortfolioCard from './PortfolioCard';
 
 export default function CardCarousel({ data }) {
   const [index, setIndex] = useState(0);
