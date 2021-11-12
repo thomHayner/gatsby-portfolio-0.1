@@ -30,12 +30,12 @@ export default function BlogPage() {
             <Row><hr/></Row>
             <Row><br/></Row>
             <Row>
-              {data.allStrapiArticle.nodes.map((res, i) => (
+              {data.allStrapiArticle.nodes.map((node, i) => (
               <Container>
                 <Row><br/></Row>
                 <Row>
-                  <Link to={`/blog/${res.title.split(' ').join('-')}`} key={i}>
-                    <BlogCard data={res}/>
+                  <Link to={`/blog/${node.title.split(' ').join('-')}`} key={i}>
+                    <BlogCard data={node}/>
                   </Link>
                 </Row>
                 <Row><br/></Row>
