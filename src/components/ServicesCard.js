@@ -5,7 +5,7 @@ import { Container, Card } from "react-bootstrap";
 export default function ServicesCard({ data }) {
   return(
     <Container>
-        <Card style={{ width: "256px", height: "400px", alignItems: "center", backgroundColor: "#363636" }} >
+        <Card style={{ width: "224px", height: "400px", alignItems: "center", backgroundColor: "#363636" }} >
           <br/>
           <Card.Title>{data.name}</Card.Title>
           <Card.Img src={data.img.localFile.url} style={{ width: "200px", height: "200px" }} />
