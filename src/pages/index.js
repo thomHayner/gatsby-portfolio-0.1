@@ -3,6 +3,7 @@ import * as React from "react";
 import { Container, Row } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Layout from "../components/layout";
+import PortfolioPage from './portfolio'
 
 // // styles
 // const codeStyles = {
@@ -20,14 +21,15 @@ import Layout from "../components/layout";
 const IndexPage = () => {
   return (
     <main>
-      <Layout>
+      <PortfolioPage />
+      {/* <Layout>
         <Container>
           <Row><h1>WELCOME TO THE SITE!!!!!!</h1></Row>
           <Row><hr/></Row>
-          <Row><br/></Row>
-          {/* some content would go here */}
+          <Row><br/></Row> */}
+          {/* some content would go here
         </Container>
-      </Layout>
+      </Layout> */}
     </main>
   )
 }
