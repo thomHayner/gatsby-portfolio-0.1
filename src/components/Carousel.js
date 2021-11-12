@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { StaticQuery, graphql } from 'gatsby';
 import { Container, Carousel } from 'react-bootstrap';
 import ServicesCard from './ServicesCard';
 
@@ -12,7 +13,7 @@ export default function CardCarousel() {
   return (
     <StaticQuery
       query={graphql`
-        query skillCardDeck { 
+        query projectCardDeck { 
           allStrapiSkill(sort: {fields: displayOrder, order: ASC}) { 
             nodes { 
               id 
