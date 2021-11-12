@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import Layout from "../components/layout";
 import TechStackCatalog from "../components/TechStackCatalog";
 import ServicesPamphlet from "../components/ServicesPamphlet";
@@ -9,15 +9,32 @@ export default function PortfolioPage() {
   return (
     <Layout>
       <Container id="services" className="">
+        <Row><hr/></Row>
+        <Row>
+          <Col className="d-flex justify-content-center" >
+            <h1>Knowledge</h1>
+          </Col>
+        </Row>
+        <Row><hr/></Row>
         <Row><ServicesPamphlet/></Row>
         <Row><br/></Row>
         <Row><hr/></Row>
-        <Row><br/></Row>
+        <Row>
+          <Col className="d-flex justify-content-center" >
+            <h1>Skills</h1>
+          </Col>
+        </Row>
+        <Row><hr/></Row>
         <Row><TechStackCatalog/></Row>
         {/* {certifications could possibly go here} */}
         <Row><br/></Row>
         <Row><hr/></Row>
-        <Row><br/></Row>
+        <Row>
+          <Col className="d-flex justify-content-center" >
+            <h1>Projects</h1>
+          </Col>
+        </Row>
+        <Row><hr/></Row>
         <Row><ProjectDisplayCase/></Row>
         {/* {testimonials could possibly go here} */}
       </Container>
