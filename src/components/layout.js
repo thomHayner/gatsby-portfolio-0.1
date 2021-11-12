@@ -5,7 +5,7 @@ import { Container } from 'react-bootstrap';
 
 export default function Layout ({ children }) {
   return (
-    <div style={{ backgroundColor: "#121212", backgroundSize: "cover", color: "rgba(255, 255, 255, 0.87)", minHeight: "100vh" }} >
+    <div style={{ backgroundColor: "rgba(18,18,18, .97)", backgroundSize: "cover", color: "rgba(255, 255, 255, 0.87)", minHeight: "100vh" }} >
       <Container>
         <Header/>
         <br/>
