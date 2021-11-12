@@ -9,7 +9,7 @@ const footer={
 
 export default function Footer() {
   return (
-    <Navbar fixed="bottom" style={{ backgroundColor: "#181818", borderBottom: "solid 1px", borderColor: "#000000" }} variant="dark" >
+    <Navbar fixed="bottom" style={{ backgroundColor: "#181818", borderTop: "solid 1px", borderColor: "#000000" }} variant="dark" >
       <Container style={footer}>
         <Navbar.Brand href="#home">
           <img 
