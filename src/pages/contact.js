@@ -31,7 +31,7 @@ function ContactPage() {
         <Row><br/></Row>
         <Row>
           <Col>
-            <Form>
+            <Form style={{ color: "rgba(0,0,0,0.7)" }}>
               <FloatingLabel
                 controlId="floatingInputContactName"
                 label="Name"
