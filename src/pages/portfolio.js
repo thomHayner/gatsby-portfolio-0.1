@@ -15,7 +15,7 @@ export default function PortfolioPage() {
             <h1>Knowledge</h1>
           </Col>
         </Row>
-        <Row><hr/></Row>
+        <Row><br/></Row>
         <Row><ServicesPamphlet/></Row>
         <Row><br/></Row>
         <Row><hr/></Row>
@@ -24,7 +24,7 @@ export default function PortfolioPage() {
             <h1>Skills</h1>
           </Col>
         </Row>
-        <Row><hr/></Row>
+        <Row><br/></Row>
         <Row><TechStackCatalog/></Row>
         {/* {certifications could possibly go here} */}
         <Row><br/></Row>
@@ -34,7 +34,7 @@ export default function PortfolioPage() {
             <h1>Projects</h1>
           </Col>
         </Row>
-        <Row><hr/></Row>
+        <Row><br/></Row>
         <Row><ProjectDisplayCase/></Row>
         {/* {testimonials could possibly go here} */}
       </Container>
