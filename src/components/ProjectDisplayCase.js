@@ -24,12 +24,18 @@ export default function ProjectDisplayCase() {
       `} 
 
       render={data => (
-        <Container> 
+        <Container className="m-3" > 
           <Row>
-            <Col>
+            <Col className="d-flex justify-content-center m-3" >
+              <h1>Projects</h1>
+            </Col>
+          </Row>
+          <Row><br/></Row>
+          <Row>
+            <Col className="m-3" >
               <CardCarousel data={data} /> 
             </Col>
-            <Col>
+            <Col className="m-3" >
               <CardCarousel data={data} /> 
             </Col>
           </Row>
