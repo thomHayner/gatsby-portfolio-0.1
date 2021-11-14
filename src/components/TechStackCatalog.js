@@ -34,9 +34,9 @@ export default function TechStackCatalog() {
           </Row>
           <Row><br/></Row>
           <Row>
-            <Col className="d-flex justify-content-center" >
+            <Col className="d-flex justify-content-center m-3" >
               <Tab.Container>
-                <Nav variant="pills" className="flex-row m-3">
+                <Nav variant="pills" className="flex-row">
                 {data.allStrapiTechnology.nodes.map((node, i) => (
                   <Nav.Item>
                     <Nav.Link eventKey={node.name}>
