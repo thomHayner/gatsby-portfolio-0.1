@@ -41,13 +41,13 @@ export default function TechStackPamphlet() {
             <Col className="d-flex justify-content-center" >
               <Tab.Container>
                 <Nav variant="pills" className="flex-row">
-                {data.allStrapiTechnology.nodes.map((node, i) => (
-                  <Nav.Item>
-                    <Nav.Link eventKey={node.name}>
-                      <img alt="" src={node.img.localFile.url} width="60rem" height="60rem" />
-                    </Nav.Link>
-                  </Nav.Item>
-                ))}
+                  {data.allStrapiTechnology.nodes.map((node, i) => (
+                    <Nav.Item>
+                      <Nav.Link eventKey={node.name}>
+                        <img alt="" src={node.img.localFile.url} width="60rem" height="60rem" />
+                      </Nav.Link>
+                    </Nav.Item>
+                  ))}
                 </Nav>
               </Tab.Container>
             </Col>
