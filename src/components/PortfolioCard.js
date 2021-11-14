@@ -10,29 +10,3 @@ export default function PortfolioCard({ data }) {
     </Card>
   )
 }
-
-// export default function ServicesCard() {
-//   return(
-//     <div/>
-//     <StaticQuery
-//       query={graphql`
-//         query portfolioCards {
-//           allStrapiSkills {
-//             nodes {
-//               name
-//               description
-//             }
-//           }
-//         }
-//       `}
-
-//       render={data=> (
-//         <Container>
-//           <Card>
-
-//           </Card>
-//         </Container>
-//       )}
-//     />
-//   )
-// }
