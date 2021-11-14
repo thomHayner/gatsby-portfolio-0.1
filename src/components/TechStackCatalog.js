@@ -1,6 +1,6 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
-import { Container, Row, Col, Nav, Tab, Tabs, TabPane } from 'react-bootstrap';
+import { Container, Row, Col, Nav, Tab } from 'react-bootstrap';
 
 export default function TechStackCatalog() {
   return (
