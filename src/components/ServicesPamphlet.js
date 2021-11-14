@@ -7,32 +7,35 @@ export default function ServicesPamphlet() {
   return (
     <StaticQuery
       query={graphql`
-        query skillCardDeck { 
-          allStrapiSkill(sort: {fields: displayOrder, order: ASC}) { 
-            nodes { 
-              id 
-              name 
-              description 
-            } 
-          } 
-        } 
+        query servicesPamphlet {
+          strapiServicesPamphlet {
+            id
+            title
+            subTitle
+            services {
+              id
+              title
+              text
+            }
+          }
+        }
       `} 
 
       render={data => (
         <Container className="m-3" >
           <Row>
             <Col className="d-flex justify-content-center" >
-              <h1>Skills and Services</h1>
+              <h1>{data.strapiServicesPamphlet.title}</h1>
             </Col>
           </Row>
           <Row>
             <Col className="d-flex justify-content-center mb-3" >
-              <h5>What can we do for you?</h5>
+              <h5>{data.strapiServicesPamphlet.subTitle}</h5>
             </Col>
           </Row>
           <Row>
             <CardGroup as="Col" className="d-flex justify-content-center" >
-              {data.allStrapiSkill.nodes.map(node => (
+              {data.strapiServicesPamphlet.services.map(node => (
                 <Col key={node.id} >
                   <ServicesCard data={node} />
                 </Col>
