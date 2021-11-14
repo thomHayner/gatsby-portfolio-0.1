@@ -24,15 +24,13 @@ export default function ServicesPamphlet() {
       `} 
 
       render={data => (
-        <Col className="d-flex justify-content-center" >
-          <CardGroup>
-            {data.allStrapiSkill.nodes.map(node => (
-              <Col key={node.id} >
-                <ServicesCard data={node} />
-              </Col>
-            ))}
-          </CardGroup>
-        </Col>
+        <CardGroup as="Col" className="d-flex justify-content-center" >
+          {data.allStrapiSkill.nodes.map(node => (
+            <Col key={node.id} >
+              <ServicesCard data={node} />
+            </Col>
+          ))}
+        </CardGroup>
       )}
     />
   )
