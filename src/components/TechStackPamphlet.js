@@ -1,6 +1,6 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Card } from 'react-bootstrap';
 
 // Make it collapse into even rows of icons
 // Maybe add a text description, one or two paragraphs, or maybe have it cycle through highlighting different stacks
@@ -51,7 +51,9 @@ export default function TechStackPamphlet() {
             </Col>
             <Col className="d-flex justify-content-center col-8 flex-wrap" >
               {data.strapiTechStackPamphlet.devIcons.map(devIcon => (
-                  <img  key={"devIcon_" + devIcon.id} alt="" src={devIcon.localFile.url} width="60rem" height="60rem" className="m-3" />
+                <Card  key={"devIcon_" + devIcon.id} className="bg-success m-3" >
+                  <img alt="" src={devIcon.localFile.url} width="60rem" height="60rem" className="" />
+                </Card>
               ))}
             </Col>
           </Row>
