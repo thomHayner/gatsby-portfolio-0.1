@@ -1,7 +1,7 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import { Container, Col, Row, Nav, Tab } from 'react-bootstrap';
-import PortfolioCard from './PortfolioCard';
+import ProjectCard  from './ProjectCard';
 
 // at "md" collapse down to vertical stack
 // at "sm" collapse into cards with overlays
@@ -58,7 +58,7 @@ export default function ProjectPamphlet() {
                     <Tab.Content>
                       {data.allStrapiSkill.nodes.map((node, i) => (
                         <Tab.Pane eventKey={node.id}>
-                          <PortfolioCard data={node} />
+                          <ProjectCard data={node} />
                         </Tab.Pane>
                       ))}
                     </Tab.Content>

@@ -1,7 +1,7 @@
 import React from "react";
 import { Card } from "react-bootstrap";
 
-export default function PortfolioCard({ data }) {
+export default function ProjectCard({ data }) {
   return(
     <Card className="text-white align-items-center justify-content-center bg-secondary" style={{ width: "512px", height: "512px" }} >
       <Card.Title>{data.name}</Card.Title>
