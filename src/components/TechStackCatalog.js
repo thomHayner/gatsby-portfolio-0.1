@@ -23,9 +23,9 @@ export default function TechStackCatalog() {
       `} 
 
       render={data => (
-        <Container>
+        <Container className="m-3" >
           <Row>
-            <Col className="d-flex justify-content-center" >
+            <Col className="d-flex justify-content-center m-3" >
               <h1>Skills</h1>
             </Col>
           </Row>
@@ -33,7 +33,7 @@ export default function TechStackCatalog() {
           <Row>
             <Col className="d-flex justify-content-center" >
               <Tab.Container>
-                <Nav variant="pills" className="flex-row mb-3">
+                <Nav variant="pills" className="flex-row m-3">
                 {data.allStrapiTechnology.nodes.map((node, i) => (
                   <Nav.Item>
                     <Nav.Link eventKey={node.name}>
