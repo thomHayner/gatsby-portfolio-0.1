@@ -24,9 +24,9 @@ export default function ServicesPamphlet() {
       `} 
 
       render={data => (
-        <Container>
+        <Container className="m-3" >
           <Row>
-            <Col className="d-flex justify-content-center m-3" >
+            <Col className="d-flex justify-content-center" >
               <h1>Knowledge</h1>
             </Col>
           </Row>
