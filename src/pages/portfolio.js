@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import Layout from "../components/layout";
 import TechStackPamphlet from "../components/TechStackPamphlet";
 import ServicesPamphlet from "../components/ServicesPamphlet";
