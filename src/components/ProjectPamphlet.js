@@ -50,11 +50,6 @@ export default function ProjectPamphlet() {
               </Tab.Container>
             </Col>
           </Row>
-          <Row>
-            <Col className="d-flex justify-content-center" >
-              <CardCarousel data={data} /> 
-            </Col>
-          </Row>
         </Container>
       )}
     />
