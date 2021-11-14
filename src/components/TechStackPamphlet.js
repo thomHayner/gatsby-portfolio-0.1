@@ -40,7 +40,18 @@ export default function TechStackPamphlet() {
           <Row>
             <Col className="d-flex justify-content-center" >
                   {data.allStrapiTechnology.nodes.map((node, i) => (
-                        <img alt="" src={node.img.localFile.url} width="60rem" height="60rem" className="m-3" />
+                    <Figure>
+                      <Figure.Image
+                        width={60}
+                        height={60}
+                        alt="60x60"
+                        src={node.img.localFile.url}
+                      />
+                      <Figure.Caption>
+                        {node.name}
+                      </Figure.Caption>
+                    {/* <img alt="" src={node.img.localFile.url} width="60rem" height="60rem" className="m-3" /> */}
+                    </Figure>
                   ))}
             </Col>
           </Row>
@@ -49,16 +60,3 @@ export default function TechStackPamphlet() {
     />
   )
 }
-
-
-{/* <Figure>
-  <Figure.Image
-    width={171}
-    height={180}
-    alt="171x180"
-    src="holder.js/171x180"
-  />
-  <Figure.Caption>
-    Nulla vitae elit libero, a pharetra augue mollis interdum.
-  </Figure.Caption>
-</Figure> */}
