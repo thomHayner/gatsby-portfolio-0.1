@@ -3,6 +3,8 @@ import { StaticQuery, graphql } from 'gatsby';
 import { Container, Col, Row, Nav, Tab } from 'react-bootstrap';
 import PortfolioCard from './PortfolioCard';
 
+// at "md" collapse down to vertical stack
+// at "sm" collapse into cards with overlays
 
 export default function ProjectPamphlet() {
   return (
