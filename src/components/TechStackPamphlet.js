@@ -1,6 +1,6 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
-import { Container, Row, Col, Nav, Tab } from 'react-bootstrap';
+import { Container, Row, Col, Nav, Tab, Figure } from 'react-bootstrap';
 
 // Make it collapse into even rows of icons
 // Maybe add a text description, one or two paragraphs, or maybe have it cycle through highlighting different stacks
@@ -39,17 +39,9 @@ export default function TechStackPamphlet() {
           </Row>
           <Row>
             <Col className="d-flex justify-content-center" >
-              <Tab.Container>
-                <Nav variant="pills" className="flex-row">
                   {data.allStrapiTechnology.nodes.map((node, i) => (
-                    <Nav.Item>
-                      <Nav.Link eventKey={node.name}>
-                        <img alt="" src={node.img.localFile.url} width="60rem" height="60rem" />
-                      </Nav.Link>
-                    </Nav.Item>
+                        <img alt="" src={node.img.localFile.url} width="60rem" height="60rem" className="m-3" />
                   ))}
-                </Nav>
-              </Tab.Container>
             </Col>
           </Row>
         </Container>
@@ -57,3 +49,16 @@ export default function TechStackPamphlet() {
     />
   )
 }
+
+
+{/* <Figure>
+  <Figure.Image
+    width={171}
+    height={180}
+    alt="171x180"
+    src="holder.js/171x180"
+  />
+  <Figure.Caption>
+    Nulla vitae elit libero, a pharetra augue mollis interdum.
+  </Figure.Caption>
+</Figure> */}
