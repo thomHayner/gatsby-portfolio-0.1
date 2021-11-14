@@ -2,6 +2,9 @@ import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import { Container, Row, Col, Nav, Tab } from 'react-bootstrap';
 
+// Make it collapse into even rows of icons
+// Maybe add a text description, one or two paragraphs, or maybe have it cycle through highlighting different stacks
+
 export default function TechStackCatalog() {
   return (
     <StaticQuery
