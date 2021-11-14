@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Layout from "../components/layout";
-import TechStackCatalog from "../components/TechStackCatalog";
+import TechStackPamphlet from "../components/TechStackPamphlet";
 import ServicesPamphlet from "../components/ServicesPamphlet";
 import ProjectDisplayCase from "../components/ProjectDisplayCase";
 
@@ -12,7 +12,7 @@ export default function PortfolioPage() {
         <Row><ServicesPamphlet/></Row>
         <Row><br/></Row>
         <Row><hr/></Row>
-        <Row><TechStackCatalog/></Row>
+        <Row><TechStackPamphlet/></Row>
         {/* {certifications could possibly go here} */}
         <Row><br/></Row>
         <Row><hr/></Row>
