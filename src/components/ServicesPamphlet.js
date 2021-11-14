@@ -27,10 +27,14 @@ export default function ServicesPamphlet() {
         <Container className="m-3" >
           <Row>
             <Col className="d-flex justify-content-center" >
-              <h1>Knowledge</h1>
+              <h1>Skills and Services</h1>
             </Col>
           </Row>
-          <Row><br/></Row>
+          <Row>
+            <Col className="d-flex justify-content-center mb-3" >
+              <h5>What can we do for you?</h5>
+            </Col>
+          </Row>
           <Row>
             <CardGroup as="Col" className="d-flex justify-content-center" >
               {data.allStrapiSkill.nodes.map(node => (
