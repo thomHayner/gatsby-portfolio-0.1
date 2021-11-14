@@ -9,16 +9,9 @@ export default function PortfolioPage() {
   return (
     <Layout>
       <Container id="services" className="">
-        <Row><hr/></Row>
-        <Row>
-          <Col className="d-flex justify-content-center" >
-            <h1>Knowledge</h1>
-          </Col>
-        </Row>
-        <Row><br/></Row>
         <Row><ServicesPamphlet/></Row>
         <Row><br/></Row>
-        <Row><hr/></Row>
+        <Row><hr style={{ maxWidth: "200vw" }} /></Row>
         <Row>
           <Col className="d-flex justify-content-center" >
             <h1>Skills</h1>
