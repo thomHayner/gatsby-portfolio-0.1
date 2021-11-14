@@ -3,7 +3,7 @@ import { StaticQuery, graphql } from 'gatsby';
 import { Container, Col, Row } from 'react-bootstrap';
 import CardCarousel from './Carousel';
 
-export default function ProjectDisplayCase() {
+export default function ProjectPamphlet() {
   return (
     <StaticQuery 
       query={graphql` 

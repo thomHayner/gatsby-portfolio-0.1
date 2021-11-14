@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Layout from "../components/layout";
 import TechStackPamphlet from "../components/TechStackPamphlet";
 import ServicesPamphlet from "../components/ServicesPamphlet";
-import ProjectDisplayCase from "../components/ProjectDisplayCase";
+import ProjectPamphlet from "../components/ProjectPamphlet";
 
 export default function PortfolioPage() {
   return (
@@ -16,7 +16,7 @@ export default function PortfolioPage() {
         {/* {certifications could possibly go here} */}
         <Row><br/></Row>
         <Row><hr/></Row>
-        <Row><ProjectDisplayCase/></Row>
+        <Row><ProjectPamphlet/></Row>
         {/* {testimonials could possibly go here} */}
       </Container>
     </Layout>
