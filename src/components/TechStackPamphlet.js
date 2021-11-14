@@ -38,6 +38,20 @@ export default function TechStackPamphlet() {
             </Col>
           </Row>
           <Row>
+            <Col>
+              <Row>
+                <h5>Serverless</h5>
+                <p>Products designed for cloud hosted services.</p>
+              </Row>
+              <Row>
+                <h5>Scalable</h5>
+                <p>Ready to grow with you.</p>
+              </Row>
+              <Row>
+                <h5>Simple</h5>
+                <p>Automated updates and continuous development integration.</p>
+              </Row>
+            </Col>
             <Col className="d-flex justify-content-center" >
                   {data.allStrapiTechnology.nodes.map((node, i) => (
                     <Figure>
