@@ -40,7 +40,7 @@ export default function TechStackPamphlet() {
                 {data.allStrapiTechnology.nodes.map((node, i) => (
                   <Nav.Item>
                     <Nav.Link eventKey={node.name}>
-                      <img alt="" src={node.img.localFile.url} width="60" height="60" />
+                      <img alt="" src={node.img.localFile.url} width="60rem" height="60rem" />
                     </Nav.Link>
                   </Nav.Item>
                 ))}
