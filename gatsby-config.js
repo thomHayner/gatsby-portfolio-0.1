@@ -12,7 +12,7 @@ module.exports = {
       options: {
         apiURL: `http://localhost:1337`,
         queryLimit: 1000, // Defaults to 100
-        collectionTypes: [`article`, `category`],
+        collectionTypes: [`article`, 'skill', `category`],
         singleTypes: ['services-pamphlet', 'tech-stack-pamphlet'],
         // loginData: {
         //   identifier: `reader@strapi.io`,
