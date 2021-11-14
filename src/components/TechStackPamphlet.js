@@ -51,7 +51,7 @@ export default function TechStackPamphlet() {
             <Col className="col-xl-8 col-lg-8 col-12 d-flex justify-content-center flex-wrap" >
               {data.strapiTechStackPamphlet.devIcons.map(devIcon => (
                 // <Card  key={"devIcon_" + devIcon.id} className="bg-success " >
-                  <img key={"devIcon_" + devIcon.id} alt="" src={devIcon.localFile.url} width="60rem" height="60rem" className="m-3" />
+                  <img key={"devIcon_" + devIcon.id} alt="" src={devIcon.localFile.url} width="75rem" height="75rem" className="m-3" />
                 // </Card>
               ))}
             </Col>
