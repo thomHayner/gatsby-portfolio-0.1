@@ -34,7 +34,7 @@ export default function ServicesPamphlet() {
             </Col>
           </Row>
           <Row>
-            <CardGroup as="Col" className="d-flex justify-content-center" >
+            <CardGroup className="d-flex justify-content-center" >
               {data.strapiServicesPamphlet.services.map(node => (
                 <Col key={node.id} >
                   <ServicesCard data={node} />
