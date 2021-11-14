@@ -41,7 +41,7 @@ export default function TechStackPamphlet() {
             </Col>
           </Row>
           <Row>
-            <Col className="col-4" >
+            <Col className="col-xl-4 col-lg-5 col-12" >
               {data.strapiTechStackPamphlet.techBulletPoint.map(bulletPoint => (
                 <Row key={"bulletPoint_" + bulletPoint.id} className="m-3" >
                   <h5>{bulletPoint.title}</h5>
@@ -49,7 +49,7 @@ export default function TechStackPamphlet() {
                 </Row>
               ))}
             </Col>
-            <Col className="d-flex justify-content-center col-8 flex-wrap" >
+            <Col className="col-xl-8 col-lg-7 col-12 d-flex justify-content-center flex-wrap" >
               {data.strapiTechStackPamphlet.devIcons.map(devIcon => (
                 <Card  key={"devIcon_" + devIcon.id} className="bg-success m-3" >
                   <img alt="" src={devIcon.localFile.url} width="60rem" height="60rem" className="" />
