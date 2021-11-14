@@ -26,16 +26,20 @@ export default function ProjectPamphlet() {
       render={data => (
         <Container className="m-3" > 
           <Row>
-            <Col className="d-flex justify-content-center m-3" >
+            <Col className="d-flex justify-content-center" >
               <h1>Projects</h1>
             </Col>
           </Row>
-          <Row><br/></Row>
           <Row>
-            <Col className="m-3" >
+            <Col className="d-flex justify-content-center m-3" >
+              <h5>Things that have worked before...</h5>
+            </Col>
+          </Row>
+          <Row>
+            <Col className="d-flex justify-content-center" >
               <CardCarousel data={data} /> 
             </Col>
-            <Col className="m-3" >
+            <Col className="d-flex justify-content-center" >
               <CardCarousel data={data} /> 
             </Col>
           </Row>
