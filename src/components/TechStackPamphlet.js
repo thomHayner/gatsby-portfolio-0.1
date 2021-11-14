@@ -54,7 +54,7 @@ export default function TechStackPamphlet() {
             </Col>
             <Col className="d-flex justify-content-center" >
                   {data.allStrapiTechnology.nodes.map((node, i) => (
-                    <Figure>
+                    <Figure className="m-3" >
                       <Figure.Image
                         width={60}
                         height={60}
