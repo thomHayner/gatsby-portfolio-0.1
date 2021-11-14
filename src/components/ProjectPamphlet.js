@@ -42,7 +42,8 @@ export default function ProjectPamphlet() {
             <Col className="d-flex justify-content-center" >
               <Tab.Container id="" defaultActiveKey={data.allStrapiSkill.nodes[0].id} >
                 <Row>
-                  <Col sm={2} >
+                  <Col className="col-2" />
+                  <Col className="col-xl-1 col-lg-1 col-12" >
                     <Nav variant="pills" className="flex-row">
                       {data.allStrapiSkill.nodes.map((node, i) => (
                         <Nav.Item>
@@ -53,7 +54,7 @@ export default function ProjectPamphlet() {
                       ))}
                     </Nav>
                   </Col>
-                  <Col sm={10}>
+                  <Col className="col-xl-7 col-lg-7 col-12" >
                     <Tab.Content>
                       {data.allStrapiSkill.nodes.map((node, i) => (
                         <Tab.Pane eventKey={node.id}>
@@ -62,6 +63,7 @@ export default function ProjectPamphlet() {
                       ))}
                     </Tab.Content>
                   </Col>
+                  <Col className="col-2" />
                 </Row>
               </Tab.Container>
             </Col>
