@@ -1,7 +1,7 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import { Container, Col, Row, Nav, Tab } from 'react-bootstrap';
-import CardCarousel from './Carousel';
+
 
 export default function ProjectPamphlet() {
   return (
