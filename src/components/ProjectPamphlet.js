@@ -31,7 +31,7 @@ export default function ProjectPamphlet() {
             </Col>
           </Row>
           <Row>
-            <Col className="d-flex justify-content-center m-3" >
+            <Col className="d-flex justify-content-center mb-3" >
               <h5>Things that have worked before...</h5>
             </Col>
           </Row>
