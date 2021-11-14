@@ -31,11 +31,13 @@ export default function ProjectPamphlet() {
           <Row>
             <Col className="d-flex justify-content-center" >
               <h1>Projects</h1>
+              {/* <h1>Projects</h1> */}
             </Col>
           </Row>
           <Row>
             <Col className="d-flex justify-content-center mb-3" >
               <h5>Things that have worked before...</h5>
+              {/* <h5>Projects</h5> */}
             </Col>
           </Row>
           <Row>
