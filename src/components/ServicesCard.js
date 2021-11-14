@@ -7,7 +7,6 @@ export default function ServicesCard({ data }) {
     <Card className="border-dark m-3 p-5" style={{ minWidth: "310px", height: "250px", backgroundColor: "#363636" }} >
       <Container className="" style={{ width: "290px" }}>
       <Card.Title className="text-warning" >{data.name}</Card.Title>
-      {/* <Card.Img src={data.img.localFile.url} style={{ width: "200px", height: "200px" }} /> */}
       <Card.Body className="p-0" >{data.description}</Card.Body>
       </Container>
     </Card>
