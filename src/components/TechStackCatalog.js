@@ -24,16 +24,13 @@ export default function TechStackCatalog() {
 
       render={data => (
         <Container>
-          
-            {/* <Tabs defaultActiveKey="profile" id="uncontrolled-tab" className="mb-3" variant="pills" >
-              {data.allStrapiTechnology.nodes.map((node, i) => (
-                <TabPane key={node.id} eventKey={node.name} title={ <img alt="" src={node.img.localFile.url} width="60" height="60" /> }>
-                  {node.description}
-                </TabPane>
-              ))}
-            </Tabs> */}
-          
-          
+          <Row>
+            <Col className="d-flex justify-content-center" >
+              <h1>Skills</h1>
+            </Col>
+          </Row>
+          <Row><br/></Row>
+          <Row>
             <Col className="d-flex justify-content-center" >
               <Tab.Container>
                 <Nav variant="pills" className="flex-row mb-3">
@@ -47,64 +44,7 @@ export default function TechStackCatalog() {
                 </Nav>
               </Tab.Container>
             </Col>
-          
-          
-
-            {/* <Tab.Container id="left-tabs-example" defaultActiveKey="first">
-              <Row>
-                <Col>
-                
-                
-                </Col>
-                <Col sm={3}>
-                  <Nav variant="pills" className="flex-column">
-                    <Nav.Item>
-                      <Nav.Link eventKey="first">Tab 1</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="second" style={{ backgroundColor: "rgba(255,255,255,.6)" }} >Tab 2</Nav.Link>
-                    </Nav.Item>
-                  </Nav>
-                </Col>
-                <Col sm={3}>
-                  <Nav variant="pills" className="flex-column">
-                    <Nav.Item>
-                      <Nav.Link eventKey="third">Tab 3</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="fourth">Tab 4</Nav.Link>
-                    </Nav.Item>
-                  </Nav>
-                </Col>
-                <Col sm={9}>
-                  <Tab.Content>
-                    <Tab.Pane eventKey="first">
-                      What 1
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="second">
-                      Who 2
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="third">
-                      Which 3
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="fourth">
-                      Where 4
-                    </Tab.Pane>
-                  </Tab.Content>
-                </Col>
-                <Col sm={3}>
-                  <Nav variant="pills" className="flex-column">
-                    <Nav.Item>
-                      <Nav.Link eventKey="fifth">Tab 5</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="sixth">Tab 6</Nav.Link>
-                    </Nav.Item>
-                  </Nav>
-                </Col>
-              </Row>
-            </Tab.Container> */}
-
+          </Row>
         </Container>
       )}
     />
