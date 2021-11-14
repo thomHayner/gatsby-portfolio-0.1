@@ -28,13 +28,17 @@ export default function TechStackPamphlet() {
       render={data => (
         <Container className="m-3" >
           <Row>
-            <Col className="d-flex justify-content-center m-3" >
-              <h1>Skills</h1>
+            <Col className="d-flex justify-content-center" >
+              <h1>Technologies</h1>
             </Col>
           </Row>
-          <Row><br/></Row>
           <Row>
-            <Col className="d-flex justify-content-center m-3" >
+            <Col className="d-flex justify-content-center mb-3" >
+              <h5>How would you like it done?</h5>
+            </Col>
+          </Row>
+          <Row>
+            <Col className="d-flex justify-content-center" >
               <Tab.Container>
                 <Nav variant="pills" className="flex-row">
                 {data.allStrapiTechnology.nodes.map((node, i) => (
