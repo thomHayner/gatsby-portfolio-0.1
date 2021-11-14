@@ -13,11 +13,6 @@ export default function ServicesPamphlet() {
               id 
               name 
               description 
-              img { 
-                localFile { 
-                  url 
-                } 
-              } 
             } 
           } 
         } 
