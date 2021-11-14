@@ -30,6 +30,7 @@ export default function ServicesPamphlet() {
               <h1>Knowledge</h1>
             </Col>
           </Row>
+          <Row><br/></Row>
           <Row>
             <CardGroup as="Col" className="d-flex justify-content-center" >
               {data.allStrapiSkill.nodes.map(node => (
