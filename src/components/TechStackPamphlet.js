@@ -8,7 +8,7 @@ import { DevIcons } from '../assets/images/techStackIcons';
 
 export default function TechStackPamphlet() {
   return (
-    <Container className="m-3" >
+    <Container className="" >
       <Row>
         <Col className="d-flex justify-content-center" >
           <h1>{DATA.title}</h1>

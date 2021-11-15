@@ -5,7 +5,7 @@ import DATA from '../assets/content/services-pamphlet.json';
 
 export default function ServicesPamphlet() {
   return (
-    <Container className="m-3" >
+    <Container className="" >
       <Row>
         <Col className="d-flex justify-content-center" >
           <h1>{DATA.title}</h1>
