@@ -19,20 +19,17 @@
     {
       "id": 1,
       "name": "Email",
-      "url": "/contact",
-      "img": ""
+      "url": "/contact"
     },
     {
       "id": 2,
-      "name": "LinkedIn",
-      "url": "https://www.linkedin.com/in/thomHayner",
-      "img": ""
+      "name": "GitHub",
+      "url": "https://www.github.com/thomHayner"
     },
     {
       "id": 3,
-      "name": "GitHub",
-      "url": "https://www.github.com/thomHayner",
-      "img": ""
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/thomHayner"
     }
   ]
 }
