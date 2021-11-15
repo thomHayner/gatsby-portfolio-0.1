@@ -1,7 +1,7 @@
 import React, { /* useState */ } from 'react';
 import { Container, Form, Button, Row, Col, FloatingLabel } from 'react-bootstrap';
 import Layout from '../components/layout';
-import CONTENT from '../assets/content/contact-info.json';
+import contentData from '../assets/content/contact-info.json';
 
 // https://material.io/design/color/dark-theme.html#properties
 // Background #121212
@@ -27,7 +27,7 @@ export default function ContactPage() {
   return (
     <Layout>
       <Container>
-        <Row><h1>{CONTENT.title}</h1></Row> 
+        <Row><h1>{contentData.title}</h1></Row> 
         <Row><hr/></Row>
         <Row><br/></Row>
         <Row>
@@ -87,33 +87,33 @@ export default function ContactPage() {
               </Button>
             </Form>
           </Col>
-          <Col className="ps-5 col-2" style={addressArea}>
+          <Col className="ps-5 col-2" style={addressArea} >
             <address>
-              {CONTENT.contactAddressName ? <Row>{CONTENT.contactAddressName}</Row> : '' }
-              {CONTENT.contactAddress1 ? <Row>{CONTENT.contactAddress1}</Row> : '' }
-              {CONTENT.contactAddress2 ? <Row>{CONTENT.contactAddress2}</Row> : '' }
-              {CONTENT.contactAddress3 ? <Row>{CONTENT.contactAddress3}</Row> : '' }
-              {CONTENT.contactAddress4 ? <Row>{CONTENT.contactAddress4}</Row> : '' }
-              {CONTENT.contactAddress5 ? <Row>{CONTENT.contactAddress5}</Row> : '' }
-              {CONTENT.contactCity ? 
-                CONTENT.contactState ? 
-                  CONTENT.contactCountry ? 
-                    <Row>{CONTENT.contactCity}, {CONTENT.contactState}, {CONTENT.contactCountry}</Row> : <Row>{CONTENT.contactCity}, {CONTENT.contactState}</Row>
+              {contentData.contactAddressName ? <Row>{contentData.contactAddressName}</Row> : '' }
+              {contentData.contactAddress1 ? <Row>{contentData.contactAddress1}</Row> : '' }
+              {contentData.contactAddress2 ? <Row>{contentData.contactAddress2}</Row> : '' }
+              {contentData.contactAddress3 ? <Row>{contentData.contactAddress3}</Row> : '' }
+              {contentData.contactAddress4 ? <Row>{contentData.contactAddress4}</Row> : '' }
+              {contentData.contactAddress5 ? <Row>{contentData.contactAddress5}</Row> : '' }
+              {contentData.contactCity ? 
+                contentData.contactState ? 
+                  contentData.contactCountry ? 
+                    <Row>{contentData.contactCity}, {contentData.contactState}, {contentData.contactCountry}</Row> : <Row>{contentData.contactCity}, {contentData.contactState}</Row>
                 :
-                  CONTENT.contactCountry ?
-                  <Row>{CONTENT.contactCity}, {CONTENT.contactCountry}</Row> : <Row>{CONTENT.contactCity}</Row>
+                  contentData.contactCountry ?
+                  <Row>{contentData.contactCity}, {contentData.contactCountry}</Row> : <Row>{contentData.contactCity}</Row>
                 
               : 
-                CONTENT.contactState ? 
-                  CONTENT.contactCountry ? 
-                    <Row>{CONTENT.contactState}, {CONTENT.contactCountry}</Row> : <Row>{CONTENT.contactState}</Row>
+                contentData.contactState ? 
+                  contentData.contactCountry ? 
+                    <Row>{contentData.contactState}, {contentData.contactCountry}</Row> : <Row>{contentData.contactState}</Row>
               :
-                CONTENT.contactCountry ? 
-                <Row>{CONTENT.contactCountry}</Row> : ''
+                contentData.contactCountry ? 
+                <Row>{contentData.contactCountry}</Row> : ''
               }
-              {CONTENT.contactPostalCode ? <Row>{CONTENT.contactPostalCode}</Row> : '' }
-              {CONTENT.contactPhone ? <Row>{CONTENT.contactPhone}</Row> : '' }
-              {CONTENT.contactEmail ? <Row>{CONTENT.contactEmail}</Row> : '' }
+              {contentData.contactPostalCode ? <Row>{contentData.contactPostalCode}</Row> : '' }
+              {contentData.contactPhone ? <Row>{contentData.contactPhone}</Row> : '' }
+              {contentData.contactEmail ? <Row>{contentData.contactEmail}</Row> : '' }
             </address>
           </Col>
         </Row>
