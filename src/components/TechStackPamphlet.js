@@ -20,7 +20,7 @@ export default function TechStackPamphlet() {
         </Col>
       </Row>
       <Row>
-        <Col className="col-xl-4 col-lg-4 col-12" >
+        <Col className="col-xl-4 col-lg-3 col-12" >
           {DATA.techBulletPoint.map(bulletPoint => (
             <Row key={"bulletPoint_" + bulletPoint.id} className="m-3" >
               <h5>{bulletPoint.title}</h5>
@@ -28,7 +28,7 @@ export default function TechStackPamphlet() {
             </Row>
           ))}
         </Col>
-        <Col className="col-xl-8 col-lg-8 col-12 d-flex justify-content-center flex-wrap" >
+        <Col className="col-xl-8 col-lg-9 col-12 d-flex justify-content-center flex-wrap" >
           {DevIcons.map((DevIcon, i) => (
             <DevIcon key={"devIcon_" + i} className="m-md-3 m-sm-2" style={{ height: "75px", width: "75px" }} />
           ))}
