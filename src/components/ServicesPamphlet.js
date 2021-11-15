@@ -17,9 +17,9 @@ export default function ServicesPamphlet() {
         </Col>
       </Row>
       <Row>
-        <CardGroup className="d-flex justify-content-center" >
+        <CardGroup className="d-flex flex-wrap justify-content-center" >
           {DATA.services.map(node => (
-            <Col key={node.id} >
+            <Col key={node.id} className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 col-xxs-12" >
               <ServicesCard data={node} />
             </Col>
           ))}
