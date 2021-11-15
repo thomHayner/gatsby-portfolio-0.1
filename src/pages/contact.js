@@ -1,6 +1,7 @@
-import React, { /* useState */ } from "react";
-import { Container, Form, Button, Row, Col, FloatingLabel } from 'react-bootstrap'
-import Layout from "../components/layout";
+import React, { /* useState */ } from 'react';
+import { Container, Form, Button, Row, Col, FloatingLabel } from 'react-bootstrap';
+import Layout from '../components/layout';
+import CONTENT from '../assets/content/contact-info.json';
 
 // https://material.io/design/color/dark-theme.html#properties
 // Background #121212
@@ -26,7 +27,7 @@ export default function ContactPage() {
   return (
     <Layout>
       <Container>
-        <Row><h1>Contact Us</h1>{/* <h1>{data.strapiCompanyInfo.sectionTitle}</h1> */}</Row> 
+        <Row><h1>{CONTENT.title}</h1></Row> 
         <Row><hr/></Row>
         <Row><br/></Row>
         <Row>
@@ -86,27 +87,34 @@ export default function ContactPage() {
               </Button>
             </Form>
           </Col>
-          <Col xs={2} style={addressArea}>
+          <Col className="ps-5 col-2" style={addressArea}>
             <address>
-                1023 Walnut St<br/>
-                Boulder, CO<br/>
-                80302<br/>
+              {CONTENT.contactAddressName ? <Row>{CONTENT.contactAddressName}</Row> : '' }
+              {CONTENT.contactAddress1 ? <Row>{CONTENT.contactAddress1}</Row> : '' }
+              {CONTENT.contactAddress2 ? <Row>{CONTENT.contactAddress2}</Row> : '' }
+              {CONTENT.contactAddress3 ? <Row>{CONTENT.contactAddress3}</Row> : '' }
+              {CONTENT.contactAddress4 ? <Row>{CONTENT.contactAddress4}</Row> : '' }
+              {CONTENT.contactAddress5 ? <Row>{CONTENT.contactAddress5}</Row> : '' }
+              {CONTENT.contactCity ? 
+                CONTENT.contactState ? 
+                  CONTENT.contactCountry ? 
+                    <Row>{CONTENT.contactCity}, {CONTENT.contactState}, {CONTENT.contactCountry}</Row> : <Row>{CONTENT.contactCity}, {CONTENT.contactState}</Row>
+                :
+                  CONTENT.contactCountry ?
+                  <Row>{CONTENT.contactCity}, {CONTENT.contactCountry}</Row> : <Row>{CONTENT.contactCity}</Row>
+                
+              : 
+                CONTENT.contactState ? 
+                  CONTENT.contactCountry ? 
+                    <Row>{CONTENT.contactState}, {CONTENT.contactCountry}</Row> : <Row>{CONTENT.contactState}</Row>
+              :
+                CONTENT.contactCountry ? 
+                <Row>{CONTENT.contactCountry}</Row> : ''
+              }
+              {CONTENT.contactPostalCode ? <Row>{CONTENT.contactPostalCode}</Row> : '' }
+              {CONTENT.contactPhone ? <Row>{CONTENT.contactPhone}</Row> : '' }
+              {CONTENT.contactEmail ? <Row>{CONTENT.contactEmail}</Row> : '' }
             </address>
-            {/* 
-            <address>
-              {data.strapiCompanyInfo.contactAddressName ? data.strapiCompanyInfo.contactAddressName : '' }
-              {data.strapiCompanyInfo.contactAddress1 ? data.strapiCompanyInfo.contactAddress1 : '' }
-              {data.strapiCompanyInfo.contactAddress2 ? data.strapiCompanyInfo.contactAddress2 : '' }
-              {data.strapiCompanyInfo.contactAddress3 ? data.strapiCompanyInfo.contactAddress3 : '' }
-              {data.strapiCompanyInfo.contactAddress4 ? data.strapiCompanyInfo.contactAddress4 : '' }
-              {data.strapiCompanyInfo.contactAddress5 ? data.strapiCompanyInfo.contactAddress5 : '' }
-              {data.strapiCompanyInfo.contactCity ? data.strapiCompanyInfo.contactCity : '' }
-              {data.strapiCompanyInfo.contactState ? data.strapiCompanyInfo.contactState : '' }
-              {data.strapiCompanyInfo.contactZipCode ? data.strapiCompanyInfo.contactZipCode : '' }
-              {data.strapiCompanyInfo.contactPhone ? data.strapiCompanyInfo.contactPhone : '' }
-              {data.strapiCompanyInfo.contactEmail ? data.strapiCompanyInfo.contactEmail : '' }
-            </address>
-             */}
           </Col>
         </Row>
       </Container>
