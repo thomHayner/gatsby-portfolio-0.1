@@ -18,12 +18,18 @@
   "socialMedia": [
     {
       "id": 1,
+      "name": "Email",
+      "url": "/contact",
+      "img": ""
+    },
+    {
+      "id": 2,
       "name": "LinkedIn",
       "url": "https://www.linkedin.com/in/thomHayner",
       "img": ""
     },
     {
-      "id": 2,
+      "id": 3,
       "name": "GitHub",
       "url": "https://www.github.com/thomHayner",
       "img": ""
