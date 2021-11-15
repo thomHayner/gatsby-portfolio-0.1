@@ -26,7 +26,7 @@ function ContactPage() {
   return (
     <Layout>
       <Container>
-        <Row><h1>Contact Us</h1>{/* <h1>{data.strapiContactInfo.sectionTitle}</h1> */}</Row> 
+        <Row><h1>Contact Us</h1>{/* <h1>{data.strapiCompanyInfo.sectionTitle}</h1> */}</Row> 
         <Row><hr/></Row>
         <Row><br/></Row>
         <Row>
@@ -92,6 +92,21 @@ function ContactPage() {
                 Boulder, CO<br/>
                 80302<br/>
             </address>
+            {/* 
+            <address>
+              {data.strapiCompanyInfo.contactAddressName ? data.strapiCompanyInfo.contactAddressName : '' }
+              {data.strapiCompanyInfo.contactAddress1 ? data.strapiCompanyInfo.contactAddress1 : '' }
+              {data.strapiCompanyInfo.contactAddress2 ? data.strapiCompanyInfo.contactAddress2 : '' }
+              {data.strapiCompanyInfo.contactAddress3 ? data.strapiCompanyInfo.contactAddress3 : '' }
+              {data.strapiCompanyInfo.contactAddress4 ? data.strapiCompanyInfo.contactAddress4 : '' }
+              {data.strapiCompanyInfo.contactAddress5 ? data.strapiCompanyInfo.contactAddress5 : '' }
+              {data.strapiCompanyInfo.contactCity ? data.strapiCompanyInfo.contactCity : '' }
+              {data.strapiCompanyInfo.contactState ? data.strapiCompanyInfo.contactState : '' }
+              {data.strapiCompanyInfo.contactZipCode ? data.strapiCompanyInfo.contactZipCode : '' }
+              {data.strapiCompanyInfo.contactPhone ? data.strapiCompanyInfo.contactPhone : '' }
+              {data.strapiCompanyInfo.contactEmail ? data.strapiCompanyInfo.contactEmail : '' }
+            </address>
+             */}
           </Col>
         </Row>
       </Container>
