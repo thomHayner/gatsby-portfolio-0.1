@@ -34,9 +34,6 @@ export default function BlogArticle(props) {
             <Row>{data.strapiArticle.publishedDate}</Row>
             <Row>{data.strapiArticle.updated_at}</Row>
             <Row>{data.strapiArticle.body}</Row>
-            <Row><br/></Row>
-            <Row><br/></Row>
-            <Row><br/></Row>
           </Container>
         </Layout>
       )}
