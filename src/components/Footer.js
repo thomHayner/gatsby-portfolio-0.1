@@ -13,14 +13,7 @@ export default function Footer() {
     <Navbar style={{ backgroundColor: "#181818" }} className="bg-dark border-top border-info" variant="dark" fixed="bottom" >
       <Container style={footer}>
         <Navbar.Brand href="#home">
-          <img 
-            alt=""
-            src={Logo}
-            width="30"
-            height="30"
-          />
-          {``}
-          Thomas Hayner
+          <h5>{`©${contentData.displayName}`}</h5>
         </Navbar.Brand>
       </Container>
     </Navbar>
