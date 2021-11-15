@@ -29,6 +29,7 @@ export default function BlogArticle(props) {
             <Row><br/></Row>
             <Row><br/></Row>
             <Row><hr/></Row>
+            <Row><img src={data.strapiArticle.heroImage.localFile.url} alt="" /></Row>
             <Row><h1>{data.strapiArticle.title}</h1></Row>
             <Row><hr/></Row>
             <Row><br/></Row>
