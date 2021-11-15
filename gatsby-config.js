@@ -14,6 +14,7 @@ module.exports = {
         path: `${__dirname}/src/markdown-pages`,
       },
     },
+    `gatsby-transformer-remark`,
     // {
     //   resolve: `gatsby-source-strapi`,
     //   options: {
