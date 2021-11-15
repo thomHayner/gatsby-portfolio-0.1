@@ -3,7 +3,7 @@ import { StaticQuery, graphql } from 'gatsby';
 import { Container, Row } from 'react-bootstrap';
 import Layout from '../components/layout';
 
-export default function BlogArticle(props) {
+export default function BlogArticle() {
   return (
     <StaticQuery 
       query={graphql`
@@ -25,7 +25,7 @@ export default function BlogArticle(props) {
       
       render={data=> (
         <Layout>
-          <Container data={props.data}>
+          <Container>
             <Row><img src={data.strapiArticle.heroImage.localFile.url} alt="" /></Row>
             <Row><br/></Row>
             <Row><hr/></Row>
