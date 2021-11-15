@@ -5,7 +5,8 @@ import Layout from '../components/layout';
 
 export default function BlogArticle() {
   return (
-    <StaticQuery 
+    <div>
+    {/* <StaticQuery 
       query={graphql`
         query blogPost {
           strapiArticle {
@@ -37,6 +38,7 @@ export default function BlogArticle() {
           </Container>
         </Layout>
       )}
-    />
+    /> */}
+    </div>
   )
 }
