@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import DATA from '../assets/content/tech-stack-pamphlet.json'
+import { DevIcons } from '../assets/images/techStackIcons';
 
 // or maybe have it cycle through highlighting different stacks
 // decide whether to use devicons font or to import all of the files
@@ -28,12 +29,11 @@ export default function TechStackPamphlet() {
           ))}
         </Col>
         <Col className="col-xl-8 col-lg-8 col-12 d-flex justify-content-center flex-wrap" >
-          {/* {data.strapiTechStackPamphlet.devIcons.map(devIcon => (
-            // <Card  key={"devIcon_" + devIcon.id} className="bg-success " >
-              <img key={"devIcon_" + devIcon.id} alt="" src={devIcon.localFile.url} width="75rem" height="75rem" className="m-3" />
-            // </Card>
-          ))} */}
+          {DevIcons.map((DevIcon, i) => (
+            <DevIcon key={"devIcon_" + i} className="m-md-3 m-sm-2" style={{ height: "75px", width: "75px" }} />
+          ))}
         </Col>
+        {/* <Col className="col-xl-1 col-lg-0" /> */}
       </Row>
     </Container>
   )
