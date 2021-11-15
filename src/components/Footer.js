@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import { Container, Navbar } from 'react-bootstrap';
 import Logo from '../assets/images/icon.png';
+import contentData from '../assets/content/contact-info.json';
 
 const footer={
   alignSelf: "end"
@@ -9,7 +10,7 @@ const footer={
 
 export default function Footer() {
   return (
-    <Navbar fixed="bottom" style={{ backgroundColor: "#181818", borderTop: "solid 1px", borderColor: "#000000" }} variant="dark" >
+    <Navbar style={{ backgroundColor: "#181818" }} className="bg-dark border-top border-info" variant="dark" fixed="bottom" >
       <Container style={footer}>
         <Navbar.Brand href="#home">
           <img 
