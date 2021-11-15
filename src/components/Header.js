@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { Nav, Container, Navbar } from 'react-bootstrap';
-import Logo from '../images/icon.png';
+import Logo from '../assets/images/icon.png';
 
 // This is just a data object for generating Nav Links dynamically
 const links = [
