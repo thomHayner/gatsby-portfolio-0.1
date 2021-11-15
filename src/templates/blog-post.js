@@ -7,16 +7,20 @@ export default function BlogArticle(props) {
   return (
     <StaticQuery 
       query={graphql`
-        query blogPostQuery {
+        query blogPost {
           strapiArticle {
-            author
-            body
+            id
             title
-            strapiId
+            author
             publishedDate
-            updated_at(fromNow: true)
+            body
+            heroImage {
+              localFile {
+                url
+              }
+            }
           }
-        }      
+        }
       `}
       
       render={data=> (
