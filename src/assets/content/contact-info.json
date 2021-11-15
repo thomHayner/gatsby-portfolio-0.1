@@ -1,0 +1,32 @@
+{
+  "id": 1,
+  "title": "Contact Us",
+  "subTitle": "What would you like us to know?",
+  "displayName": "ThomasHayner",
+  "contactName": "",
+  "contactAddress1": "1023 Walnut St.",
+  "contactAddress2": "",
+  "contactAddress3": "",
+  "contactAddress4": "",
+  "contactAddress5": "",
+  "contactCity": "Boulder",
+  "contactState": "CO",
+  "contactCountry": "",
+  "contactPostalCode": "80302",
+  "contactPhoneNumber": "",
+  "contactEmail": "",
+  "socialMedia": [
+    {
+      "id": 1,
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/thomHayner",
+      "img": ""
+    },
+    {
+      "id": 2,
+      "name": "GitHub",
+      "url": "https://www.github.com/thomHayner",
+      "img": ""
+    }
+  ]
+}
