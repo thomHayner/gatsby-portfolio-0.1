@@ -27,9 +27,9 @@ export default function BlogArticle(props) {
         <Layout>
           <Container data={props.data}>
             <Row><img src={data.strapiArticle.heroImage.localFile.url} alt="" /></Row>
-            <Row><h1>{data.strapiArticle.title}</h1></Row>
-            <Row><hr/></Row>
             <Row><br/></Row>
+            <Row><hr/></Row>
+            <Row><h1>{data.strapiArticle.title}</h1></Row>
             <Row>{data.strapiArticle.author}</Row>
             <Row>{data.strapiArticle.publishedDate}</Row>
             <Row>{data.strapiArticle.updated_at}</Row>
