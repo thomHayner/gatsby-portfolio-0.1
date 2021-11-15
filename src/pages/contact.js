@@ -10,7 +10,7 @@ const addressArea = {
   minWidth: "160px",
 }
 
-function ContactPage() {
+export default function ContactPage() {
   // const [validated, setValidated] = useState(false);
 
   // const handleSubmit = (event) => {
@@ -113,5 +113,3 @@ function ContactPage() {
     </Layout>
   )
 }
-
-export default ContactPage;
