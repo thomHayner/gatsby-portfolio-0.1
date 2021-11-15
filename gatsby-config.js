@@ -8,6 +8,14 @@ module.exports = {
       resolve: `gatsby-plugin-gatsby-cloud`,
     },
     {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /assets\/images\/techStackIcons/
+        }
+      }
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: 
         {
