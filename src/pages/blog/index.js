@@ -6,7 +6,7 @@ import BlogCard from "../../templates/blogCard";
 
 export default function BlogPage() {
   return (
-    <div>
+    <Layout>
     {/* <StaticQuery
       query={graphql`
         query blogListQuery {
@@ -48,6 +48,6 @@ export default function BlogPage() {
         </Layout>
       )}
     /> */}
-    </div>
+    </Layout>
   )
 }
