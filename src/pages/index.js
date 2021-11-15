@@ -21,7 +21,8 @@ import PortfolioPage from './portfolio'
 const IndexPage = () => {
   return (
     <main>
-      <PortfolioPage />
+      <Layout />
+      {/* <PortfolioPage /> */}
       {/* <Layout>
         <Container>
           <Row><h1>WELCOME TO THE SITE!!!!!!</h1></Row>
