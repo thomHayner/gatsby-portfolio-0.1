@@ -1,0 +1,22 @@
+{
+  "id": 1,
+  "title": "Technologies",
+  "subTitle": "How would you like to build it?",
+  "techBulletPoint": [
+      {
+          "id": 1,
+          "title": "Serverless",
+          "text": "Applications designed for cloud hosted services."
+      },
+      {
+          "id": 2,
+          "title": "Scalable",
+          "text": "Products that are ready to grow with you."
+      },
+      {
+          "id": 3,
+          "title": "Simple",
+          "text": "Automated updates and continuous integration."
+      }
+  ]
+}
