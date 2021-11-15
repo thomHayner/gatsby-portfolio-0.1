@@ -16,7 +16,7 @@ export default function PortfolioPage() {
         {/* {certifications could possibly go here} */}
         <Row><br/></Row>
         <Row><hr/></Row>
-        <Row><ProjectPamphlet/></Row>
+        {/* <Row><ProjectPamphlet/></Row> */}
         {/* {testimonials could possibly go here} */}
       </Container>
     </Layout>
