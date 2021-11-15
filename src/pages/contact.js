@@ -26,7 +26,7 @@ function ContactPage() {
   return (
     <Layout>
       <Container>
-        <Row><h1>Contact Us</h1></Row>
+        <Row><h1>Contact Us</h1>{/* <h1>{data.strapiContactInfo.sectionTitle}</h1> */}</Row> 
         <Row><hr/></Row>
         <Row><br/></Row>
         <Row>
