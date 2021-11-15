@@ -9,16 +9,12 @@ module.exports = {
     },
     {
       resolve: `gatsby-source-filesystem`,
-      options: [
+      options: 
         {
           name: `markdown-pages`,
           path: `${__dirname}/src/assets/markdown-pages`,
         },
-        {
-          name: `portfolio-content`,
-          path: `${__dirname}/src/assets/markdown-pages`,
-        },
-      ]
+      
     },
     `gatsby-transformer-remark`,
     // {
