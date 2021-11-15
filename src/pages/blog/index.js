@@ -6,7 +6,8 @@ import BlogCard from "../../templates/blogCard";
 
 export default function BlogPage() {
   return (
-    <StaticQuery
+    <div>
+    {/* <StaticQuery
       query={graphql`
         query blogListQuery {
           allStrapiArticle(limit: 10, sort: {fields: id, order: DESC}) {
@@ -34,7 +35,7 @@ export default function BlogPage() {
               <Container>
                 <Row><br/></Row>
                 <Row>
-                  <Link to={`/blog/${node.title.split(' ').join('-')}`} key={i}>
+                  <Link to={`/blog/${node.title.toLowerCase().split(' ').join('-')}`} key={i}>
                     <BlogCard data={node}/>
                   </Link>
                 </Row>
@@ -46,6 +47,7 @@ export default function BlogPage() {
           </Container>
         </Layout>
       )}
-    />
+    /> */}
+    </div>
   )
 }
