@@ -9,7 +9,13 @@
 
 ## Intro
 
-<p>A brochure website highlighting my project portfolio and web development skills, with a web development blog as well.  Originally this was a full stack project hooked up to a Headless CMS called [Strapi](http://www.strapi.io).  After setting up a minimum viable product in development mode I deployed to AWS for a few days, but later decided that it would be better to scrap the backend / API in favor of a hosted site with static profile content and programattically generated blog posts from markdown files, and (possibly, I am still considering this part) a CMS like [Contently](http://www.contently.com) for image hosting.  This simpler setup allows the portfolio and blog site to be very low cost, free hosting through [Gatsby Cloud](http://www.GatsbyCloud.com) means that I only have to pay for the annual domain name registration (for which I used [GoDaddy](http://www.GoDaddy.com)).  I can also just push to GitHub for both new content, new site features or improvements.  The automated CI / CD environment allows for easy deployments and intermittent content updates, and can be easily replaced with a scalable backend solution if the need arises and the expense becomes justifiable.
+<p>A brochure website highlighting my project portfolio and web development skills, with a web development blog as well.
+</p>
+<p>
+Originally this was a full stack project hooked up to a Headless CMS called [Strapi](http://www.strapi.io).  After setting up a minimum viable product in development mode I deployed to AWS for a few days, but later decided that it would be better to scrap the backend / API in favor of a hosted site with static profile content and programattically generated blog posts from markdown files, and (possibly, I am still considering this part) a CMS like [Contently](http://www.contently.com) for image hosting.
+</p>
+<p>
+This simpler setup allows the portfolio and blog site to be very low cost, free hosting through [Gatsby Cloud](http://www.GatsbyCloud.com) means that I only have to pay for the annual domain name registration (for which I used [GoDaddy](http://www.GoDaddy.com)).  I can also just push to GitHub for both new content, new site features or improvements.  The automated CI / CD environment allows for easy deployments and intermittent content updates, and can be easily replaced with a scalable backend solution if the need arises and the expense becomes justifiable.
 </p>
 
 ## Tech Stack
