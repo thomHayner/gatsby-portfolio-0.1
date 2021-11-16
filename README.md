@@ -60,7 +60,7 @@ This simpler setup allows the portfolio and blog site to be very low cost, free 
   <summary>
     <p>
       <a href="http://www.ThomasHayner.com">
-        <img alt="TH" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="45" />
+        <img alt="TH" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="30" />
       </a>
       Quick Start Guide
     </p> 
