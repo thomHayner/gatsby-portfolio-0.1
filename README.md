@@ -55,12 +55,8 @@ This simpler setup allows the portfolio and blog site to be very low cost, free 
 </p>
 </details>
 
-
-
-
-
-
-
+<details><summary>Gatsby Resources</summary>
+<p>
 
 1.  **Create a Gatsby site.**
 
@@ -100,8 +96,5 @@ This simpler setup allows the portfolio and blog site to be very low cost, free 
 
     - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
 
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+</p>
+</details>
