@@ -4,6 +4,7 @@ import { Container, Row } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Layout from "../components/layout";
 import PortfolioPage from './portfolio'
+// import '../index.scss';
 
 const IndexPage = () => {
   return (
