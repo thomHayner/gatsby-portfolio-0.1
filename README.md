@@ -55,7 +55,8 @@ This simpler setup allows the portfolio and blog site to be very low cost, free 
 </p>
 </details>
 
-<details><summary>Gatsby Resources</summary>
+## Gatsby Starter Info
+<details><summary>Starter Resources</summary>
 <p>
 
 1.  **Create a Gatsby site.**
