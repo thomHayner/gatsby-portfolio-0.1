@@ -13,14 +13,13 @@ import Email from '../assets/images/techStackIcons/EmailLogoSymbol.svg';
 
 export default function Footer() {
   return (
-    <Navbar style={{ backgroundColor: "#181818" }} className="bg-dark border-top border-info" variant="dark" >
+    <Navbar style={{ backgroundColor: "#181818" }} className="bg-dark border-top border-info " variant="dark" fixed="bottom" >
       <Container style={{  }} >
           <Navbar.Brand>
             {`©${contentData.displayName}`}
           </Navbar.Brand>
           <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end" style={{  }} >
             <Nav as="ul" >
-              
                 <Nav.Item as="li" key={"FooterLink_"} >
                   <Link 
                     to={'/contact'} 
@@ -51,7 +50,6 @@ export default function Footer() {
                     <LinkedIn />
                   </Link>
                 </Nav.Item>
-              
             </Nav>
           </Navbar.Collapse>
       </Container>
