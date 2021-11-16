@@ -58,12 +58,10 @@ This simpler setup allows the portfolio and blog site to be very low cost, free 
 ## Gatsby Resources
 <details>
   <summary>
-    <p>
-      <a href="http://www.ThomasHayner.com">
-        <img alt="TH" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="30" />
-      </a>
-      Quick Start Guide
-    </p> 
+    <a href="http://www.ThomasHayner.com">
+      <img alt="TH" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="20" />
+    </a>
+    Quick Start Guide
   </summary>
 <p>
 
