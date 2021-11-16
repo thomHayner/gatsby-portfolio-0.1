@@ -3,11 +3,11 @@ import { Card } from "react-bootstrap";
 
 export default function ServicesCard({ data }) {
   return(
-    <Card className="border-info bg-secondary m-3 p-4" style={{ minHeight: "180px", minWidth: "325px" }} >
-      <Card.Title className="text-warning" >
+    <Card className="border-success bg-secondary m-3 p-4" style={{ minHeight: "180px", minWidth: "325px" }} >
+      <Card.Title className="text-info" >
         {data.title}
       </Card.Title>
-      <Card.Body className="p-0 text-dark" >
+      <Card.Body className="p-0" >
         {data.text}
       </Card.Body>
     </Card>
