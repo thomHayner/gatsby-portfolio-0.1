@@ -55,8 +55,16 @@ This simpler setup allows the portfolio and blog site to be very low cost, free 
 </p>
 </details>
 
-## Gatsby Starter Info
-<details><summary>Starter Resources</summary>
+## Gatsby Resources
+<details>
+  <summary>
+    <p>
+      <a href="http://www.ThomasHayner.com">
+        <img alt="TH" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="45" />
+      </a>
+      Quick Start Guide
+    </p> 
+  </summary>
 <p>
 
 1.  **Create a Gatsby site.**
