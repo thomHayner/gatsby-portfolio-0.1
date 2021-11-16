@@ -24,6 +24,14 @@ module.exports = {
         },
       
     },
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        sassOptions: {
+          includePaths: ["src/index.scss"],
+        }
+      },
+    },  
     `gatsby-transformer-remark`,
     // {
     //   resolve: `gatsby-source-strapi`,
