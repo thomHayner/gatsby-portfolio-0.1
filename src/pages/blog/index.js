@@ -7,7 +7,8 @@ import Layout from "../../components/layout";
 export default function BlogPage() {
   return (
     <Layout>
-    {/* <StaticQuery
+    {/* <StaticQuery */}
+    {/* 
       query={graphql`
         query blogListQuery {
           allStrapiArticle(limit: 10, sort: {fields: id, order: DESC}) {
@@ -23,8 +24,24 @@ export default function BlogPage() {
           }
         }
       `} 
-
-      render={data => (
+     */}
+    {/* 
+        query={graphql`
+        query blogListQuery {
+          allMarkdownRemark(limit: 10, sort: {fields: id, order: DESC}) {
+            nodes {
+              id
+              abstract
+              author
+              body
+              publishedDate
+              title
+              updated_at
+            }
+          }
+        } `}
+      */}
+    {/*   render={data => (
         <Layout>
           <Container>
             <Row><h1>Latest Posts</h1></Row>
