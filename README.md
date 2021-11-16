@@ -24,20 +24,30 @@
 - Gatsby
 - Sass
 - GraphQL
+
 </p>
 </details>
 
-### Plugins / Utilities
+<details><summary>Plugins / Utilities</summary>
+<p>
+
 - gatsby-source-filesystem
 - gatsby-transformer-remark
 - gatsby-plugin-react-svg
 - gatsby-plugin-gatsby-cloud
 - gatsby-plugin-sass
 
-### Future Development Plans
+</p>
+</details>
+
+<details><summary>Future Development Plans</summary>
+<p>
+
 - React Helmet
 - Apollo
 
+</p>
+</details>
 
 
 
