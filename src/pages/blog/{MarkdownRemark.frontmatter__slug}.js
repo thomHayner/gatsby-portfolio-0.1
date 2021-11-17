@@ -21,7 +21,8 @@ export default function BlogArticleTemplate({ data }) {
           <Col className="col-2" />
           <Col className="col-8" >
             <Row className="" ><h1>{frontmatter.title}</h1></Row>
-            <Row className="" ><h6>{`Posted on: ${frontmatter.date}, by: ${frontmatter.author}`}</h6></Row>
+            <Row className="" ><h6>{`Posted: ${frontmatter.date}`}</h6></Row>
+            <Row><h6>{`by: ${frontmatter.author}`}</h6></Row>
             {/* <Row><h6>{frontmatter.updated_at}</h6></Row> */}
             <Row><br/></Row>
             <Row><hr/></Row>
