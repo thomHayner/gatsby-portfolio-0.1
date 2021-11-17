@@ -17,15 +17,19 @@ export default function BlogArticleTemplate({ data }) {
           <br/>
         </Row>
         <Row><br/></Row>
-        <Row><p>HERO IMAGE GOES HERE</p></Row>
-        <Row><br/></Row>
-        <Row className="" ><h1>{frontmatter.title}</h1></Row>
-        <Row className="" ><h6>{`Posted on: ${frontmatter.date}, by: ${frontmatter.author}`}</h6></Row>
-        {/* <Row><h6>{frontmatter.updated_at}</h6></Row> */}
-        <Row><br/></Row>
-        <Row><hr/></Row>
-        <Row><br/></Row>
-        <Container className="" dangerouslySetInnerHTML={{ __html: html }} />
+        <Row>
+          <Col className="col-2" />
+          <Col className="col-8" >
+            <Row className="" ><h1>{frontmatter.title}</h1></Row>
+            <Row className="" ><h6>{`Posted on: ${frontmatter.date}, by: ${frontmatter.author}`}</h6></Row>
+            {/* <Row><h6>{frontmatter.updated_at}</h6></Row> */}
+            <Row><br/></Row>
+            <Row><hr/></Row>
+            <Row><br/></Row>
+            <Container className="" dangerouslySetInnerHTML={{ __html: html }} />
+          </Col>
+          <Col className="col-2" />
+        </Row>
       </Container>
     </Layout>
   )
