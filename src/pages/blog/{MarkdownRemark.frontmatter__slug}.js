@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import { Container, Row } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import Layout from '../../components/layout';
 
 export default function BlogArticleTemplate({ data }) {
@@ -9,7 +9,13 @@ export default function BlogArticleTemplate({ data }) {
   return (
     <Layout>
       <Container className="" style={{ maxWidth: "" }} >
-        {/* <Row><img src={frontmatter.url} alt="" /></Row> */}
+        <Row>
+          <img 
+            alt={frontmatter.heroAlt} 
+            src={frontmatter.heroSrc} 
+          />
+          <br/>
+        </Row>
         <Row><br/></Row>
         <Row><p>HERO IMAGE GOES HERE</p></Row>
         <Row><br/></Row>
@@ -34,6 +40,8 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         author
+        heroSrc
+        heroAlt
       }
     }
   }
