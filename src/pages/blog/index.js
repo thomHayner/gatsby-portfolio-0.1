@@ -15,6 +15,7 @@ export default function BlogPage() {
                 frontmatter {
                   slug
                   title
+                  author
                   date
                 }
               }

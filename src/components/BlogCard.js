@@ -5,8 +5,11 @@ export default function BlogCard({ data }) {
   return (
     <Card className="bg-dark text-light">
       <Card.Title>{data.title}</Card.Title>
-      <Card.Subtitle>{data.date}</Card.Subtitle>
-      {/* <Card.Body>{data.body}</Card.Body> // this needs to be limited to chars or it needs to use Fragment query method */}
+      <Row>
+        <Card.Subtitle>{data.date}</Card.Subtitle>
+        <Card.Subtitle>{data.author}</Card.Subtitle>
+      </Row>
+      <Card.Body>{data.author}</Card.Body>
     </Card>
   )
 }
