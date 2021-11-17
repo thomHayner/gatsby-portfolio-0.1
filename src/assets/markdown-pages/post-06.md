@@ -1,4 +1,9 @@
-# P-06
+---
+slug: "/SIXTH-POST"
+date: "2019-05-04"
+title: "Sixth Post"
+author: T.Hayner
+---
 
 # Header for Title
 ## Subtitle area 
@@ -6,7 +11,7 @@
 ##### Published Date
 
 <p>
-SIXTH POST Occaecat taxidermy farm-to-table shabby chic. Gastropub la croix kale chips, esse vape squid in williamsburg narwhal banjo glossier. Aliquip esse meh fashion axe tumeric sustainable. Try-hard bitters ut ea selvage. Salvia ipsum semiotics leggings.
+ Occaecat taxidermy farm-to-table shabby chic. Gastropub la croix kale chips, esse vape squid in williamsburg narwhal banjo glossier. Aliquip esse meh fashion axe tumeric sustainable. Try-hard bitters ut ea selvage. Salvia ipsum semiotics leggings.
 </p>
 <p>
 Cloud bread cupidatat vinyl vice echo park skateboard. Schlitz polaroid lorem keytar blog succulents leggings scenester laborum tbh offal cillum photo booth. Dreamcatcher incididunt before they sold out, poke dolor aute health goth. Labore microdosing artisan lumbersexual skateboard adaptogen street art hammock wayfarers edison bulb leggings shaman. Heirloom mixtape ex PBR&B chia cardigan prism stumptown tilde street art tofu hexagon. Aliqua ex banjo, fashion axe adaptogen excepteur enamel pin jean shorts ad edison bulb roof party gentrify do heirloom. Ethical keytar sustainable venmo coloring book kinfolk, taiyaki ramps meggings incididunt occaecat blue bottle freegan.

@@ -1,4 +1,9 @@
-# P-01
+---
+slug: "/What-Is-A-Gibibyte"
+date: "2019-05-04"
+title: "What Is A Gibibyte?"
+author: T.Hayner
+---
 
 # What is a Gibibyte?
 ## The cloud computing unit of measure for storage space

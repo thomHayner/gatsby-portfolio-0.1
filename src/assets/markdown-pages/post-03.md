@@ -1,4 +1,9 @@
-# P-03
+---
+slug: "/THIRD-POST"
+date: "2019-05-04"
+title: "Third Post"
+author: T.Hayner
+---
 
 # Header for Title
 ## Subtitle area 
@@ -6,7 +11,7 @@
 ##### Published Date
 
 <p>
-THIRD POST Etsy post-ironic enamel pin keytar. Deep v kickstarter authentic ramps. Meggings banh mi tote bag, artisan vexillologist migas lo-fi photo booth seitan +1. Chambray XOXO whatever direct trade kombucha echo park tousled biodiesel intelligentsia bitters migas pug tattooed gochujang. Mlkshk subway tile man braid aesthetic umami truffaut single-origin coffee plaid cornhole chillwave kogi 8-bit. 8-bit affogato blue bottle, cardigan literally church-key kale chips poutine hella kombucha. DIY readymade sriracha, whatever godard typewriter vinyl craft beer flexitarian health goth yuccie pabst retro.
+Etsy post-ironic enamel pin keytar. Deep v kickstarter authentic ramps. Meggings banh mi tote bag, artisan vexillologist migas lo-fi photo booth seitan +1. Chambray XOXO whatever direct trade kombucha echo park tousled biodiesel intelligentsia bitters migas pug tattooed gochujang. Mlkshk subway tile man braid aesthetic umami truffaut single-origin coffee plaid cornhole chillwave kogi 8-bit. 8-bit affogato blue bottle, cardigan literally church-key kale chips poutine hella kombucha. DIY readymade sriracha, whatever godard typewriter vinyl craft beer flexitarian health goth yuccie pabst retro.
 </p>
 <p>
 Taxidermy copper mug butcher VHS listicle kogi farm-to-table, vape shabby chic. Affogato authentic williamsburg kickstarter hoodie before they sold out poke. Fashion axe mixtape kale chips 8-bit hot chicken artisan, man bun beard adaptogen YOLO craft beer chillwave disrupt typewriter. Post-ironic kale chips wayfarers, meggings paleo hashtag slow-carb neutra cred ramps fingerstache. Williamsburg 8-bit banjo, twee yr 3 wolf moon deep v.

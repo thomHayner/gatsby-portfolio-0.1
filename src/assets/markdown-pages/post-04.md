@@ -1,4 +1,9 @@
-# P-04
+---
+slug: "/FOURTH-POST"
+date: "2019-05-04"
+title: "Fourth Post"
+author: T.Hayner
+---
 
 # Header for Title
 ## Subtitle area 
@@ -6,7 +11,7 @@
 ##### Published Date
 
 <p>
-FOURTH POST Cloud bread mumblecore man braid shaman. Kogi tote bag woke, ethical copper mug single-origin coffee meh. Tattooed locavore subway tile irony quinoa, vegan venmo. Locavore vinyl la croix quinoa, poke squid tumblr. Pug umami bespoke tumblr, franzen beard taiyaki.
+Cloud bread mumblecore man braid shaman. Kogi tote bag woke, ethical copper mug single-origin coffee meh. Tattooed locavore subway tile irony quinoa, vegan venmo. Locavore vinyl la croix quinoa, poke squid tumblr. Pug umami bespoke tumblr, franzen beard taiyaki.
 </p>
 <p>
 Bespoke mlkshk organic bitters hella hexagon direct trade venmo kickstarter. Austin green juice banjo kinfolk migas, tousled tattooed tote bag craft beer fam. Thundercats banh mi kickstarter vinyl marfa quinoa offal. Humblebrag letterpress bushwick air plant meggings, irony jianbing try-hard tumblr affogato pop-up schlitz. Truffaut neutra 90's, cray pug 3 wolf moon locavore.
