@@ -1,5 +1,5 @@
 ---
-slug: "/What-Is-A-Gibibyte"
+slug: "What-Is-A-Gibibyte"
 date: "2019-05-04"
 title: "What Is A Gibibyte?"
 author: T.Hayner
