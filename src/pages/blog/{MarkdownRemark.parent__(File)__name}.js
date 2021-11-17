@@ -15,12 +15,11 @@ export default function BlogArticleTemplate({ data }) {
         <Row><br/></Row>
         <Row className="" ><h1>{frontmatter.title}</h1></Row>
         <Row className="" ><h6>{`On: ${frontmatter.date} By: ${frontmatter.author}`}</h6></Row>
+        {/* <Row><h6>{frontmatter.updated_at}</h6></Row> */}
         <Row><br/></Row>
         <Row><hr/></Row>
         <Row><br/></Row>
         <Container className="" dangerouslySetInnerHTML={{ __html: html }} />
-        {/* <Row>{frontmatter.updated_at}</Row> */}
-        {/* <Row>{frontmatter.body}</Row> */}
       </Container>
     </Layout>
   )
