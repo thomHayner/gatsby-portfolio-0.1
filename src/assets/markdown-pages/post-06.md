@@ -1,5 +1,5 @@
 ---
-slug: "SIXTH-POST"
+slug: "sixth-post"
 date: "2019-05-04"
 title: "Sixth Post"
 author: T.Hayner
