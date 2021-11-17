@@ -1,14 +1,15 @@
 import React from 'react';
 import { useStaticQuery, graphql } from "gatsby"
 // import PropTypes from "prop-types";
-import {helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet';
 
-const Helmet = ({ description, lang, meta, title }) => {
+export default function Seo({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
     graphql`
-    query {
+    query helmetQuery {
       site {
         siteMetadata {
+          siteUrl
           title
           description
         }
