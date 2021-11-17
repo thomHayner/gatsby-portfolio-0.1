@@ -1,0 +1,10 @@
+$primary: #321d2f;
+$secondary: #3d2e4f;
+$info: #8ecccc;
+$success: #4c5f7a;
+$warning: #393e6f;
+// $danger: ;
+$light: lighten(#ffffff, 20%);
+$dark: #212121;
+
+@import "bootstrap";

@@ -1,13 +1,72 @@
 <p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
+  <a href="http://www.ThomasHayner.com">
+    <img alt="TH" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
   </a>
 </p>
 <h1 align="center">
-  Gatsby minimal starter
+  Portfolio Site w/ Markdown Blog
 </h1>
 
-## 🚀 Quick start
+## Intro
+
+<p>A brochure website highlighting my project portfolio and web development skills, with a web development blog as well.
+</p>
+<p>
+Originally this was a full stack project hooked up to a Headless CMS called [Strapi](http://www.strapi.io).  After setting up a minimum viable product in development mode I deployed to AWS for a few days, but later decided that it would be better to scrap the backend / API in favor of a hosted site with static profile content and programattically generated blog posts from markdown files, and (possibly, I am still considering this part) a CMS like [Contently](http://www.contently.com) for image hosting.  As an added bonus, I will be forced to get better at writing documentation in Markdown format.
+</p>
+<p>
+This simpler setup allows the portfolio and blog site to be very low cost, free hosting through [Gatsby Cloud](http://www.GatsbyCloud.com) means that I only have to pay for the annual domain name registration (for which I used [GoDaddy](http://www.GoDaddy.com) for).  I can just push to GitHub for new content, new site features or improvements.  The automated CI / CD environment allows for easy deployments and content updates, and can be easily replaced with a scalable backend solution if the need arises and the expense becomes justifiable.
+</p>
+
+## Tech Stack
+
+<details><summary>Core Dependencies</summary>
+<p>
+
+- JavaScript
+- NodeJS
+- React
+- BootStrap
+- Gatsby
+- Sass
+- GraphQL
+
+</p>
+</details>
+
+<details><summary>Plugins / Utilities</summary>
+<p>
+
+- gatsby-source-filesystem
+- gatsby-transformer-remark
+- gatsby-plugin-react-svg
+- gatsby-plugin-gatsby-cloud
+- gatsby-plugin-sass
+
+</p>
+</details>
+
+<details><summary>Future Development Plans</summary>
+<p>
+
+- React Helmet
+- Apollo
+- gatsby-plugin-slug
+- TypeScript
+- Contently / Contentfull (I can't remember the name)
+
+</p>
+</details>
+
+## Gatsby Resources
+<details>
+  <summary>
+    <a href="http://www.ThomasHayner.com">
+      <img alt="TH" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="15" />
+    </a>
+    Quick Start Guide
+  </summary>
+<p>
 
 1.  **Create a Gatsby site.**
 
@@ -47,8 +106,5 @@
 
     - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
 
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+</p>
+</details>

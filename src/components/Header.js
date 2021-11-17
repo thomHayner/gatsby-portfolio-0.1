@@ -26,7 +26,7 @@ const links = [
 
 export default function Header() {
   return (
-    <Navbar style={{  }} className="bg-dark border-bottom border-info" variant="dark" fixed="top" expand="md" >
+    <Navbar style={{  }} className="bg-dark border-bottom border-success" variant="dark" fixed="top" expand="md" >
       <Container>
         <Navbar.Brand href="#" >
           <img 
