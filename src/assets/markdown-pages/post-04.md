@@ -1,14 +1,11 @@
 ---
-slug: "/FOURTH-POST"
+slug: "FOURTH-POST"
 date: "2019-05-04"
 title: "Fourth Post"
 author: T.Hayner
 ---
 
-# Header for Title
-## Subtitle area 
-##### Author
-##### Published Date
+## Numbah Fawwh
 
 <p>
 Cloud bread mumblecore man braid shaman. Kogi tote bag woke, ethical copper mug single-origin coffee meh. Tattooed locavore subway tile irony quinoa, vegan venmo. Locavore vinyl la croix quinoa, poke squid tumblr. Pug umami bespoke tumblr, franzen beard taiyaki.

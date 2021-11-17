@@ -1,14 +1,11 @@
 ---
-slug: "/FIFTH-POST"
+slug: "FIFTH-POST"
 date: "2019-05-04"
 title: "Fifth Post"
 author: T.Hayner
 ---
 
-# Header for Title
-## Subtitle area 
-##### Author
-##### Published Date
+## Post #5
 
 <p>
 Occaecat taxidermy farm-to-table shabby chic. Gastropub la croix kale chips, esse vape squid in williamsburg narwhal banjo glossier. Aliquip esse meh fashion axe tumeric sustainable. Try-hard bitters ut ea selvage. Salvia ipsum semiotics leggings.
