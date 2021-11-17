@@ -37,15 +37,15 @@ export default function ProjectPamphlet() {
                   ))} */}
                   <Nav.Item>
                       <Nav.Link eventKey="1">
-                        <img alt="" src="" width="60rem" height="60rem" />
+                        <img alt="Coming Soon!" src="" width="60rem" height="60rem" />
                       </Nav.Link>
                     </Nav.Item><Nav.Item>
                       <Nav.Link eventKey="2">
-                        <img alt="" src="" width="60rem" height="60rem" />
+                        <img alt="Coming Soon!" src="" width="60rem" height="60rem" />
                       </Nav.Link>
                     </Nav.Item><Nav.Item>
                       <Nav.Link eventKey="3">
-                        <img alt="" src="" width="60rem" height="60rem" />
+                        <img alt="Coming Soon!" src="" width="60rem" height="60rem" />
                       </Nav.Link>
                     </Nav.Item>
                 </Nav>
@@ -58,13 +58,13 @@ export default function ProjectPamphlet() {
                     </Tab.Pane>
                   ))} */}
                   <Tab.Pane eventKey="1" >
-                    <ProjectCard data={{ name: "project 1", description: "first project" }} />
+                    <ProjectCard data={{ name: "project 1", description: "First Project To Display: Coming Soon!" }} />
                   </Tab.Pane>
                   <Tab.Pane eventKey="2" >
-                    <ProjectCard data={{ name: "project 2", description: "second project" }} />
+                    <ProjectCard data={{ name: "project 2", description: "Second Project To Display: Coming Soon!" }} />
                   </Tab.Pane>
                   <Tab.Pane eventKey="3" >
-                    <ProjectCard data={{ name: "project 3", description: "third project" }} />
+                    <ProjectCard data={{ name: "project 3", description: "Third Project To Display: Coming Soon!" }} />
                   </Tab.Pane>
                 </Tab.Content>
               </Col>
