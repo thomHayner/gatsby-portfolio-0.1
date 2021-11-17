@@ -51,6 +51,9 @@ This simpler setup allows the portfolio and blog site to be very low cost, free 
 
 - React Helmet
 - Apollo
+- gatsby-plugin-slug
+- TypeScript
+- Contently / Contentfull (I can't remember the name)
 
 </p>
 </details>
