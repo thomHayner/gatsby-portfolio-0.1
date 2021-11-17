@@ -9,7 +9,7 @@ export default function BlogArticleTemplate({ data }) {
   return (
     <Layout>
       <Container>
-        <Row><img src={frontmatter.url} alt="" /></Row>
+        {/* <Row><img src={frontmatter.url} alt="" /></Row> */}
         <Row><br/></Row>
         <Row><hr/></Row>
         <Row><h1>{frontmatter.title}</h1></Row>
