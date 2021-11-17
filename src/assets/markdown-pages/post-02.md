@@ -3,6 +3,10 @@ slug: "second-post "
 date: "2019-05-04"
 title: "Second Post"
 author: T.Hayner
+heroSrc: ""
+heroAlt: ""
+heroPhotog: ""
+heroDistro: ""
 ---
 
 ## We're' Number Two!

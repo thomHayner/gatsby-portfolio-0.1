@@ -3,6 +3,10 @@ slug: "third-post"
 date: "2019-05-04"
 title: "Third Post"
 author: T.Hayner
+heroSrc: ""
+heroAlt: ""
+heroPhotog: ""
+heroDistro: ""
 ---
 
 ## This is the Third Post!

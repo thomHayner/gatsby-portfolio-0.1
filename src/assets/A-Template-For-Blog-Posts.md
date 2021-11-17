@@ -3,6 +3,10 @@ slug: "My-Blog-Post-Template"
 date: "2019-05-04"
 title: "My Blog Post Template"
 author: T.Hayner
+heroSrc: ""
+heroAlt: ""
+heroPhotog: ""
+heroDistro: ""
 ---
 
 <img alt="" src="" width="" height="" />
