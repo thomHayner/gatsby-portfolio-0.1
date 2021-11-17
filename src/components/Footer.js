@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { Container, Navbar, Nav } from 'react-bootstrap';
+import { Container, Navbar, Nav, Row } from 'react-bootstrap';
 import contentData from '../assets/content/contact-info.json';
 import GitHub from '../assets/images/techStackIcons/github-original-wordmark.svg';
 import LinkedIn from '../assets/images/techStackIcons/linkedin-original.svg';
@@ -13,10 +13,11 @@ import Email from '../assets/images/techStackIcons/EmailLogoSymbol.svg';
 
 export default function Footer() {
   return (
-    <Navbar style={{ backgroundColor: "#181818" }} className="bg-dark border-top border-info " variant="dark" fixed="bottom" >
+    <Navbar style={{  }} className="bg-primary border-top border-dark " variant="dark" fixed="bottom" >
       <Container style={{  }} >
           <Navbar.Brand>
-            {`©${contentData.displayName}`}
+            <Row><h5>{`©${contentData.copyrightYear} ${contentData.displayName}`}</h5></Row>
+            <Row><h6>{`All Rights Reserved`}</h6></Row>
           </Navbar.Brand>
           <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end" style={{  }} >
             <Nav as="ul" >
