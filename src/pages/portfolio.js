@@ -10,13 +10,10 @@ export default function PortfolioPage() {
     <Layout>
       <Container id="services" className="">
         <Row><ServicesPamphlet/></Row>
-        <Row><br/></Row>
         <Row><hr/></Row>
         <Row><TechStackPamphlet/></Row>
         {/* {certifications could possibly go here} */}
-        <Row><br/></Row>
         <Row><hr/></Row>
-        {/* <Row><ProjectPamphlet/></Row> */}
         {/* {testimonials could possibly go here} */}
       </Container>
     </Layout>
