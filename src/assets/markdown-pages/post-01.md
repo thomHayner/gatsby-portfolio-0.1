@@ -3,12 +3,14 @@ slug: "what-is-a-gibibyte"
 date: "2021-11-15"
 title: "What Is A Gibibyte"
 author: "T. Hayner"
+heroSrc: "https://images.unsplash.com/photo-1553026108-495a88f77fc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+heroAlt: "https://unsplash.com/photos/f6qvFwMADyk"
+heroPhotog: ""
+heroDistro: ""
 ---
 
-<img alt="" src="" width="" height="" />
-
 #### The unit of measure for cloud computing storage space.
-
+<br/>
 <p>
 If you have ever read the docs for a cloud service provider or clicked around on a IaaS dashboard, you may have seen the term 'gibibyte' or it's acronym, GiB, and wondered if it was a typo.  Well, it wasn't a typo, you read it correctly, it said gibibyte.
 </p>

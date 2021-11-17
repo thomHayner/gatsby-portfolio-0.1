@@ -3,6 +3,10 @@ slug: "fourth-post"
 date: "2019-05-04"
 title: "Fourth Post"
 author: T.Hayner
+heroSrc: ""
+heroAlt: ""
+heroPhotog: ""
+heroDistro: ""
 ---
 
 ## Numbah Fawwh
