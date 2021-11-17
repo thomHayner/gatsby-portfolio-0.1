@@ -3,6 +3,10 @@ slug: "fifth-post"
 date: "2019-05-04"
 title: "Fifth Post"
 author: T.Hayner
+heroSrc: ""
+heroAlt: ""
+heroPhotog: ""
+heroDistro: ""
 ---
 
 ## Post #5
