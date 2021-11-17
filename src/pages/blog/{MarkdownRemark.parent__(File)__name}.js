@@ -8,12 +8,16 @@ export default function BlogArticleTemplate({ data }) {
   const { frontmatter, html } = markdownRemark; 
   return (
     <Layout>
-      <Container>
+      <Container className="" style={{ maxWidth: "" }} >
         {/* <Row><img src={frontmatter.url} alt="" /></Row> */}
         <Row><br/></Row>
+        <Row><p>HERO IMAGE GOES HERE</p></Row>
+        <Row><br/></Row>
+        <Row className="" ><h1>{frontmatter.title}</h1></Row>
+        <Row className="" ><h6>{`On: ${frontmatter.date} By: ${frontmatter.author}`}</h6></Row>
+        <Row><br/></Row>
         <Row><hr/></Row>
-        <Row><h1>{frontmatter.title}</h1></Row>
-        <Row>{`On: ${frontmatter.date} By: ${frontmatter.author}`}</Row>
+        <Row><br/></Row>
         <Container className="" dangerouslySetInnerHTML={{ __html: html }} />
         {/* <Row>{frontmatter.updated_at}</Row> */}
         {/* <Row>{frontmatter.body}</Row> */}
