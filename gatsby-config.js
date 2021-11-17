@@ -5,8 +5,23 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `gatsby-plugin-gatsby-cloud`,
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        sassOptions: {
+          includePaths: ["src/index.scss"],
+        }
+      },
+    },  
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: 
+      {
+        name: `markdown-pages`,
+        path: `${__dirname}/src/assets/markdown-pages`,
+      },
+      
     },
+    `gatsby-transformer-remark`,
     {
       resolve: "gatsby-plugin-react-svg",
       options: {
@@ -16,23 +31,8 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-source-filesystem`,
-      options: 
-        {
-          name: `markdown-pages`,
-          path: `${__dirname}/src/assets/markdown-pages`,
-        },
-      
+      resolve: `gatsby-plugin-gatsby-cloud`,
     },
-    {
-      resolve: `gatsby-plugin-sass`,
-      options: {
-        sassOptions: {
-          includePaths: ["src/index.scss"],
-        }
-      },
-    },  
-    `gatsby-transformer-remark`,
     // {
     //   resolve: `gatsby-source-strapi`,
     //   options: {
