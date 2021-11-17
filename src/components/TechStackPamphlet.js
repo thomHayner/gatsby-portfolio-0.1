@@ -8,24 +8,24 @@ export default function TechStackPamphlet() {
     <Container>
       <Row>
         <Col className="d-flex justify-content-center" >
-          <h1>{contentData.title}</h1>
+          <h1 className="text-warning" >{contentData.title}</h1>
         </Col>
       </Row>
       <Row>
         <Col className="d-flex justify-content-center mb-3" >
-          <h5>{contentData.subTitle}</h5>
+          <h5 className="text-warning" >{contentData.subTitle}</h5>
         </Col>
       </Row>
       <Row>
         <Col className="col-xl-4 col-lg-3 col-12" >
           {contentData.techBulletPoint.map(bulletPoint => (
             <Row key={"bulletPoint_" + bulletPoint.id} className="m-3" >
-              <h5>{bulletPoint.title}</h5>
+              <h5 className="text-warning" >{bulletPoint.title}</h5>
               <p>{bulletPoint.text}</p>
             </Row>
           ))}
         </Col>
-        <Col className="col-xl-8 col-lg-9 col-12 d-flex justify-content-center flex-wrap" >
+        <Col className="col-xl-8 col-lg-9 col-12 d-flex justify-content-center flex-wrap bg-secondary border-dark rounded" >
           {DevIcons.map((DevIcon, i) => (
             <DevIcon key={"devIcon_" + i} className="m-md-3 m-sm-2" style={{ height: "75px", width: "75px" }} />
           ))}

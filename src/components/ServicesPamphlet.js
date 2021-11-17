@@ -8,12 +8,12 @@ export default function ServicesPamphlet() {
     <Container>
       <Row>
         <Col className="d-flex justify-content-center" >
-          <h1>{contentData.title}</h1>
+          <h1 className="text-info" >{contentData.title}</h1>
         </Col>
       </Row>
       <Row>
         <Col className="d-flex justify-content-center mb-3" >
-          <h5>{contentData.subTitle}</h5>
+          <h5 className="text-info" >{contentData.subTitle}</h5>
         </Col>
       </Row>
       <Row>
