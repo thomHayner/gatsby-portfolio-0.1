@@ -15,7 +15,7 @@
 Originally this was a full stack project hooked up to a Headless CMS called [Strapi](http://www.strapi.io).  After setting up a minimum viable product in development mode I deployed to AWS for a few days, but later decided that it would be better to scrap the backend / API in favor of a hosted site with static profile content and programattically generated blog posts from markdown files, and (possibly, I am still considering this part) a CMS like [Contently](http://www.contently.com) for image hosting.  As an added bonus, I will be forced to get better at writing documentation in Markdown format.
 </p>
 <p>
-This simpler setup allows the portfolio and blog site to be very low cost, free hosting through [Gatsby Cloud](http://www.GatsbyCloud.com) means that I only have to pay for the annual domain name registration (for which I used [GoDaddy](http://www.GoDaddy.com)).  I can also just push to GitHub for both new content, new site features or improvements.  The automated CI / CD environment allows for easy deployments and intermittent content updates, and can be easily replaced with a scalable backend solution if the need arises and the expense becomes justifiable.
+This simpler setup allows the portfolio and blog site to be very low cost, free hosting through [Gatsby Cloud](http://www.GatsbyCloud.com) means that I only have to pay for the annual domain name registration (for which I used [GoDaddy](http://www.GoDaddy.com) for).  I can just push to GitHub for new content, new site features or improvements.  The automated CI / CD environment allows for easy deployments and content updates, and can be easily replaced with a scalable backend solution if the need arises and the expense becomes justifiable.
 </p>
 
 ## Tech Stack
@@ -62,7 +62,7 @@ This simpler setup allows the portfolio and blog site to be very low cost, free 
 <details>
   <summary>
     <a href="http://www.ThomasHayner.com">
-      <img alt="TH" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="20" />
+      <img alt="TH" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="15" />
     </a>
     Quick Start Guide
   </summary>
