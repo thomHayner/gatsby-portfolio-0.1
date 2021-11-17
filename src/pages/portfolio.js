@@ -13,7 +13,9 @@ export default function PortfolioPage() {
         <Row><hr/></Row>
         <Row><TechStackPamphlet/></Row>
         {/* {certifications could possibly go here} */}
+        <Row><br/></Row>
         <Row><hr/></Row>
+        <ProjectPamphlet/>
         {/* {testimonials could possibly go here} */}
       </Container>
     </Layout>
