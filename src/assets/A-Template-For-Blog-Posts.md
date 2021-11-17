@@ -5,6 +5,8 @@ title: "My Blog Post Template"
 author: T.Hayner
 ---
 
+<img alt="" src="" width="" height="" />
+
 ## Subtitle area 
 
 <p>Lorem Ipsum</p>
