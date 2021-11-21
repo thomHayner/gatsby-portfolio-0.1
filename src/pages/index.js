@@ -7,7 +7,7 @@ import '../index.scss';
 const IndexPage = () => {
   return (
     <main className="bg-primary" >
-      <Seo title="Home" />
+      {/* <Seo title="Home" /> */}
       <PortfolioPage />
     </main>
   )
