@@ -2,12 +2,14 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import { Container, Row, Col } from 'react-bootstrap';
 import Layout from '../../components/layout';
+import Seo from '../../components/seo';
 
 export default function BlogArticleTemplate({ data }) {
   const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark; 
   return (
     <Layout>
+      <Seo title={frontmatter.slug} />
       <Container className="" style={{ maxWidth: "" }} >
         <Row>
           <img 
