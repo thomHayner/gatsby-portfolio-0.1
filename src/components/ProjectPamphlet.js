@@ -13,12 +13,12 @@ export default function ProjectPamphlet() {
     <Container className="m-3" >
       <Row>
         <Col className="d-flex justify-content-center" >
-          <h1>Projects</h1>
+          <h1>Work</h1>
         </Col>
       </Row>
       <Row>
         <Col className="d-flex justify-content-center mb-3" >
-          <h5>Things that have worked before...</h5>
+          <h5>Examples of various web technology uses</h5>
         </Col>
       </Row>
       <Row>
