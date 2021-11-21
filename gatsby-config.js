@@ -13,6 +13,14 @@ module.exports = {
       },
     },  
     {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /assets\/images\/techStackIcons/
+        }
+      }
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: 
       {
@@ -22,14 +30,7 @@ module.exports = {
       
     },
     `gatsby-transformer-remark`,
-    {
-      resolve: "gatsby-plugin-react-svg",
-      options: {
-        rule: {
-          include: /assets\/images\/techStackIcons/
-        }
-      }
-    },
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-gatsby-cloud`,
     },
