@@ -37,7 +37,7 @@ export default function ProjectPamphlet() {
                   ))} */}
                   <Nav.Item>
                       <Nav.Link eventKey="1">
-                        <img alt="Coming Soon!" src="" width="60rem" height="60rem" />
+                        <img alt="BattleshipPortfolioDisplay" src="" width="60rem" height="60rem" />
                       </Nav.Link>
                     </Nav.Item><Nav.Item>
                       <Nav.Link eventKey="2">
@@ -58,7 +58,7 @@ export default function ProjectPamphlet() {
                     </Tab.Pane>
                   ))} */}
                   <Tab.Pane eventKey="1" >
-                    <ProjectCard data={{ name: "project 1", description: "First Project To Display: Coming Soon!" }} />
+                    <ProjectCard data={{ name: "Battleship", description: "JavaScript, CSS, React" }} />
                   </Tab.Pane>
                   <Tab.Pane eventKey="2" >
                     <ProjectCard data={{ name: "project 2", description: "Second Project To Display: Coming Soon!" }} />
