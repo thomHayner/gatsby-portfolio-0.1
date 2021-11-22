@@ -7,8 +7,8 @@ export default function ProjectCard({ project }) {
       <Card.Title>
         {project.name}
       </Card.Title>
+      <Card.Img src={project.media.url} style={{  height: "480px", width: "600px" }} />
       <a href={project.linkUrl} >
-        <Card.Img src={project.media.url} style={{  height: "480px" }} />
       </a>
       <Card.Body>
         {project.description}
