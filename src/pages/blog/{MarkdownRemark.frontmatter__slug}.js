@@ -6,10 +6,10 @@ import Seo from '../../components/seo';
 
 export default function BlogArticleTemplate({ data }) {
   const { markdownRemark } = data;
-  const { frontmatter, html } = markdownRemark; 
+  const { frontmatter, html } = markdownRemark;
   return (
     <Layout>
-      <Seo title={frontmatter.slug} />
+      <Seo title={frontmatter.title} />
       <Container className="" style={{ maxWidth: "" }} >
         <Row>
           <img 
