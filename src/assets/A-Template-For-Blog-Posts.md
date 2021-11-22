@@ -9,6 +9,16 @@ heroPhotog: ""
 heroDistro: ""
 ---
 
+<!-- 
+siteMetadata: {
+  siteUrl: "ThomasHayner.com",
+  title: "Thomas Hayner",   <--- this right here is kinda what matters for the meta data
+  description: "",
+  author: "Thomas Hayner",
+  keywords: ""
+}, 
+-->
+
 <img alt="" src="" width="" height="" />
 
 ## Subtitle area 
