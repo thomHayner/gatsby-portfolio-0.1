@@ -26,7 +26,7 @@ export default function ProjectPamphlet() {
         <Col className="d-flex justify-content-center" >
           <Tab.Container id="" defaultActiveKey="1" >
             <Row>
-              <Col className="col-2" />
+              <Col className="col-1" />
               <Col className="col-xl-1 col-lg-1 col-12" >
                 <Nav variant="pills" className="flex-row">
                   {/* {contentData.projects.map((project, i) => (
@@ -73,6 +73,8 @@ export default function ProjectPamphlet() {
             </Row>
           </Tab.Container>
         </Col>
+
+        <Col />
       </Row>
     </Container>
   )
