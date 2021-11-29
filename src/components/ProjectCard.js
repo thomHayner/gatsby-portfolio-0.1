@@ -9,6 +9,7 @@ export default function ProjectCard({ project }) {
       </Card.Title>
       <Card.Img src={project.media.url} style={{  height: "480px", width: "600px" }} />
       <a href={project.linkUrl} >
+        Try it out!
       </a>
       <Card.Body>
         {project.description}
