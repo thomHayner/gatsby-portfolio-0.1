@@ -1,0 +1,37 @@
+{
+  "id": 1,
+  "title": "Services",
+  "subTitle": "",
+  "services": [
+      {
+          "id": 1,
+          "title": "Full Stack Development",
+          "text": "Front End, Back End, APIs and Databases.  Full Stack development encompasses the entire product lifecycle, from design to launch."
+      },
+      {
+          "id": 2,
+          "title": "Cloud Operations",
+          "text": "Cloud computing services utilize shared hardware architectures to easily and efficiently scale your product to match demand."
+      },
+      {
+          "id": 3,
+          "title": "Microservices",
+          "text": "Microservice architectures leverage small teams of developers focused on only one aspect, feature or scope of your application."
+      },
+      {
+          "id": 4,
+          "title": "UX / UI Design",
+          "text": "The latest methods and features for well designed, responsive and accessible websites that anyone can enjoy using."
+      },
+      {
+          "id": 5,
+          "title": "Workflow Automation",
+          "text": "Software as a Service (SaaS) apps and workflow tools can be run on any device with a data connection, allowing more efficianet workflows."
+      },
+      {
+          "id": 6,
+          "title": "Mobile App Development",
+          "text": "Applications designed to work on any device and integrate with any platform: phone, tablet, watch, TV, thermostat, car or anything else."
+      }
+  ]
+}
