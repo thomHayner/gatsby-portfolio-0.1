@@ -32,24 +32,22 @@ export default function Footer() {
                   </Link>
                 </Nav.Item>
                 <Nav.Item as="li" >
-                  <Link 
-                    to={contentData.socialMedia[1].url} 
+                  <a 
+                    href={contentData.socialMedia[1].url} 
                     className="nav-link" 
-                    activeClassName="active" 
                     style={{ width: "55px", height: "55px" }} 
                   >
                     <GitHub />
-                  </Link>
+                  </a>
                 </Nav.Item>
                 <Nav.Item as="li" >
-                  <Link 
-                    to={contentData.socialMedia[2].url} 
+                  <a 
+                    href={contentData.socialMedia[2].url} 
                     className="nav-link" 
-                    activeClassName="active" 
                     style={{ width: "55px", height: "55px"}} 
                   >
                     <LinkedIn />
-                  </Link>
+                  </a>
                 </Nav.Item>
             </Nav>
           </Navbar.Collapse>
