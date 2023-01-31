@@ -6,17 +6,17 @@ import contentData from '../assets/content/contact-info.json';
 
 // This is just a data object for generating Nav Links dynamically
 const links = [
+  // {
+  //   text: "Home",
+  //   to: "/",
+  // },
   {
-    text: "Home",
+    text: "Portfolio",
     to: "/",
   },
   {
     text: "Blog",
     to: "/blog",
-  },
-  {
-    text: "Portfolio",
-    to: "/portfolio",
   },
   {
     text: "Contact",
