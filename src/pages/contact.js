@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Container, Form, Button, Row, Col, FloatingLabel } from 'react-bootstrap';
 import Layout from '../components/layout';
+import axios from "axios";
 import Seo from '../components/seo';
 import contentData from '../assets/content/contact-info.json';
 
@@ -32,17 +33,39 @@ export default function ContactPage() {
   }
   //// [END: Form Values] ////
 
-  // const [validated, setValidated] = useState(false);
+  //// [START: GetForm Functions] ////
+  const [serverState, setServerState] = React.useState({
+    submitting: false,
+    status: null
+  });
 
-  // const handleSubmit = (event) => {
-  //   const form = event.currentTarget;
-  //   if (form.checkValidity() === false) {
-  //     event.preventDefault();
-  //     event.stopPropagation();
-  //   }
+  const handleServerResponse = (ok, msg, form) => {
+    setServerState({
+      submitting: false,
+      status: { ok, msg }
+    });
+    if (ok) {
+      handleFormReset();
+    }
+  };
 
-  //   setValidated(true);
-  // };
+  const handleOnSubmit = (e) => {
+    e.preventDefault();
+    // const form = e.target;
+    setServerState({ ...serverState, submitting: true });
+    axios({
+      method: "post",
+      url: "https://getform.io/f/0cb59c9b-7396-48c6-a967-f947e62882e0",
+      data: form
+    })
+      .then(r => {
+        handleServerResponse(true, "Thanks!", form);
+      })
+      .catch(r => {
+        handleServerResponse(false, r.response.data.error, form);
+      });
+  };
+  //// [END: GetForm Functions] ////
 
   return (
     <Layout>
@@ -119,6 +142,7 @@ export default function ContactPage() {
                 variant="primary"
                 type="submit"
                 className="mb-3"
+                onClick={(e) => handleOnSubmit(e)}
               >
                 Submit
               </Button>
