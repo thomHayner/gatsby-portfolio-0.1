@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, CardGroup } from 'react-bootstrap';
-import ServicesCard from '../components/ServicesCard';
-import contentData from '../assets/content/services-pamphlet.json';
+import ServicesCard from './ServicesCard';
+import contentData from '../../assets/content/services-pamphlet.json';
 
 export default function ServicesPamphlet() {
   return (

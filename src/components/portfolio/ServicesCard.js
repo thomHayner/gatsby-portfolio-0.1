@@ -3,7 +3,7 @@ import { Card } from "react-bootstrap";
 
 export default function ServicesCard({ data }) {
   return(
-    <Card className="bg-tertiary m-3 p-4" style={{ minHeight: "180px", minWidth: "325px" }} >
+    <Card className="bg-primary m-3 p-4" style={{ minHeight: "180px", minWidth: "325px" }} >
       <Card.Title className="text-warning--" >
         {data.title}
       </Card.Title>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Col, Row, Nav, Tab } from 'react-bootstrap';
 import ProjectCard  from './ProjectCard';
-import contentData from '../assets/content/portfolio-pamphlet.json';
+import contentData from '../../assets/content/portfolio-pamphlet.json';
 
 // at "md" collapse down to vertical stack - done
 // at "sm" make it collapse into cards with overlays
