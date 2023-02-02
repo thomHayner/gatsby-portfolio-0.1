@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link, StaticQuery, graphql } from 'gatsby';
 import Layout from "../../components/layout";
-import SEO from "../../components/seo";
+import Seo from "../../components/seo";
 import BlogCard from "../../components/BlogCard";
 
 export default function BlogPage() {
@@ -59,5 +59,5 @@ export default function BlogPage() {
 };
 
 export const Head = () => (
-  <SEO title="Blog" />
+  <Seo title="Blog" />
 )

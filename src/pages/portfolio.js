@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row } from "react-bootstrap";
 import Layout from "../components/layout";
-import SEO from '../components/seo';
+import Seo from '../components/seo';
 import TechStackPamphlet from "../components/TechStackPamphlet";
 import ServicesPamphlet from "../components/ServicesPamphlet";
 import ProjectPamphlet from "../components/ProjectPamphlet";
@@ -36,5 +36,5 @@ export default function PortfolioPage() {
 };
 
 export const Head = () => (
-  <SEO title="Portfolio" />
+  <Seo title="Portfolio" />
 );
