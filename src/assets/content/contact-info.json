@@ -2,9 +2,8 @@
   "id": 1,
   "title": "Contact",
   "subTitle": "What would you like us to know?",
-  "displayName": "ThomasHayner",
-  "copyrightYear": "2019",
-  "contactName": "",
+  "contactName": "Thomas Hayner",
+  "contactCompany": "HRG Interactive",
   "contactAddress1": "1023 Walnut St.",
   "contactAddress2": "",
   "contactAddress3": "",
@@ -12,25 +11,8 @@
   "contactAddress5": "",
   "contactCity": "Boulder",
   "contactState": "CO",
-  "contactCountry": "",
+  "contactCountry": "USA",
   "contactPostalCode": "80302",
-  "contactPhoneNumber": "",
-  "contactEmail": "",
-  "socialMedia": [
-    {
-      "id": 1,
-      "name": "Email",
-      "url": "/contact"
-    },
-    {
-      "id": 2,
-      "name": "GitHub",
-      "url": "https://www.github.com/thomHayner"
-    },
-    {
-      "id": 3,
-      "name": "LinkedIn",
-      "url": "https://www.linkedin.com/in/thomHayner"
-    }
-  ]
+  "contactPhone": "",
+  "contactEmail": ""
 }

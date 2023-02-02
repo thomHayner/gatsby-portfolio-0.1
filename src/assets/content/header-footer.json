@@ -1,0 +1,22 @@
+{
+  "id": 1,
+  "displayName": "ThomasHayner",
+  "copyrightYear": "2019",
+  "socialMedia": [
+    {
+      "id": 1,
+      "name": "Email",
+      "url": "/contact"
+    },
+    {
+      "id": 2,
+      "name": "GitHub",
+      "url": "https://www.github.com/thomHayner"
+    },
+    {
+      "id": 3,
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/thomHayner"
+    }
+  ]
+}
