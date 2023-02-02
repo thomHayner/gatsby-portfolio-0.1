@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { Link, StaticQuery, graphql } from 'gatsby';
 import Layout from "../../components/layout";
 import Seo from "../../components/seo";
-import BlogCard from "../../components/BlogCard";
+import BlogCard from "../../components/blog/BlogCard";
 
 export default function BlogPage() {
   return (
