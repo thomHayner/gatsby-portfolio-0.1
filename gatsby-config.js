@@ -1,10 +1,29 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "http://ThomasHayner.com",
-    title: "Thomas Hayner",
-    description: "this is a test of react helmet",
-    author: "Thomas Hayner",
-    keywords: "test, react helmet test, test, test",
+    title: `Thomas Hayner`,
+    description: `Thomas Hayner's Software Engineering Portfolio`,
+    author: `Thomas Hayner`,
+    keywords: `
+      Software Development,
+      Web Development,
+      Mobile Development,
+      Web Application,
+      Mobile Application,
+      App,
+      Web App,
+      Mobile App,
+      SaaS,
+      Node,
+      JavaScript,
+      CSS,
+      HTML,
+      TypeScript,
+      React,
+      NextJS,
+      Gatsby,
+    `,
+    // image: `/src/assets/images/icon.png`,
+    siteUrl: `http://ThomasHayner.com`,
   },
   plugins: [
     {
@@ -33,7 +52,6 @@ module.exports = {
       
     },
     `gatsby-transformer-remark`,
-    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-gatsby-cloud`,
     },
