@@ -2,13 +2,12 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link, StaticQuery, graphql } from 'gatsby';
 import Layout from "../../components/layout";
-import Seo from "../../components/seo";
+import SEO from "../../components/seo";
 import BlogCard from "../../components/BlogCard";
 
 export default function BlogPage() {
   return (
     <Layout>
-      <Seo title="Blog" />
       <StaticQuery
         query={graphql`
           query allBlogArticles {
@@ -57,4 +56,8 @@ export default function BlogPage() {
       />
     </Layout>
   )
-}
+};
+
+export const Head = () => (
+  <SEO title="Blog" />
+)

@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Container, Form, Button, Row, Col, FloatingLabel } from 'react-bootstrap';
 import Layout from '../components/layout';
 import axios from "axios";
-import Seo from '../components/seo';
+import SEO from '../components/seo';
 import contentData from '../assets/content/contact-info.json';
 
 // https://material.io/design/color/dark-theme.html#properties
@@ -212,7 +212,6 @@ export default function ContactPage() {
 
   return (
     <Layout>
-      <Seo title="Contact" />
       <Container>
         <Row><h1>{contentData.title}</h1></Row> 
         <Row><hr/></Row>
@@ -228,4 +227,8 @@ export default function ContactPage() {
       </Container>
     </Layout>
   )
-}
+};
+
+export const Head = () => (
+  <SEO title="Contact" />
+);
