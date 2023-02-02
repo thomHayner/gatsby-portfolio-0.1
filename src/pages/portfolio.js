@@ -13,30 +13,20 @@ export default function PortfolioPage() {
         <Row>
           <ServicesPamphlet/>
         </Row>
-        <Row>
-          <hr/>
-        </Row>
+        <Row><hr/></Row>
         <Row>
           <TechStackPamphlet/>
         </Row>
-        <Row>
-          {/* <hr/> */}
-        </Row>
+        {/* <Row><hr/></Row> */}
+        {/* <Row><br/></Row> */}
         <Row>
           {/* {certifications could possibly go here} */}
         </Row>
+        {/* <Row><hr/></Row> */}
         {/* <Row>
-          <br/>
+          <ProjectPamphlet/>
         </Row> */}
-        <Row>
-          {/* <hr/> */}
-        </Row>
-        <Row>
-          {/* <ProjectPamphlet/> */}
-        </Row>
-        <Row>
-          {/* <hr/> */}
-        </Row>
+        {/* <Row><hr/></Row> */}
         <Row>
           {/* {testimonials could possibly go here} */}
         </Row>
@@ -47,4 +37,4 @@ export default function PortfolioPage() {
 
 export const Head = () => (
   <SEO title="Portfolio" />
-)
+);
