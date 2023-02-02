@@ -14,7 +14,7 @@ import Email from '../assets/images/techStackIcons/EmailLogoSymbol.svg';
 
 export default function Footer() {
   return (
-    <Navbar style={{  }} className='bg-primary border-top border-dark' variant='dark' fixed='bottom'>
+    <Navbar style={{  }} className='bg-tertiary border-top border-dark' variant='dark' fixed='bottom'>
       <Container style={{  }}>
           <Navbar.Brand>
             <Row><h6>{`©${contentData.copyrightYear} ${contentData.displayName}`}{` - All Rights Reserved`}</h6></Row>
