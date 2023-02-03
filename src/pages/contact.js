@@ -1,8 +1,9 @@
 import * as React from 'react';
-import { Container, Form, Button, Row, Col, FloatingLabel } from 'react-bootstrap';
+import { Link } from 'gatsby';
+import { Container, Form, Button, Row, Col, Stack, FloatingLabel } from 'react-bootstrap';
 import Layout from '../components/layout';
-import axios from "axios";
-import SEO from '../components/seo';
+import axios from 'axios';
+import Seo from '../components/seo';
 import contentData from '../assets/content/contact-info.json';
 
 // https://material.io/design/color/dark-theme.html#properties
@@ -10,7 +11,7 @@ import contentData from '../assets/content/contact-info.json';
 // Dark Primary #1F1B24
 
 const addressArea = {
-  minWidth: "160px",
+  minWidth: '160px',
 }
 
 export default function ContactPage() {
@@ -19,7 +20,7 @@ export default function ContactPage() {
   const [email, setEmail] = React.useState('');
   const [subject, setSubject] = React.useState('');
   const [message, setMessage] = React.useState('');
-  const [isSubmitted, setIsSubmitted] = React.useState(false);
+  const [isSubmitted, setIsSubmitted] = React.useState(true);
 
   const form = {
     name: name,
@@ -61,12 +62,12 @@ export default function ContactPage() {
     e.preventDefault();
     setServerState({ ...serverState, submitting: true });
     axios({
-      method: "post",
-      url: "https://getform.io/f/0cb59c9b-7396-48c6-a967-f947e62882e0",
+      method: 'post',
+      url: 'https://getform.io/f/0cb59c9b-7396-48c6-a967-f947e62882e0',
       data: form
     })
       .then(r => {
-        handleServerResponse(true, "Thanks!", form);
+        handleServerResponse(true, 'Thanks!', form);
       })
       .catch(r => {
         handleServerResponse(false, r.response.data.error, form);
@@ -151,25 +152,46 @@ export default function ContactPage() {
   );
 
   const SubmittedDisplay = () => (
-    <Container>
-      <Row><p>{`Your message has been sent`}</p></Row>
-      <Row><p>{`We'll get back to you as soon as possible`}</p></Row>
-      <Button
-        variant="primary"
-        type="submit"
-        className="mb-3"
-        // onClick={(e) => handleOnSubmit(e)}
-      >
-        Go To Portfolio
-      </Button>
-      <Button
-        variant="primary"
-        type="submit"
-        className="mb-3"
-        onClick={(e) => handleClearSubmitted(e)}
-      >
-        New Message
-      </Button>
+    <Container
+      className='
+        bg-primary
+        border
+        border-tertiary
+        rounded
+        shadow-lg
+        p-2
+      '
+    >
+      <Row><p className='d-flex justify-content-center text-justify'>{`Your message has been sent`}</p></Row>
+      <Row><p className='d-flex justify-content-center'>{`We'll get back to you as soon as possible`}</p></Row>
+      <Row className='d-flex justify-content-center m-auto'>
+        <Col className='d-flex justify-content-end'>
+          <Link
+            to={'/'}
+            className='nav-link'
+            activeClassName='active'
+          >
+            <Button
+              variant='primary'
+              type='submit'
+              className='mb-3 shadow border-tertiary'
+            >
+              {`Go To Portfolio`}
+            </Button>
+          </Link>
+        </Col>
+
+        <Col className='d-flex'>
+          <Button
+            variant='primary'
+            type='submit'
+            className='mb-3 shadow border-secondary bg-tertiary'
+            onClick={(e) => handleClearSubmitted(e)}
+          >
+            {`New Message`}
+          </Button>
+        </Col>
+      </Row>
     </Container>
   );
 
@@ -204,7 +226,7 @@ export default function ContactPage() {
         contentData.contactCountry ?
         <Row>{contentData.contactCountry}</Row> : <div />
       }
-      {contentData.contactPostalCode ? <Row>{contentData.contactPostalCode}</Row> : <div /> }
+      {contentData.contactPostalCode ? <Row className='justify-content-end'>{contentData.contactPostalCode}</Row> : <div /> }
       {contentData.contactPhone ? <Row>{contentData.contactPhone}</Row> : <div /> }
       {contentData.contactEmail ? <Row>{contentData.contactEmail}</Row> : <div /> }
     </address>
@@ -221,7 +243,7 @@ export default function ContactPage() {
           <Col>
             {isSubmitted ? <SubmittedDisplay /> : <FormDisplay />}
           </Col>
-          <Col className="ps-5 col-2" style={addressArea}>
+          <Col className='ps-5 col-2' style={addressArea}>
             <ReturnAddress />
           </Col>
         </Row>
@@ -231,5 +253,5 @@ export default function ContactPage() {
 };
 
 export const Head = () => (
-  <SEO title="Contact" />
+  <Seo title='Contact' />
 );
