@@ -1,9 +1,12 @@
 import * as React from 'react';
-import { Link } from 'gatsby';
-import { Container, Form, Button, Row, Col, Stack, FloatingLabel } from 'react-bootstrap';
-import Layout from '../components/layout';
 import axios from 'axios';
+import { Link } from 'gatsby';
 import Seo from '../components/seo';
+import Layout from '../components/layout';
+import { Container, Form, Button, Row, Col, Stack, FloatingLabel } from 'react-bootstrap';
+import ReturnAddress from '../components/contact/ReturnAddress';
+// import FormDisplay from '../components/contact/FormDisplay';
+// import SubmittedDisplay from '../components/contact/SubmittedDisplay';
 import contentData from '../assets/content/contact-info.json';
 
 // https://material.io/design/color/dark-theme.html#properties
@@ -193,43 +196,6 @@ export default function ContactPage() {
         </Col>
       </Row>
     </Container>
-  );
-
-  const ReturnAddress = () => (
-    <address>
-      {contentData.contactName ? <Row>{contentData.contactName}</Row> : <div /> }
-      {contentData.contactCompany ? <Row>{contentData.contactCompany}</Row> : <div /> }
-      {contentData.contactAddress1 ? <Row>{contentData.contactAddress1}</Row> : <div /> }
-      {contentData.contactAddress2 ? <Row>{contentData.contactAddress2}</Row> : <div /> }
-      {contentData.contactAddress3 ? <Row>{contentData.contactAddress3}</Row> : <div /> }
-      {contentData.contactAddress4 ? <Row>{contentData.contactAddress4}</Row> : <div /> }
-      {contentData.contactAddress5 ? <Row>{contentData.contactAddress5}</Row> : <div /> }
-      {contentData.contactCity ?
-        contentData.contactState ?
-          contentData.contactCountry ?
-            <Row>{contentData.contactCity}, {contentData.contactState}, {contentData.contactCountry}</Row>
-          : 
-            <Row>{contentData.contactCity}, {contentData.contactState}</Row>
-        :
-          contentData.contactCountry ?
-            <Row>{contentData.contactCity}, {contentData.contactCountry}</Row>
-          :
-            <Row>{contentData.contactCity}</Row>
-        
-      : 
-        contentData.contactState ?
-          contentData.contactCountry ?
-            <Row>{contentData.contactState}, {contentData.contactCountry}</Row>
-          :
-            <Row>{contentData.contactState}</Row>
-      :
-        contentData.contactCountry ?
-        <Row>{contentData.contactCountry}</Row> : <div />
-      }
-      {contentData.contactPostalCode ? <Row className='justify-content-end'>{contentData.contactPostalCode}</Row> : <div /> }
-      {contentData.contactPhone ? <Row>{contentData.contactPhone}</Row> : <div /> }
-      {contentData.contactEmail ? <Row>{contentData.contactEmail}</Row> : <div /> }
-    </address>
   );
   //// [END: Page Components] ////
 
