@@ -8,18 +8,18 @@ export default function ServicesPamphlet() {
     <Container>
       <Row>
         <Col className="d-flex justify-content-center" >
-          <h1 className="text-info--" >{contentData.title}</h1> 
+          <h1 className="text-light" >{contentData.title}</h1> 
         </Col>
       </Row>
       <Row>
-        <Col className="d-flex justify-content-center mb-3" >
-          <h5 className="text-info--" >{contentData.subTitle}</h5>
+        <Col className="d-flex justify-content-center" >
+          <h5 className="text-muted" >{contentData.subTitle}</h5>
         </Col>
       </Row>
       <Row>
-        <CardGroup className="d-flex flex-wrap justify-content-center" >
+        <CardGroup className="d-flex flex-wrap mb-4" >
           {contentData.services.map(node => (
-            <Col key={`Services_${node.id}`} className="col-lg-4 col-md-6 col-sm-12" >
+            <Col key={`Services_${node.id}`} className="col-12 col-md-6 col-lg-4 p-2">
               <ServicesCard data={node} />
             </Col>
           ))}
