@@ -3,7 +3,7 @@ import { Card } from "react-bootstrap";
 
 export default function ServicesCard({ data }) {
   return(
-    <Card className="p-3 h-100 bg-primary border border-secondary">
+    <Card className="p-3 h-100 bg-primary border border-tertiary">
       <Card.Title className="text-light" >
         {data.title}
       </Card.Title>
