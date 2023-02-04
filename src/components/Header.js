@@ -4,6 +4,9 @@ import { Nav, Container, Navbar } from 'react-bootstrap';
 import Logo from '../assets/images/icon.png';
 import contentData from '../assets/content/header-footer.json';
 
+//// TODO: 
+// 1. link colors, active, not active, etc... identified by --bs-nav-link-color
+
 // This is just a data object for generating Nav Links dynamically
 const links = [
   {
@@ -22,7 +25,7 @@ const links = [
 
 export default function Header() {
   return (
-    <Navbar style={{  }} className='bg-tertiary border-bottom border-dark' variant='dark' fixed='top' expand='md'>
+    <Navbar className='bg-primary border-bottom border-dark py-1' variant='dark' fixed='top' expand='md'>
       <Container>
         <Navbar.Brand href='/'>
           <img
@@ -31,7 +34,7 @@ export default function Header() {
             width='30'
             height='30'
           />
-          {contentData.displayName}
+          <span className='text-light ms-1'>{contentData.displayName}</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls='navbarResponsive' />
         <Navbar.Collapse id='navbarResponsive'  className='justify-content-end'>

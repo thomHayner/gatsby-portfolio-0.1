@@ -20,7 +20,7 @@ export default function Footer() {
               <Nav.Item as='li' key={'FooterLink_'}>
                 <Link
                   to={'/contact'}
-                  className='nav-link py-0'
+                  className='nav-link'
                   activeClassName='active'
                 >
                   <Email style={{ width: '30px', height: '30px'}} />
@@ -31,7 +31,7 @@ export default function Footer() {
                   href={contentData.socialMedia[1].url}
                   target='_blank'
                   rel='noreferrer'
-                  className='nav-link py-0'
+                  className='nav-link'
                 >
                   <GitHub style={{ width: '30px', height: '30px' }} />
                 </a>
@@ -41,7 +41,7 @@ export default function Footer() {
                   href={contentData.socialMedia[2].url}
                   target='_blank'
                   rel='noreferrer'
-                  className='nav-link py-0'
+                  className='nav-link'
                 >
                   <LinkedIn style={{ width: '30px', height: '30px'}} />
                 </a>
