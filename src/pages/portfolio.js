@@ -10,7 +10,7 @@ export default function PortfolioPage() {
   return (
     <Layout>
       <Container id="services">
-        <Row className='min-vh-100 align-content-center border border-green'>
+        <Row className='min-vh-100 align-content-center'>
           <ServicesPamphlet />
         </Row>
         {/* <Row><hr/></Row> */}
