@@ -8,24 +8,24 @@ export default function TechStackPamphlet() {
     <Container>
       <Row>
         <Col className="d-flex justify-content-center" >
-          <h1 className="text-warning--" >{contentData.title}</h1>
+          <h1 className="text-light" >{contentData.title}</h1>
         </Col>
       </Row>
       <Row>
-        <Col className="d-flex justify-content-center mb-3" >
-          <h5 className="text-warning--" >{contentData.subTitle}</h5>
+        <Col className="d-flex justify-content-center" >
+          <h5 className="text-muted" >{contentData.subTitle}</h5>
         </Col>
       </Row>
-      <Row className="my-auto" >
-        <Col className="col-xl-4 col-lg-3 col-12" >
+      <Row>
+        <Col className="col-12 col-lg-3 col-xl-4 my-auto" >
           {contentData.techBulletPoint.map(bulletPoint => (
-            <Row key={"bulletPoint_" + bulletPoint.id} className="m-3 pt-2 border-dark border rounded bg-primary" >
-              <h5 className="text-warning--" >{bulletPoint.title}</h5>
-              <p>{bulletPoint.text}</p>
+            <Row key={"bulletPoint_" + bulletPoint.id} className="m-3 pt-2 border-tertiary border rounded bg-primary" >
+              <h5 className="text-light" >{bulletPoint.title}</h5>
+              <p className="text-muted" >{bulletPoint.text}</p>
             </Row>
           ))}
         </Col>
-        <Col className="col-xl-8 col-lg-9 col-12 d-flex justify-content-center flex-wrap bg-primary border-dark rounded" >
+        <Col className="col-12 col-lg-9 col-xl-8 d-flex justify-content-center flex-wrap bg-secondary border-tertiary rounded" >
           {DevIcons.map((DevIcon, i) => (
             <DevIcon key={"devIcon_" + i} className="m-md-3 m-sm-2" style={{ height: "75px", width: "75px" }} />
           ))}
