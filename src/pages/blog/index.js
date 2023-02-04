@@ -8,7 +8,12 @@ import BlogCard from "../../components/blog/BlogCard";
 export default function BlogPage() {
   return (
     <Layout>
-      <StaticQuery
+      <Container className='min-vh-100'>
+        <Row><h1>Latest Posts</h1></Row>
+        <Row><hr/></Row>
+        <Row><span className='fs-6'>Nothing To Display</span></Row>
+      </Container>
+      {/* <StaticQuery
         query={graphql`
           query allBlogArticles {
             allMarkdownRemark {
@@ -29,7 +34,6 @@ export default function BlogPage() {
             <Container>
               <Row><h1>Latest Posts</h1></Row>
               <Row><hr/></Row>
-              <Row><br/></Row>
               <Row>
                 <Col className="col-1" ></Col>
                 <Col className="col-7" >
@@ -53,7 +57,7 @@ export default function BlogPage() {
             </Container>
           </Layout>
         )}
-      />
+      /> */}
     </Layout>
   )
 };
