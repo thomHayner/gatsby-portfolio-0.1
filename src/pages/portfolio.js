@@ -4,7 +4,7 @@ import Layout from "../components/layout";
 import Seo from '../components/seo';
 import TechStackPamphlet from "../components/portfolio/TechStackPamphlet";
 import ServicesPamphlet from "../components/portfolio/ServicesPamphlet";
-import ProjectPamphlet from "../components/portfolio/ProjectPamphlet";
+// import ProjectPamphlet from "../components/portfolio/ProjectPamphlet";
 
 export default function PortfolioPage() {
   return (
