@@ -9,27 +9,22 @@ import ServicesPamphlet from "../components/portfolio/ServicesPamphlet";
 export default function PortfolioPage() {
   return (
     <Layout>
-      <Container id="services" className="">
-        <Row>
+      <Container id="services">
+        <Row className='min-vh-100 align-content-center border border-green'>
           <ServicesPamphlet/>
         </Row>
-        <Row><hr/></Row>
+        {/* <Row><hr/></Row> */}
         <Row>
           <TechStackPamphlet/>
         </Row>
         {/* <Row><hr/></Row> */}
-        {/* <Row><br/></Row> */}
         <Row>
-          {/* {certifications could possibly go here} */}
+          {/* {certifications go here} */}
         </Row>
         {/* <Row><hr/></Row> */}
         {/* <Row>
           <ProjectPamphlet/>
         </Row> */}
-        {/* <Row><hr/></Row> */}
-        <Row>
-          {/* {testimonials could possibly go here} */}
-        </Row>
       </Container>
     </Layout>
   )
