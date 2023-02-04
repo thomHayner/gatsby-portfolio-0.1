@@ -1,42 +1,51 @@
 import * as React from 'react';
-import { Row } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import contentData from '../../assets/content/contact-info.json';
 
 export default function ReturnAddress() {
   return (
-    <address>
-      {contentData.contactName ? <Row>{contentData.contactName}</Row> : <div />}
-      {contentData.contactCompany ? <Row>{contentData.contactCompany}</Row> : <div />}
-      {contentData.contactAddress1 ? <Row>{contentData.contactAddress1}</Row> : <div />}
-      {contentData.contactAddress2 ? <Row>{contentData.contactAddress2}</Row> : <div />}
-      {contentData.contactAddress3 ? <Row>{contentData.contactAddress3}</Row> : <div />}
-      {contentData.contactAddress4 ? <Row>{contentData.contactAddress4}</Row> : <div />}
-      {contentData.contactAddress5 ? <Row>{contentData.contactAddress5}</Row> : <div />}
-      {contentData.contactCity ?
-        contentData.contactState ?
-          contentData.contactCountry ?
-            <Row>{contentData.contactCity}, {contentData.contactState}, {contentData.contactCountry}</Row>
-          : 
-            <Row>{contentData.contactCity}, {contentData.contactState}</Row>
-        :
-          contentData.contactCountry ?
-            <Row>{contentData.contactCity}, {contentData.contactCountry}</Row>
-          :
-            <Row>{contentData.contactCity}</Row>
+    <Container
+      className='p-2 bg-secondary border-tertiary rounded shadow-lg'>
+      <address>
+        {contentData.contactName ? <span>{contentData.contactName}<br /></span> : null}
         
-      : 
-        contentData.contactState ?
-          contentData.contactCountry ?
-            <Row>{contentData.contactState}, {contentData.contactCountry}</Row>
+        {contentData.contactCompany ? <span>{contentData.contactCompany}<br /></span> : null}
+        {contentData.contactAddress1 ? <span>{contentData.contactAddress1}<br /></span> : null}
+        {contentData.contactAddress2 ? <span>{contentData.contactAddress2}<br /></span> : null}
+        {contentData.contactAddress3 ? <span>{contentData.contactAddress3}<br /></span> : null}
+        {contentData.contactAddress4 ? <span>{contentData.contactAddress4}<br /></span> : null}
+        {contentData.contactAddress5 ? <span>{contentData.contactAddress5}<br /></span> : null}
+        {contentData.contactCity ?
+          contentData.contactState ?
+            contentData.contactPostalCode ?
+              <span>{contentData.contactCity}, {contentData.contactState}, {contentData.contactPostalCode}<br /></span>
+            :
+              <span>{contentData.contactCity}, {contentData.contactState}<br /></span>
           :
-            <Row>{contentData.contactState}</Row>
-      :
-        contentData.contactCountry ?
-        <Row>{contentData.contactCountry}</Row> : <div />
-      }
-      {contentData.contactPostalCode ? <Row className='justify-content-end'>{contentData.contactPostalCode}</Row> : <div />}
-      {contentData.contactPhone ? <Row>{contentData.contactPhone}</Row> : <div />}
-      {contentData.contactEmail ? <Row>{contentData.contactEmail}</Row> : <div />}
-    </address>
+            contentData.contactPostalCode ?
+              <span>
+                {contentData.contactCity}, {contentData.contactPostalCode}<br />
+              </span>
+            :
+              <span>{contentData.contactCity}<br /></span>
+          
+        : 
+          contentData.contactState ?
+            contentData.contactPostalCode ?
+              <span>
+                {contentData.contactState}, {contentData.contactPostalCode}<br />
+              </span>
+            :
+              <span>{contentData.contactState}<br /></span>
+          :
+            contentData.contactPostalCode ?
+              <span>{contentData.contactPostalCode}<br /></span> : null
+        }
+        {contentData.contactCountry ? <span>{contentData.contactCountry}<br /></span> : null}
+        {contentData.contactPhone || contentData.contactEmail ? <hr /> : null}
+        {contentData.contactPhone ? <span>{contentData.contactPhone}<br /></span> : null}
+        {contentData.contactEmail ? <span>{contentData.contactEmail}<br /></span> : null}
+      </address>
+    </Container>
   )
 };
