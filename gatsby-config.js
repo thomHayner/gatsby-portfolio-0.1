@@ -27,6 +27,19 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Thomas Hayner`,
+        short_name: `HRG Interactive`,
+        start_url: `/`,
+        background_color: `#0a192f`,
+        theme_color: `#0a192f`,
+        display: `minimal-ui`,
+        // Generate PWA icons and a favicon
+        icon: `src/assets/images/icon.png`,
+      }
+    },
+    {
       resolve: `gatsby-plugin-sass`,
       options: {
         sassOptions: {
