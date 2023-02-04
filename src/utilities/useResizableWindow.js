@@ -18,7 +18,3 @@ export default function useResizableWindow() {
 
   return dimensions;
 };
-
-// export default {
-//   useResizableWindow,
-// }
