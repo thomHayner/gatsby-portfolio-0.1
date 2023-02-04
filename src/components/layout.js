@@ -8,18 +8,10 @@ export default function Layout ({ children }) {
   // Have image make call to third site, have third site ping heroku app so that it starts the dyno.
   // Another option is to install the npm ping package or to look for a gatsby package.
   return (
-    <div className="bg-primary text-light min-vh-100 " >
+    <div className="bg-primary text-light min-vh-100" style={{ paddingTop: 71 }}>
       {/* <img src="https://th-battleship-js-demo.herokuapp.com/" alt="nada" style={{ margin: "-5000px" }} /> */}
       <Header />
-      <br/>
-      <br/>
-      <br/>
-      <br/>
       {children}
-      <br/>
-      <br/>
-      <br/>
-      <br/>
       <Footer />
     </div>
   )
