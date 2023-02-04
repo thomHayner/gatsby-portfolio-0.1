@@ -5,7 +5,7 @@ import contentData from '../../assets/content/services-pamphlet.json';
 
 export default function ServicesPamphlet() {
   return (
-    <Container>
+    <Container className='min-vh-100'>
       <Row>
         <Col className="d-flex justify-content-center" >
           <h1 className="text-light" >{contentData.title}</h1> 
@@ -17,7 +17,7 @@ export default function ServicesPamphlet() {
         </Col>
       </Row>
       <Row>
-        <CardGroup className="d-flex flex-wrap mb-4" >
+        <CardGroup className="d-flex flex-wrap my-4" >
           {contentData.services.map(node => (
             <Col key={`Services_${node.id}`} className="col-12 col-md-6 col-lg-4 p-2">
               <ServicesCard data={node} />
