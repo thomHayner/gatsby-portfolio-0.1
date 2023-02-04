@@ -3,7 +3,7 @@ import axios from 'axios';
 import { Link } from 'gatsby';
 import Seo from '../components/seo';
 import Layout from '../components/layout';
-import { Container, Form, Button, Row, Col, Stack, FloatingLabel } from 'react-bootstrap';
+import { Container, Form, Button, Row, Col, FloatingLabel } from 'react-bootstrap';
 import ReturnAddress from '../components/contact/ReturnAddress';
 // import FormDisplay from '../components/contact/FormDisplay';
 // import SubmittedDisplay from '../components/contact/SubmittedDisplay';
@@ -12,10 +12,6 @@ import contentData from '../assets/content/contact-info.json';
 // https://material.io/design/color/dark-theme.html#properties
 // Background #121212
 // Dark Primary #1F1B24
-
-const addressArea = {
-  minWidth: '160px',
-}
 
 export default function ContactPage() {
   //// [START: Form Values] ////
@@ -80,7 +76,7 @@ export default function ContactPage() {
 
   //// [START: Page Components] ////
   const FormDisplay = () => (
-    <Form className="text-dark" >
+    <Form className='h-100 p-2 bg-secondary border border-info rounded shadow-lg text-dark' >
 
       <FloatingLabel
         controlId="floatingInputContactName"
@@ -155,19 +151,18 @@ export default function ContactPage() {
   );
 
   const SubmittedDisplay = () => (
-    <Container
-      className='
-        bg-primary
-        border
-        border-tertiary
-        rounded
-        shadow-lg
-        p-2
-      '
-    >
-      <Row><p className='d-flex justify-content-center text-justify'>{`Your message has been sent`}</p></Row>
-      <Row><p className='d-flex justify-content-center'>{`We'll get back to you as soon as possible`}</p></Row>
-      <Row className='d-flex justify-content-center m-auto'>
+    <Container className='h-100 p-2 py-auto bg-secondary border border-tertiary rounded shadow-lg'>
+      <Row>
+        <p className='text-center mt-5'>
+          {`Your message has been sent`}
+        </p>
+      </Row>
+      <Row>
+        <p className='text-center mb-5'>
+          {`We'll get back to you as soon as possible`}
+        </p>
+      </Row>
+      <Row className='d-flex justify-content-center mt-3 mb-5'>
         <Col className='d-flex justify-content-end'>
           <Link
             to={'/'}
@@ -175,9 +170,9 @@ export default function ContactPage() {
             activeClassName='active'
           >
             <Button
-              variant='primary'
+              variant='dark'
               type='submit'
-              className='mb-3 shadow border-tertiary'
+              className='btn mb-3 shadow'
             >
               {`Go To Portfolio`}
             </Button>
@@ -186,9 +181,9 @@ export default function ContactPage() {
 
         <Col className='d-flex'>
           <Button
-            variant='primary'
+            variant='dark'
             type='submit'
-            className='mb-3 shadow border-secondary bg-tertiary'
+            className='btn mb-3 shadow'
             onClick={(e) => handleClearSubmitted(e)}
           >
             {`New Message`}
@@ -201,15 +196,14 @@ export default function ContactPage() {
 
   return (
     <Layout>
-      <Container>
+      <Container className='min-vh-100' >
         <Row><h1>{contentData.title}</h1></Row> 
         <Row><hr/></Row>
-        <Row><br/></Row>
         <Row>
-          <Col>
-            {isSubmitted ? <SubmittedDisplay /> : <FormDisplay />}
+          <Col className='col-12 col-md-8 col-lg-9 col-xl-10'>
+            {isSubmitted ? <SubmittedDisplay  /> : <FormDisplay />}
           </Col>
-          <Col className='ps-5 col-2' style={addressArea}>
+          <Col className='col-5 col-md-4 col-lg-3 col-xl-2'>
             <ReturnAddress />
           </Col>
         </Row>
@@ -219,5 +213,5 @@ export default function ContactPage() {
 };
 
 export const Head = () => (
-  <Seo title='Contact' />
+  <Seo title={contentData.title} />
 );
