@@ -14,19 +14,19 @@ import Email from '../assets/images/techStackIcons/EmailLogoSymbol.svg';
 
 export default function Footer() {
   return (
-    <Navbar style={{  }} className='bg-tertiary border-top border-dark' variant='dark' fixed='bottom'>
-      <Container style={{  }}>
-          <Navbar.Brand>
-            <Row><h6>{`©${contentData.copyrightYear} ${contentData.displayName}`}{` - All Rights Reserved`}</h6></Row>
+    <Navbar className='bg-primary border-top border-dark py-1' variant='dark'>
+      <Container>
+          <Navbar.Brand className='p-0'>
+            <p className='text-light fs-6'>{`©${contentData.copyrightYear}`}{` - All Rights Reserved`}</p>
           </Navbar.Brand>
-          <Navbar.Collapse id='responsive-navbar-nav' className='justify-content-end' style={{  }}>
-            <Nav as='ul'>
+          {/* <Navbar.Collapse id='responsive-navbar-nav' className='justify-content-end' style={{  }}> */}
+            <Nav as='ul' className='p-0'>
                 <Nav.Item as='li' key={'FooterLink_'}>
                   <Link
                     to={'/contact'}
-                    className='nav-link'
+                    className='nav-link mx-2 p-0'
                     activeClassName='active'
-                    style={{ width: '45px', height: '45px'}}
+                    style={{ width: '30px', height: '30px'}}
                   >
                     <Email />
                   </Link>
@@ -36,10 +36,10 @@ export default function Footer() {
                     href={contentData.socialMedia[1].url}
                     target='_blank'
                     rel='noreferrer'
-                    className='nav-link'
-                    style={{ width: '45px', height: '45px' }}
+                    className='nav-link mx-2 p-0'
+                    style={{ width: '30px', height: '30px' }}
                   >
-                    <GitHub />
+                    <GitHub className='' />
                   </a>
                 </Nav.Item>
                 <Nav.Item as='li'>
@@ -47,14 +47,14 @@ export default function Footer() {
                     href={contentData.socialMedia[2].url}
                     target='_blank'
                     rel='noreferrer'
-                    className='nav-link'
-                    style={{ width: '45px', height: '45px'}}
+                    className='nav-link mx-2 p-0'
+                    style={{ width: '30px', height: '30px'}}
                   >
                     <LinkedIn />
                   </a>
                 </Nav.Item>
             </Nav>
-          </Navbar.Collapse>
+          {/* </Navbar.Collapse> */}
       </Container>
     </Navbar>
   )
