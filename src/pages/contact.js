@@ -196,7 +196,7 @@ export default function ContactPage() {
 
   return (
     <Layout>
-      <Container className='min-vh-100' >
+      <Container>
         <Row><h1>{contentData.title}</h1></Row> 
         <Row><hr/></Row>
         <Row>

@@ -1,14 +1,14 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { Link, StaticQuery, graphql } from 'gatsby';
+// import { Link, StaticQuery, graphql } from 'gatsby';
 import Layout from "../../components/layout";
 import Seo from "../../components/seo";
-import BlogCard from "../../components/blog/BlogCard";
+// import BlogCard from "../../components/blog/BlogCard";
 
 export default function BlogPage() {
   return (
     <Layout>
-      <Container className='min-vh-100'>
+      <Container>
         <Row><h1>Latest Posts</h1></Row>
         <Row><hr/></Row>
         <Row><span className='fs-6'>Nothing To Display</span></Row>
@@ -64,4 +64,4 @@ export default function BlogPage() {
 
 export const Head = () => (
   <Seo title="Blog" />
-)
+);

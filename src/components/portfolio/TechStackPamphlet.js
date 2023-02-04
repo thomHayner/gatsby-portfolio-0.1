@@ -19,7 +19,7 @@ export default function TechStackPamphlet() {
       <Row>
         <Col className="col-12 col-lg-3 col-xl-4 my-auto" >
           {contentData.techBulletPoint.map(bulletPoint => (
-            <Row key={"bulletPoint_" + bulletPoint.id} className="m-3 pt-2 border-tertiary border rounded bg-primary" >
+            <Row key={"bulletPoint_" + bulletPoint.id} className="m-3 pt-2 border-info border rounded" >
               <h5 className="text-light" >{bulletPoint.title}</h5>
               <p className="text-muted" >{bulletPoint.text}</p>
             </Row>
@@ -33,4 +33,4 @@ export default function TechStackPamphlet() {
       </Row>
     </Container>
   )
-}
+};

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function useResizableWindow() {
   const [dimensions, setDimensions] = useState({

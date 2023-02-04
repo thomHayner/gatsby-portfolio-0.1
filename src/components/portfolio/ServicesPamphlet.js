@@ -5,7 +5,7 @@ import contentData from '../../assets/content/services-pamphlet.json';
 
 export default function ServicesPamphlet() {
   return (
-    <Container className='min-vh-100'>
+    <Container>
       <Row>
         <Col className="d-flex justify-content-center" >
           <h1 className="text-light" >{contentData.title}</h1> 
@@ -27,4 +27,4 @@ export default function ServicesPamphlet() {
       </Row>
     </Container>
   )
-}
+};
