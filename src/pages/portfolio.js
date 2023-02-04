@@ -11,11 +11,11 @@ export default function PortfolioPage() {
     <Layout>
       <Container id="services">
         <Row className='min-vh-100 align-content-center border border-green'>
-          <ServicesPamphlet/>
+          <ServicesPamphlet />
         </Row>
         {/* <Row><hr/></Row> */}
         <Row>
-          <TechStackPamphlet/>
+          <TechStackPamphlet />
         </Row>
         {/* <Row><hr/></Row> */}
         <Row>
@@ -23,7 +23,7 @@ export default function PortfolioPage() {
         </Row>
         {/* <Row><hr/></Row> */}
         {/* <Row>
-          <ProjectPamphlet/>
+          <ProjectPamphlet />
         </Row> */}
       </Container>
     </Layout>
