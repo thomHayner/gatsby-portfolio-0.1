@@ -4,9 +4,6 @@ import { Nav, Container, Navbar } from 'react-bootstrap';
 import Logo from '../assets/images/icon.png';
 import contentData from '../assets/content/header-footer.json';
 
-//// TODO: 
-// 1. link colors, active, not active, etc... identified by --bs-nav-link-color
-
 // This is just a data object for generating Nav Links dynamically
 const links = [
   {
