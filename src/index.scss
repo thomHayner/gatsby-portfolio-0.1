@@ -1,16 +1,31 @@
 $theme-colors: (
-  "primary": #181818,
-  "secondary": #363636,
-  "tertiary": #404040,
-  "info": #0dcaf0,
+  "primary": #0a192f,
+  "secondary": #112240,
+  "tertiary": #64ffda,
+  "info": #57cbff,
   "success": #198754,
   "warning": #ffc107,
   "danger": #dc3545,
-  "light": #f5f5f5,
-  "muted": #BDBDBD,
-  "dark": #121212,
+  "light": #ccd6f6,
+  "muted": #8892b0,
+  "dark": #495670,
 );
 $link-color: #BDBDBD;
 $link-hover-color: #f5f5f5;
 
 @import "bootstrap";
+
+// --dark-navy: #020c1b;
+// --navy: #0a192f;
+// --light-navy: #112240;
+// --lightest-navy: #233554;
+// --navy-shadow: rgba(2,12,27,0.7);
+// --dark-slate: #495670;
+// --slate: #8892b0;
+// --light-slate: #a8b2d1;
+// --lightest-slate: #ccd6f6;
+// --white: #e6f1ff;
+// --green: #64ffda;
+// --green-tint: rgba(100,255,218,0.1);
+// --pink: #f57dff;
+// --blue: #57cbff;
