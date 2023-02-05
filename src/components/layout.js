@@ -10,7 +10,7 @@ import Footer from './Footer';
 
 export default function Layout ({ children }) {
   const dimensions = useResizableWindow();
-  const viewHeight = dimensions.height - 55 - 55;
+  const viewHeight = dimensions.height - 55 - 55; // this sets height to: window minus top and bottom navbars
 
   return (
     <div className="bg-primary text-light min-vh-100" style={{ paddingTop: 55 }}>
