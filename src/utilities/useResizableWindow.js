@@ -27,7 +27,7 @@ export default function useResizableWindow() {
     width: 1920,
     height: 1080
   };
-  if (!isBrowser) {
+  if (isBrowser) {
     // If there is a browser, then return window dimensions
     // return dimensions
     dimensions = BrowserDimensions();
