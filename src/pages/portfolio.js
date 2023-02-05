@@ -26,28 +26,28 @@ export default function PortfolioPage() {
       <Container id="services">
         <Row
           style={{ minHeight: viewHeight }}
-          className='align-content-center'
+          className='align-content-center py-3'
         >
           <ServicesPamphlet />
         </Row>
         <Row><hr className='m-0' /></Row>
         <Row
           style={{ minHeight: viewHeight - 55 }}
-          className='align-content-center'
+          className='align-content-center py-3'
         >
           <TechStackPamphlet />
         </Row>
         {/* <Row><hr className='m-0' /></Row> */}
         {/* <Row
           style={{ minHeight: viewHeight }}
-          className='align-content-center'
+          className='align-content-center py-3'
         >
           {`certifications go here`}
         </Row> */}
         {/* <Row><hr className='m-0' /></Row> */}
         {/* <Row
           style={{ minHeight: viewHeight }}
-          className='align-content-center'
+          className='align-content-center py-3'
         >
           <ProjectPamphlet />
         </Row> */}
