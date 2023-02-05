@@ -5,7 +5,7 @@ import contentData from '../../assets/content/contact-info.json';
 export default function ReturnAddress() {
   return (
     <Container
-      className='p-2 bg-secondary border-tertiary rounded shadow-lg'>
+      className='p-2 bg-dark-navy border-tertiary rounded shadow-lg'>
       <address>
         {contentData.contactName ? <span>{contentData.contactName}<br /></span> : null}
         
