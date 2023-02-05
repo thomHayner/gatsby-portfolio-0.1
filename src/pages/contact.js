@@ -5,13 +5,7 @@ import Seo from '../components/seo';
 import Layout from '../components/layout';
 import { Container, Form, Button, Row, Col, FloatingLabel } from 'react-bootstrap';
 import ReturnAddress from '../components/contact/ReturnAddress';
-// import FormDisplay from '../components/contact/FormDisplay';
-// import SubmittedDisplay from '../components/contact/SubmittedDisplay';
 import contentData from '../assets/content/contact-info.json';
-
-// https://material.io/design/color/dark-theme.html#properties
-// Background #121212
-// Dark Primary #1F1B24
 
 export default function ContactPage() {
   //// [START: Form Values] ////
