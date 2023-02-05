@@ -42,8 +42,8 @@ export default function useResizableWindow() {
     })
   };
   useEffect(() => {
-    handleResize();
     window.addEventListener('resize', handleResize);
+    handleResize();
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
