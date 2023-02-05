@@ -8,8 +8,8 @@ import ServicesPamphlet from "../components/portfolio/ServicesPamphlet";
 import useResizableWindow from "../utilities/useResizableWindow";
 
 //// DEVNOTE:
-/* The last <Row> element has it's height shortened by and additional 55px 
-to account for the bottom navbar/footer. */
+/* The last <Row /> element on this page has it's height shortened by an 
+additional 55px to account for the bottom navbar/footer. */
 
 export default function PortfolioPage() {
   const dimensions = useResizableWindow();
