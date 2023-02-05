@@ -21,31 +21,3 @@
 // import "bootstrap/dist/css/bootstrap.min.css";
 // import "bootstrap/dist/js/bootstrap.min.js";
 // import "@popperjs/core/dist/umd/popper.min.js";
-
-
-////////////////////////////////////////////////////////////////////////////////
-
-
-////// BAD / DUMPSTER CODE SECTION
-// const React = require("react");
-// const { default: useResizableWindow } = require("./src/hooks/useResizableWindow");
-
-//// THIS DID NOT WORK TO RESIZRE WINDOW
-// exports.onInitialClientRender = ({ setBodyAttributes, pathname, }) => {
-//   setBodyAttributes({
-//     style: {
-//       minHeight: useResizableWindow.height,
-//       minWidth: useResizableWindow.width,
-//     },
-//   });
-// };
-
-//// THIS DID NOT WORK TO RESIZRE WINDOW
-// exports.onClientEntry = ({ setBodyAttributes, pathname, }) => {
-//   setBodyAttributes({
-//     style: {
-//       minHeight: useResizableWindow.height,
-//       minWidth: useResizableWindow.width,
-//     },
-//   });
-// };
