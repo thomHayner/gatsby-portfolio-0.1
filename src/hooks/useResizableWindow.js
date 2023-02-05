@@ -15,10 +15,10 @@ export default function useResizableWindow() {
     })
   };
   useEffect(() => {
-    setDimensions({
-      width: window.innerWidth,
-      height: window.innerHeight
-    })
+    // setDimensions({
+    //   width: window.innerWidth,
+    //   height: window.innerHeight
+    // })
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
