@@ -6,6 +6,7 @@ import Layout from '../components/layout';
 import { Container, Form, Button, Row, Col, FloatingLabel } from 'react-bootstrap';
 import ReturnAddress from '../components/contact/ReturnAddress';
 import contentData from '../assets/content/contact-info.json';
+import '../index.scss';
 
 export default function ContactPage() {
   //// [START: Form Values] ////
