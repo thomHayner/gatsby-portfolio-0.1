@@ -1,5 +1,5 @@
 import React from 'react';
-import useResizableWindow from '../utilities/useResizableWindow';
+import useResizableWindow from '../hooks/useResizableWindow';
 import Header from './Header';
 import Footer from './Footer';
 

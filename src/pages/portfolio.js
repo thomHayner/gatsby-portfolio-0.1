@@ -5,7 +5,7 @@ import Seo from '../components/seo';
 import TechStackPamphlet from "../components/portfolio/TechStackPamphlet";
 import ServicesPamphlet from "../components/portfolio/ServicesPamphlet";
 // import ProjectPamphlet from "../components/portfolio/ProjectPamphlet";
-import useResizableWindow from "../utilities/useResizableWindow";
+import useResizableWindow from "../hooks/useResizableWindow";
 
 //// DEVNOTE:
 /* The last <Row /> element on this page has it's height shortened by an 
