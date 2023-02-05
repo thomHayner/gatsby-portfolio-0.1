@@ -76,7 +76,7 @@ export default function ContactPage() {
 
   //// [START: Page Components] ////
   const FormDisplay = () => (
-    <Form className='h-100 p-2 bg-secondary border border-info rounded shadow-lg text-dark' >
+    <Form className='h-100 p-2 bg-secondary rounded shadow-lg text-dark' >
 
       <FloatingLabel
         controlId="floatingInputContactName"
