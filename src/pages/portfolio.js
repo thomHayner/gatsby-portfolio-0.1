@@ -7,9 +7,19 @@ import ServicesPamphlet from "../components/portfolio/ServicesPamphlet";
 // import ProjectPamphlet from "../components/portfolio/ProjectPamphlet";
 import useResizableWindow from "../utilities/useResizableWindow";
 
+//// DEVNOTE:
+/* The last <Row> element has it's height shortened by and additional 55px 
+to account for the bottom navbar/footer. */
+
 export default function PortfolioPage() {
   const dimensions = useResizableWindow();
   const viewHeight = dimensions.height - 52;
+
+  React.useEffect(()=> {
+    if (typeof window !== 'undefined') {
+      window.resizeTo(1366, 768);
+    };
+  }, [])
 
   return (
     <Layout>
@@ -22,7 +32,7 @@ export default function PortfolioPage() {
         </Row>
         <Row><hr className='m-0' /></Row>
         <Row
-          style={{ minHeight: viewHeight }}
+          style={{ minHeight: viewHeight - 55 }}
           className='align-content-center'
         >
           <TechStackPamphlet />
