@@ -24,13 +24,13 @@ export default function useResizableWindow() {
   const isBrowser = typeof window !== "undefined";
   // If no browser, return empty object so that gatsby-cloud build does not fail.
   let dimensions = {
-    width: 1920,
-    height: 1080
+    width: 1366,
+    height: 768
   };
   if (isBrowser) {
     // If there is a browser, then return window dimensions
-    // return dimensions
     dimensions = BrowserDimensions();
+    window.resizeTo(dimensions);
   };
 
   return dimensions
