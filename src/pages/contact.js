@@ -1,4 +1,5 @@
 import * as React from 'react';
+import '../index.scss';
 import axios from 'axios';
 import { Link } from 'gatsby';
 import Seo from '../components/seo';
@@ -6,7 +7,6 @@ import Layout from '../components/layout';
 import { Container, Form, Button, Row, Col, FloatingLabel } from 'react-bootstrap';
 import ReturnAddress from '../components/contact/ReturnAddress';
 import contentData from '../assets/content/contact-info.json';
-import '../index.scss';
 
 export default function ContactPage() {
   //// [START: Form Values] ////
@@ -74,14 +74,14 @@ export default function ContactPage() {
     <Form className='h-100 p-2 bg-secondary rounded shadow-lg text-dark' >
 
       <FloatingLabel
-        controlId="floatingInputContactName"
-        label="Name"
-        className="mb-3"
+        controlId='floatingInputContactName'
+        label='Name'
+        className='mb-3'
       >
         <Form.Control
           aria-describedby='floatingInputContactName'
-          type="name"
-          placeholder="Name"
+          type='name'
+          placeholder='Name'
           value={name}
           onChange={(e) => setName(e.target.value)}
           required
@@ -89,14 +89,14 @@ export default function ContactPage() {
       </FloatingLabel>
 
       <FloatingLabel
-        controlId="floatingInputContactEmail"
-        label="Email"
-        className="mb-3"
+        controlId='floatingInputContactEmail'
+        label='Email'
+        className='mb-3'
       >
         <Form.Control
           aria-describedby='floatingInputContactEmail'
-          type="email"
-          placeholder="Email"
+          type='email'
+          placeholder='Email'
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
@@ -104,29 +104,29 @@ export default function ContactPage() {
       </FloatingLabel>
 
       <FloatingLabel
-        controlId="floatingInputContactSubject"
-        label="Subject"
-        className="mb-3"
+        controlId='floatingInputContactSubject'
+        label='Subject'
+        className='mb-3'
       >
         <Form.Control
           aria-describedby='floatingInputContactSubject'
-          type="subject"
-          placeholder="Subject"
+          type='subject'
+          placeholder='Subject'
           value={subject}
           onChange={(e) => setSubject(e.target.value)}
         />
       </FloatingLabel>
 
       <FloatingLabel
-        controlId="floatingTextareaContactMessage"
-        label="Message"
-        className="mb-3"
+        controlId='floatingTextareaContactMessage'
+        label='Message'
+        className='mb-3'
       >
         <Form.Control
           aria-describedby='floatingTextareaContactMessage'
-          as="textarea"
+          as='textarea'
           style={{ height: '100px'}}
-          placeholder="Message"
+          placeholder='Message'
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           required
@@ -134,9 +134,9 @@ export default function ContactPage() {
       </FloatingLabel>
 
       <Button
-        variant="primary"
-        type="submit"
-        className="mb-3"
+        variant='primary'
+        type='submit'
+        className='mb-3'
         onClick={(e) => handleOnSubmit(e)}
       >
         Submit

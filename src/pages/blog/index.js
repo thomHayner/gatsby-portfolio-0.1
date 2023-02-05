@@ -1,9 +1,10 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import React from 'react';
+import '../../index.scss';
+import { Container, Row, Col } from 'react-bootstrap';
 // import { Link, StaticQuery, graphql } from 'gatsby';
-import Layout from "../../components/layout";
-import Seo from "../../components/seo";
-// import BlogCard from "../../components/blog/BlogCard";
+import Layout from '../../components/layout';
+import Seo from '../../components/seo';
+// import BlogCard from '../../components/blog/BlogCard';
 
 export default function BlogPage() {
   return (
@@ -35,8 +36,8 @@ export default function BlogPage() {
               <Row><h1>Latest Posts</h1></Row>
               <Row><hr/></Row>
               <Row>
-                <Col className="col-1" ></Col>
-                <Col className="col-7" >
+                <Col className='col-1' ></Col>
+                <Col className='col-7' >
                   {data.allMarkdownRemark.nodes.map((node, i) => (
                     <Container>
                       <Row><br/></Row>
@@ -50,7 +51,7 @@ export default function BlogPage() {
                     </Container>
                   ))}
                 </Col>
-                <Col className="col-4" >
+                <Col className='col-4' >
                   <p>THIS IS JUST SOME PLACEHOLDER TEXT AND SUCH FOR THIS col-4 REGION</p>
                 </Col>
               </Row>
@@ -63,5 +64,5 @@ export default function BlogPage() {
 };
 
 export const Head = () => (
-  <Seo title="Blog" />
+  <Seo title='Blog' />
 );

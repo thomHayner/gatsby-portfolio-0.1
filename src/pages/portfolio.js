@@ -1,11 +1,11 @@
-import React from "react";
-import { Container, Row } from "react-bootstrap";
-import Layout from "../components/layout";
+import React from 'react';
+import { Container, Row } from 'react-bootstrap';
+import Layout from '../components/layout';
 // import Seo from '../components/seo';
-import TechStackPamphlet from "../components/portfolio/TechStackPamphlet";
-import ServicesPamphlet from "../components/portfolio/ServicesPamphlet";
-// import ProjectPamphlet from "../components/portfolio/ProjectPamphlet";
-import useResizableWindow from "../hooks/useResizableWindow";
+import TechStackPamphlet from '../components/portfolio/TechStackPamphlet';
+import ServicesPamphlet from '../components/portfolio/ServicesPamphlet';
+// import ProjectPamphlet from '../components/portfolio/ProjectPamphlet';
+import useResizableWindow from '../hooks/useResizableWindow';
 
 //// DEVNOTE:
 /* The last <Row /> element on this page has it's height shortened by an 
@@ -23,7 +23,7 @@ export default function PortfolioPage() {
 
   return (
     <Layout>
-      <Container id="services">
+      <Container id='services'>
         <Row
           style={{ minHeight: viewHeight }}
           className='align-content-center py-3'
@@ -62,5 +62,5 @@ so that it would populate a browser's tab with a title.  Do some more research
 to learn about dublication / de-duplication in these scenarios. */
 
 // export const Head = () => (
-//   <Seo title="Portfolio" />
+//   <Seo title='Portfolio' />
 // );
