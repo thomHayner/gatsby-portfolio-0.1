@@ -1,6 +1,5 @@
 // const React = require("react")
 // const Layout = require("./src/components/layout")
-import "bootstrap/dist/css/bootstrap.min.css";
 
 // // Logs when the client route changes
 // exports.onRouteUpdate = ({ location, prevLocation }) => {
@@ -14,7 +13,39 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // }
 
 
+////////////////////////////////////////////////////////////////////////////////
+
+
+//// THIS IS NOT NECESSARY HERE - EVERYTHING WORKS FINE WITHOUT IT
 //// [https://stackoverflow.com/questions/56493502/how-to-add-bootstrap-js-in-a-gatsby-website] ////
 // import "bootstrap/dist/css/bootstrap.min.css";
 // import "bootstrap/dist/js/bootstrap.min.js";
 // import "@popperjs/core/dist/umd/popper.min.js";
+
+
+////////////////////////////////////////////////////////////////////////////////
+
+
+////// BAD / DUMPSTER CODE SECTION
+// const React = require("react");
+// const { default: useResizableWindow } = require("./src/hooks/useResizableWindow");
+
+//// THIS DID NOT WORK TO RESIZRE WINDOW
+// exports.onInitialClientRender = ({ setBodyAttributes, pathname, }) => {
+//   setBodyAttributes({
+//     style: {
+//       minHeight: useResizableWindow.height,
+//       minWidth: useResizableWindow.width,
+//     },
+//   });
+// };
+
+//// THIS DID NOT WORK TO RESIZRE WINDOW
+// exports.onClientEntry = ({ setBodyAttributes, pathname, }) => {
+//   setBodyAttributes({
+//     style: {
+//       minHeight: useResizableWindow.height,
+//       minWidth: useResizableWindow.width,
+//     },
+//   });
+// };
