@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row } from "react-bootstrap";
 import Layout from "../components/layout";
-import Seo from '../components/seo';
+// import Seo from '../components/seo';
 import TechStackPamphlet from "../components/portfolio/TechStackPamphlet";
 import ServicesPamphlet from "../components/portfolio/ServicesPamphlet";
 // import ProjectPamphlet from "../components/portfolio/ProjectPamphlet";
@@ -56,6 +56,11 @@ export default function PortfolioPage() {
   )
 };
 
-export const Head = () => (
-  <Seo title="Portfolio" />
-);
+//// DEVNOTE:
+/* This was moved into src/index.js, the main entry point for this page, so 
+that it would populate a browser's tab with a title.  Do some more research 
+to learn about dublication / de-duplication in these scenarios. */
+
+// export const Head = () => (
+//   <Seo title="Portfolio" />
+// );
