@@ -57,8 +57,8 @@ export default function PortfolioPage() {
 };
 
 //// DEVNOTE:
-/* This was moved into src/index.js, the main entry point for this page, so 
-that it would populate a browser's tab with a title.  Do some more research 
+/* This was moved into src/pages/index.js, the main entry point for this page, 
+so that it would populate a browser's tab with a title.  Do some more research 
 to learn about dublication / de-duplication in these scenarios. */
 
 // export const Head = () => (
