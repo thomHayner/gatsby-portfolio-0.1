@@ -1,5 +1,6 @@
 // const React = require("react")
 // const Layout = require("./src/components/layout")
+import "bootstrap/dist/css/bootstrap.min.css";
 
 // // Logs when the client route changes
 // exports.onRouteUpdate = ({ location, prevLocation }) => {
@@ -17,5 +18,3 @@
 // import "bootstrap/dist/css/bootstrap.min.css";
 // import "bootstrap/dist/js/bootstrap.min.js";
 // import "@popperjs/core/dist/umd/popper.min.js";
-
-import "bootstrap/dist/css/bootstrap.min.css";
