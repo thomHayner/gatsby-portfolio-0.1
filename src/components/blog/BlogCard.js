@@ -3,7 +3,7 @@ import { Card, Row } from 'react-bootstrap';
 
 export default function BlogCard({ data }) {
   return (
-    <Card className="bg-secondary text-light">
+    <Card className="bg-secondary text-lightest-slate">
       <Card.Title>{data.title}</Card.Title>
       <Row>
         <Card.Subtitle>{data.date}</Card.Subtitle>

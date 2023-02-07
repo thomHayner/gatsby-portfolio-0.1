@@ -14,7 +14,7 @@ export default function Footer() {
     <Navbar className='bg-primary border-top border-dark py-1' variant='dark'>
       <Container>
           <Navbar.Brand className='p-0'>
-            <span className='text-light fs-6'>{`©${contentData.copyrightYear}`}{` - All Rights Reserved`}</span>
+            <span className='text-lightest-slate fs-6'>{`©${contentData.copyrightYear}`}{` - All Rights Reserved`}</span>
           </Navbar.Brand>
           <Nav as='ul'>
               <Nav.Item as='li' key={'FooterLink_'}>

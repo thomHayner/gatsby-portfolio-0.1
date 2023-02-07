@@ -8,20 +8,20 @@ export default function TechStackPamphlet() {
     <Container>
       <Row>
         <Col className="d-flex justify-content-center" >
-          <h1 className="text-light" >{contentData.title}</h1>
+          <h1 className="text-lightest-slate" >{contentData.title}</h1>
         </Col>
       </Row>
       <Row>
         <Col className="d-flex justify-content-center" >
-          <h5 className="text-muted" >{contentData.subTitle}</h5>
+          <h5 className="text-light-slate" >{contentData.subTitle}</h5>
         </Col>
       </Row>
       <Row>
         <Col className="col-12 col-lg-3 col-xl-4 my-auto" >
           {contentData.techBulletPoint.map(bulletPoint => (
-            <Row key={"bulletPoint_" + bulletPoint.id} className="m-3 pt-2 border-info border rounded" >
-              <h5 className="text-light" >{bulletPoint.title}</h5>
-              <p className="text-muted" >{bulletPoint.text}</p>
+            <Row key={"bulletPoint_" + bulletPoint.id} className="m-3 pt-2 border-blue border rounded" >
+              <h5 className="text-lightest-slate" >{bulletPoint.title}</h5>
+              <p className="text-light-slate" >{bulletPoint.text}</p>
             </Row>
           ))}
         </Col>

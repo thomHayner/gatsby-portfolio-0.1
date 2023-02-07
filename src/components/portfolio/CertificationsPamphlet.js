@@ -17,7 +17,7 @@ export default function CertificationsPamphlet() {
         </Col>
       </Row>
       {contentData.certifications.map((cert) => (
-        <Container className='d-inline-flex bg-secondary rounded p-3'>
+        <Container className='d-inline-flex bg-seconday p-3 rounded border border-pink'>
           <div className='m-1 me-2'>
             <img
               className='rounded'

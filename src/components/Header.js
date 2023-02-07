@@ -31,7 +31,7 @@ export default function Header() {
             width='30'
             height='30'
           />
-          <span className='text-light ms-1 h-100 align-middle'>{contentData.displayName}</span>
+          <span className='text-lightest-slate ms-1 h-100 align-middle'>{contentData.displayName}</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls='navbarResponsive' />
         <Navbar.Collapse id='navbarResponsive'  className='justify-content-end'>
