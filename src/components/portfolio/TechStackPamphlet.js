@@ -20,7 +20,7 @@ export default function TechStackPamphlet() {
         <Col className='col-12 col-lg-4 my-auto ps-0'>
           {/* <CardGroup className=''> */}
             {contentData.techBulletPoint.map(bulletPoint => (
-              <Card key={'bulletPoint_' + bulletPoint.id} className='m-3 p-3 bg-dark-navy border border-blue-tetrad border-opacity-75 rounded'>
+              <Card key={'bulletPoint_' + bulletPoint.id} className='m-3 p-3 bg-dark-navy border border-blue-tetrad border-opacity-50 rounded'>
                 <Card.Title className='text-lightest-slate'>
                   {bulletPoint.title}
                 </Card.Title>
@@ -34,7 +34,7 @@ export default function TechStackPamphlet() {
         <Col
           className='col-12 col-lg-8 
             d-flex flex-wrap justify-content-center 
-            bg-secondary  border border-orange-tetrad border-opacity-75 rounded'
+            bg-light-navy  border border-orange-tetrad border-opacity-50 rounded'
         >
           {DevIcons.map((DevIcon, i) => (
             <DevIcon key={'devIcon_' + i} className='m-1 m-sm-2 m-md-3' style={{ height: '75px', width: '75px' }} />

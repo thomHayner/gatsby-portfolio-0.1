@@ -19,7 +19,7 @@ export default function ServicesPamphlet() {
         <CardGroup className='d-flex flex-wrap my-4'>
           {contentData.services.map(service => (
             <Col key={`Services_${service.id}`} className='col-12 col-md-6 col-lg-4 p-2'>
-              <Card className='p-3 h-100 bg-dark-navy border border-green-tetrad border-opacity-75 rounded shadow-lg'>
+              <Card className='p-3 h-100 bg-dark-navy border border-green-tetrad border-opacity-50 rounded shadow-lg'>
                 <Card.Title className='text-lightest-slate'>
                   {service.title}
                 </Card.Title>
