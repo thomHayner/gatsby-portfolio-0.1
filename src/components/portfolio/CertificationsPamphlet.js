@@ -26,7 +26,7 @@ export default function CertificationsPamphlet() {
                   alt={cert.img.alt}
                   src={HackReactor}
                   width='200'
-                  height='200'
+                  height='194.5'
                 />
               </Col>
               <Col className='col-12 col-md-8 col-lg-9 mt-4 my-md-auto justify-content-center justify-content-md-start'>
