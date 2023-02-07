@@ -5,18 +5,8 @@ import TechStackPamphlet from '../components/portfolio/TechStackPamphlet';
 import ServicesPamphlet from '../components/portfolio/ServicesPamphlet';
 import CertificationsPamphlet from '../components/portfolio/CertificationsPamphlet'
 // import ProjectPamphlet from '../components/portfolio/ProjectPamphlet';
-// import useResizableWindow from '../hooks/useResizableWindow';
 
 export default function PortfolioPage() {
-  // const dimensions = useResizableWindow();
-  // const viewHeight = dimensions.height - 52;
-
-  // React.useEffect(()=> {
-  //   if (typeof window !== 'undefined') {
-  //     window.resizeTo(1366, 768);
-  //   };
-  // }, [])
-
   return (
     <Layout>
       <Container id='services'>
