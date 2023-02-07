@@ -7,13 +7,13 @@ export default function CertificationsPamphlet() {
   return (
     <Container>
       <Row>
-        <Col className="d-flex justify-content-center" >
-          <h1>{contentData.title}</h1>
+        <Col className="d-flex justify-content-center">
+          <h1 className='text-lightest-slate'>{contentData.title}</h1>
         </Col>
       </Row>
       <Row>
-        <Col className="d-flex justify-content-center" >
-          <h3>{contentData.subTitle}</h3>
+        <Col className="d-flex justify-content-center">
+          <h3 className='text-light-slate'>{contentData.subTitle}</h3>
         </Col>
       </Row>
       <CardGroup className='px-3'>
