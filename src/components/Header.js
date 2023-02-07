@@ -26,7 +26,7 @@ export default function Header() {
       <Container>
         <Navbar.Brand href='/'>
           <img
-            alt=''
+            alt="Thomas Hayner's Business Logo"
             src={Logo}
             width='30'
             height='30'
