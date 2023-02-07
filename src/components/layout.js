@@ -14,7 +14,7 @@ export default function Layout ({ children }) {
   const viewHeight = dimensions.height - 55 - 55; // this sets height to: window minus top and bottom navbars
 
   return (
-    <div className="bg-primary text-lightest-slate min-vh-100" style={{ paddingTop: 55 }}>
+    <div className="bg-navy text-lightest-slate min-vh-100" style={{ paddingTop: 55 }}>
       {/* <img src="https://th-battleship-js-demo.herokuapp.com/" alt="nada" style={{ margin: "-5000px" }} /> */}
       <Header />
       <div style={{ minHeight: viewHeight }}>

@@ -6,7 +6,7 @@ import Seo from '../components/seo';
 
 const IndexPage = () => {
   return (
-    <main className='bg-primary' >
+    <main className='bg-navy' >
       <PortfolioPage />
     </main>
   )

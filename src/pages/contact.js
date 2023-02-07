@@ -71,7 +71,7 @@ export default function ContactPage() {
 
   //// [START: Page Components] ////
   const FormDisplay = () => (
-    <Form className='h-100 p-2 bg-secondary rounded shadow-lg text-dark' >
+    <Form className='h-100 p-2 bg-light-navy rounded shadow-lg text-dark' >
 
       <FloatingLabel
         controlId='floatingInputContactName'
@@ -146,7 +146,7 @@ export default function ContactPage() {
   );
 
   const SubmittedDisplay = () => (
-    <Container className='h-100 p-2 py-auto bg-secondary border border-tertiary rounded shadow-lg'>
+    <Container className='h-100 p-2 py-auto bg-light-navy border border-tertiary rounded shadow-lg'>
       <Row>
         <p className='text-center mt-5'>
           {`Your message has been sent`}
