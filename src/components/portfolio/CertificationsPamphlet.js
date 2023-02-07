@@ -16,7 +16,7 @@ export default function CertificationsPamphlet() {
           <h3>{contentData.subTitle}</h3>
         </Col>
       </Row>
-      <CardGroup>
+      <CardGroup className='px-3'>
         {contentData.certifications.map((cert) => (
           <Card className='p-2 pe-md-4 d-inline-flex bg-dark-navy border border-pink-tetrad border-opacity-75 rounded'>
             <Row className='g-0'>
