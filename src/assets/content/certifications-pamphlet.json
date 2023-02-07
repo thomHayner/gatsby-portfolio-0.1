@@ -1,0 +1,17 @@
+{
+  "id": 1,
+  "title": "Certifications",
+  "subTitle": "",
+  "certifications": [
+      {
+          "id": 1,
+          "organization": "Hack Reactor",
+          "certificate": "Advanced Software Engineering",
+          "description": "A long term course focusing on the principals of object oriented programming and software engineering with Javascript.  Topics include JS / HTML / CSS / Node / TS fundamentals, advanced JS patterns such as recursion and state management, data structures, API's, databases, microservice architectures, devOps and others.",
+          "img": {
+            "src": "../../assets/images/HackReactorLogo.png",
+            "alt": "Hack Reactor Logo"
+          }
+      }
+  ]
+}
