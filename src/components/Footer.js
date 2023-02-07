@@ -22,6 +22,7 @@ export default function Footer() {
                   to={'/contact'}
                   className='nav-link'
                   activeClassName='active'
+                  aria-label='Contact Me'
                 >
                   <Email style={{ width: '30px', height: '30px'}} />
                 </Link>
@@ -32,6 +33,7 @@ export default function Footer() {
                   target='_blank'
                   rel='noreferrer'
                   className='nav-link'
+                  aria-label='View my GitHub page'
                 >
                   <GitHub style={{ width: '30px', height: '30px' }} />
                 </a>
@@ -42,6 +44,7 @@ export default function Footer() {
                   target='_blank'
                   rel='noreferrer'
                   className='nav-link'
+                  aria-label='View my LinkedIn page'
                 >
                   <LinkedIn style={{ width: '30px', height: '30px'}} />
                 </a>
