@@ -9,6 +9,8 @@ import ContactForm from '../components/contact/ContactForm';
 import ThankYou from '../components/contact/ThankYou';
 import ReturnAddress from '../components/contact/ReturnAddress';
 
+// DEVNOTE: https://blog.getform.io/building-a-gatsby-contact-form-using-getform/
+
 export default function ContactPage() {
   //// [START: Form Values] ////
   const [name, setName] = React.useState('');
