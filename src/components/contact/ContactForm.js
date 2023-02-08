@@ -27,7 +27,7 @@ export default function ContactForm({
         <Form.Control
           aria-describedby='floatingInputContactName'
           type='text'
-          name='Eame'
+          name='Name'
           placeholder='Name'
           value={name}
           onChange={(e) => setName(e.target.value)}

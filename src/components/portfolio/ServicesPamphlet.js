@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col, CardGroup, Card } from 'react-bootstrap';
+import { Container, Row, Col, Card } from 'react-bootstrap';
 import contentData from '../../assets/content/services-pamphlet.json';
 
 export default function ServicesPamphlet() {
@@ -16,20 +16,18 @@ export default function ServicesPamphlet() {
         </Col>
       </Row>
       <Row>
-        <CardGroup className='d-flex flex-wrap my-4'>
-          {contentData.services.map(service => (
-            <Col key={`Services_${service.id}`} className='col-12 col-md-6 col-lg-4 p-2'>
-              <Card className='p-3 h-100 bg-dark-navy border border-green-tetrad border-opacity-50 rounded shadow-lg'>
-                <Card.Title className='text-lightest-slate'>
-                  {service.title}
-                </Card.Title>
-                <Card.Body className='p-0 text-light-slate'>
-                  {service.text}
-                </Card.Body>
-              </Card>
-            </Col>
-          ))}
-        </CardGroup>
+        {contentData.services.map(service => (
+          <Col key={`Services_${service.id}`} className='col-12 col-md-6 col-lg-4 p-2'>
+            <Card className='p-3 h-100 bg-dark-navy border border-green-tetrad border-opacity-50 rounded shadow-lg'>
+              <Card.Title className='text-lightest-slate'>
+                {service.title}
+              </Card.Title>
+              <Card.Body className='p-0 text-light-slate'>
+                {service.text}
+              </Card.Body>
+            </Card>
+          </Col>
+        ))}
       </Row>
     </Container>
   )
