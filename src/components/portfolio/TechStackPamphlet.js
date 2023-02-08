@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, CardGroup, Card } from 'react-bootstrap';
 import contentData from '../../assets/content/tech-stack-pamphlet.json';
-import { DevIcons } from '../../assets/images/techStackIcons';
+import { DevIcons } from './techStackIcons';
 
 export default function TechStackPamphlet() {
   return (

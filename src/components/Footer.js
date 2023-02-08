@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'gatsby';
 import { Container, Navbar, Nav } from 'react-bootstrap';
 import contentData from '../assets/content/header-footer.json';
-import GitHub from '../assets/images/techStackIcons/github-original-wordmark.svg';
-import LinkedIn from '../assets/images/techStackIcons/linkedin-original.svg';
-import Email from '../assets/images/techStackIcons/EmailLogoSymbol.svg';
+import GitHub from '../assets/icons/github-original-wordmark.svg';
+import LinkedIn from '../assets/icons/linkedin-original.svg';
+import Email from '../assets/icons/EmailLogoSymbol.svg';
 
 //// TODO: 
 // 1. privacy policy

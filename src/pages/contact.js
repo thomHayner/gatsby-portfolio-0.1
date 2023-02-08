@@ -6,7 +6,7 @@ import Seo from '../components/seo';
 import Layout from '../components/layout';
 import { Container, Form, Button, Row, Col, FloatingLabel } from 'react-bootstrap';
 import ReturnAddress from '../components/contact/ReturnAddress';
-import CheckCircle from '../assets/images/techStackIcons/green-check-circle.svg'
+import CheckCircle from '../assets/icons/green-check-circle.svg'
 import contentData from '../assets/content/contact-info.json';
 
 export default function ContactPage() {
