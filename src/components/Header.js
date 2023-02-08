@@ -34,7 +34,7 @@ export default function Header() {
           <span className='text-lightest-slate ms-1 h-100 align-middle'>{contentData.displayName}</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls='navbarResponsive' />
-        <Navbar.Collapse id='navbarResponsive'  className='justify-content-end'>
+        <Navbar.Collapse id='navbarResponsive'  className='text-end justify-content-end'>
           <Nav as='ul'>
             {links.map((link, i) => (
               <Nav.Item as='li' key={'LinkH_'+ i}>
@@ -45,7 +45,8 @@ export default function Header() {
                 >
                   {link.text}
                 </Link>
-              </Nav.Item>))}
+              </Nav.Item>
+            ))}
           </Nav>
         </Navbar.Collapse>
       </Container>
