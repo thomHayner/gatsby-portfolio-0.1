@@ -76,9 +76,9 @@ export default function ContactPage() {
     <Layout>
       <Container>
         <Row><h1>{contentData.title}</h1></Row> 
-        <Row><hr/></Row>
+        <Row><hr /></Row>
         <Row>
-          <Col className='col-12 col-md-8 col-lg-9 col-xl-10'>
+          <Col className='col-12 col-md-8 col-lg-9 col-xl-10 mb-3'>
             {isSubmitted ?
               <ThankYou handleClearSubmitted={handleClearSubmitted} />
             :
@@ -100,7 +100,7 @@ export default function ContactPage() {
               />
             }
           </Col>
-          <Col className='col-5 col-md-4 col-lg-3 col-xl-2 pt-3 pt-md-0'>
+          <Col className='col-5 col-md-4 col-lg-3 col-xl-2 mb-3 pt-3 pt-md-0'>
             <ReturnAddress />
           </Col>
         </Row>
