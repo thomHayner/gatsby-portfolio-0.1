@@ -15,6 +15,7 @@ export default function ContactPage() {
   const [email, setEmail] = React.useState('');
   const [subject, setSubject] = React.useState('');
   const [message, setMessage] = React.useState('');
+  const [isButtonDisabled, setIsButtonDisabled] = React.useState(false);
   const [isSubmitted, setIsSubmitted] = React.useState(false);
 
   const form = {
@@ -30,6 +31,7 @@ export default function ContactPage() {
     setSubject('');
     setMessage('');
     setIsSubmitted(true);
+    setIsButtonDisabled(false);
   }
 
   const handleClearSubmitted = () => {
@@ -39,13 +41,13 @@ export default function ContactPage() {
 
   //// [START: GetForm Functions] ////
   const [serverState, setServerState] = React.useState({
-    submitting: false,
+    isSubmitting: false,
     status: null
   });
 
   const handleServerResponse = (ok, msg) => {
     setServerState({
-      submitting: false,
+      isSubmitting: false,
       status: { ok, msg }
     });
     if (ok) {
@@ -55,7 +57,8 @@ export default function ContactPage() {
 
   const handleOnSubmit = (e) => {
     e.preventDefault();
-    setServerState({ ...serverState, submitting: true });
+    setIsButtonDisabled(true);
+    setServerState({ ...serverState, isSubmitting: true });
     axios({
       method: 'post',
       url: 'https://getform.io/f/0cb59c9b-7396-48c6-a967-f947e62882e0',
@@ -135,12 +138,13 @@ export default function ContactPage() {
       </FloatingLabel>
 
       <Button
-        variant='primary'
+        variant='lightest-navy'
         type='submit'
-        className='mb-3'
-        onClick={(e) => handleOnSubmit(e)}
+        disabled={isButtonDisabled}
+        className='mb-3 border border-dark-navy shadow text-lightest-slate'
+        onClick={!isButtonDisabled ? (e) => handleOnSubmit(e) : null}
       >
-        Submit
+        {isButtonDisabled ? 'Sending...' : 'Submit'}
       </Button>
 
     </Form>
@@ -169,9 +173,9 @@ export default function ContactPage() {
             activeClassName='active'
           >
             <Button
-              variant='dark'
-              type='submit'
-              className='btn bg-lightest-navy border border-dark-navy shadow text-lightest-slate'
+              variant='lightest-navy'
+              type='link'
+              className='border border-dark-navy shadow text-lightest-slate'
             >
               {`Go To Portfolio`}
             </Button>
@@ -180,9 +184,9 @@ export default function ContactPage() {
 
         <Col className='d-flex'>
           <Button
-            variant='dark'
-            type='submit'
-            className='btn bg-lightest-navy border border-dark-navy shadow text-lightest-slate'
+            variant='lightest-navy'
+            type='reset'
+            className='border border-dark-navy shadow text-lightest-slate'
             onClick={(e) => handleClearSubmitted(e)}
           >
             {`New Message`}
