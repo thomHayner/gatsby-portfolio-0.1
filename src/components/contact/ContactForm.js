@@ -88,7 +88,6 @@ export default function ContactForm({
         type='submit'
         disabled={isButtonDisabled}
         className='mb-3 border border-dark-navy shadow text-lightest-slate'
-        // onClick={!isButtonDisabled ? handleOnSubmit : null}
       >
         {isButtonDisabled ? 'Sending...' : 'Submit'}
       </Button>
