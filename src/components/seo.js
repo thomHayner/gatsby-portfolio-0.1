@@ -16,10 +16,11 @@ const Seo = ({ title, description, pathname, children }) => {
   return (
     <>
       <title>{seo.title}</title>
-      <meta name="description" content={seo.description} />
-      <meta name="keywords" content={seo.keywords} />
-      <meta name="image" content={seo.image} />
-      {/* <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>👤</text></svg>" /> */}
+      <meta name='description' content={seo.description} />
+      <meta name='keywords' content={seo.keywords} />
+      <meta name='image' content={seo.image} />
+      <html lang='en'/>
+      {/* <link rel='icon' href='data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>👤</text></svg>' /> */}
       {children}
     </>
   )
