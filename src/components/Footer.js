@@ -2,19 +2,18 @@ import React from 'react';
 import { Link } from 'gatsby';
 import { Container, Navbar, Nav } from 'react-bootstrap';
 import contentData from '../assets/content/header-footer.json';
+import PrivacyPolicy from './PrivacyPolicy';
 import GitHub from '../assets/icons/github-original-wordmark.svg';
 import LinkedIn from '../assets/icons/linkedin-original.svg';
 import Email from '../assets/icons/EmailLogoSymbol.svg';
-
-//// TODO: 
-// 1. privacy policy
 
 export default function Footer() {
   return (
     <Navbar className='bg-navy border-top border-dark py-1' variant='dark'>
       <Container>
-          <Navbar.Brand className='p-0'>
-            <span className='text-lightest-slate fs-6'>{`©${contentData.copyrightYear}`}{` - All Rights Reserved`}</span>
+          <Navbar.Brand className='d-inline-flex p-0 fs-6 text-lightest-slate'>
+            <span className='me-2'>{`©${contentData.copyrightYear}`}{` - All Rights Reserved`}</span>
+            <span classname='align-text-top'><PrivacyPolicy /></span>
           </Navbar.Brand>
           <Nav as='ul'>
               <Nav.Item as='li' key={'FooterLink_'}>
