@@ -1,5 +1,6 @@
 import * as React from 'react';
-import { Form,FloatingLabel, Button, } from 'react-bootstrap';
+import { Form, FloatingLabel, Container, Row, Col, Button, } from 'react-bootstrap';
+import PrivacyPolicy from '../PrivacyPolicy';
 
 export default function ContactForm({
   name,
@@ -82,15 +83,23 @@ export default function ContactForm({
           required
         />
       </FloatingLabel>
-
-      <Button
-        variant='lightest-navy'
-        type='submit'
-        disabled={isButtonDisabled}
-        className='mb-3 border border-dark-navy shadow text-lightest-slate'
-      >
-        {isButtonDisabled ? 'Sending...' : 'Submit'}
-      </Button>
+      <Container>
+        <Row>
+          <Col className='col-6'>
+            <Button
+              variant='lightest-navy'
+              type='submit'
+              disabled={isButtonDisabled}
+              className='mb-3 border border-dark-navy shadow text-lightest-slate'
+            >
+              {isButtonDisabled ? 'Sending...' : 'Submit'}
+            </Button>
+          </Col>
+          <Col className='col-6 d-flex justify-content-end align-items-end pe-0 text-green-tetrad'>
+            <PrivacyPolicy />
+          </Col>
+        </Row>
+      </Container>
 
     </Form>
   )
