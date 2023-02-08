@@ -3,7 +3,7 @@ import '../index.scss';
 import axios from 'axios';
 import Seo from '../components/seo';
 import Layout from '../components/layout';
-import { Container, Form, Button, Row, Col, FloatingLabel } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import contentData from '../assets/content/contact-info.json';
 import ContactForm from '../components/contact/ContactForm';
 import ThankYou from '../components/contact/ThankYou';
