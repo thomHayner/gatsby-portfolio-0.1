@@ -91,7 +91,7 @@ export default function ContactPage() {
               />
             }
           </Col>
-          <Col className='col-5 col-md-4 col-lg-3 col-xl-2'>
+          <Col className='col-5 col-md-4 col-lg-3 col-xl-2 pt-3 pt-md-0'>
             <ReturnAddress />
           </Col>
         </Row>
