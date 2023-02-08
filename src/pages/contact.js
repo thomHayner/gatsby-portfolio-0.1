@@ -16,6 +16,8 @@ export default function ContactPage() {
   //// [START: Form Values] ////
   const [name, setName] = React.useState('');
   const [email, setEmail] = React.useState('');
+  const [company, setCompany] = React.useState('');
+  const [website, setWebsite] = React.useState('');
   const [subject, setSubject] = React.useState('');
   const [message, setMessage] = React.useState('');
   const [isSubmitted, setIsSubmitted] = React.useState(false);
@@ -23,6 +25,8 @@ export default function ContactPage() {
   const handleFormReset = () => {
     setName('');
     setEmail('');
+    setCompany('');
+    setWebsite('');
     setSubject('');
     setMessage('');
     setIsSubmitted(true);
@@ -82,6 +86,10 @@ export default function ContactPage() {
                 setName={setName}
                 email={email}
                 setEmail={setEmail}
+                company={company}
+                setCompany={setCompany}
+                website={website}
+                setWebsite={setWebsite}
                 subject={subject}
                 setSubject={setSubject}
                 message={message}

@@ -7,6 +7,10 @@ export default function ContactForm({
   setName,
   email,
   setEmail,
+  company,
+  setCompany,
+  website,
+  setWebsite,
   subject,
   setSubject,
   message,
@@ -49,6 +53,36 @@ export default function ContactForm({
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
+        />
+      </FloatingLabel>
+
+      <FloatingLabel
+        controlId='floatingInputContactCompany'
+        label='Company'
+        className='mb-3'
+      >
+        <Form.Control
+          aria-describedby='floatingInputContactCompany'
+          type='text'
+          name='Company'
+          placeholder='Company'
+          value={company}
+          onChange={(e) => setCompany(e.target.value)}
+        />
+      </FloatingLabel>
+
+      <FloatingLabel
+        controlId='floatingInputContactWebsite'
+        label='Website'
+        className='mb-3'
+      >
+        <Form.Control
+          aria-describedby='floatingInputContactWebsite'
+          type='url'
+          name='Website'
+          placeholder='Website'
+          value={website}
+          onChange={(e) => setWebsite(e.target.value)}
         />
       </FloatingLabel>
 
