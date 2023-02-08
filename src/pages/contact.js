@@ -6,6 +6,7 @@ import Seo from '../components/seo';
 import Layout from '../components/layout';
 import { Container, Form, Button, Row, Col, FloatingLabel } from 'react-bootstrap';
 import ReturnAddress from '../components/contact/ReturnAddress';
+import CheckCircle from '../assets/images/techStackIcons/green-check-circle.svg'
 import contentData from '../assets/content/contact-info.json';
 
 export default function ContactPage() {
@@ -14,7 +15,7 @@ export default function ContactPage() {
   const [email, setEmail] = React.useState('');
   const [subject, setSubject] = React.useState('');
   const [message, setMessage] = React.useState('');
-  const [isSubmitted, setIsSubmitted] = React.useState(true);
+  const [isSubmitted, setIsSubmitted] = React.useState(false);
 
   const form = {
     name: name,
@@ -146,14 +147,17 @@ export default function ContactPage() {
   );
 
   const SubmittedDisplay = () => (
-    <Container className='h-100 p-2 py-auto bg-light-navy border border-tertiary rounded shadow-lg'>
+    <Container className='h-100 p-2 py-auto bg-light-navy border border-success rounded shadow-lg'>
+      <Row className='d-flex justify-content-center mt-5 mb-3'>
+        <CheckCircle className='' style={{ height: '75px', width: '75px' }} />
+      </Row>
       <Row>
-        <p className='text-center mt-5'>
-          {`Your message has been sent`}
+        <p className='text-center'>
+          {`Your message has been sent successfully`}
         </p>
       </Row>
       <Row>
-        <p className='text-center mb-5'>
+        <p className='text-center'>
           {`We'll get back to you as soon as possible`}
         </p>
       </Row>
@@ -167,7 +171,7 @@ export default function ContactPage() {
             <Button
               variant='dark'
               type='submit'
-              className='btn mb-3 shadow'
+              className='btn bg-lightest-navy border border-dark-navy shadow text-lightest-slate'
             >
               {`Go To Portfolio`}
             </Button>
@@ -178,7 +182,7 @@ export default function ContactPage() {
           <Button
             variant='dark'
             type='submit'
-            className='btn mb-3 shadow'
+            className='btn bg-lightest-navy border border-dark-navy shadow text-lightest-slate'
             onClick={(e) => handleClearSubmitted(e)}
           >
             {`New Message`}
