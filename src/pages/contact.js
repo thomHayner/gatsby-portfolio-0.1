@@ -10,6 +10,7 @@ import ThankYou from '../components/contact/ThankYou';
 import ReturnAddress from '../components/contact/ReturnAddress';
 
 // DEVNOTE: https://docs.getform.io/
+// DEVNOTE: https://docs.getform.io/guides/gatsby/
 // DEVNOTE: https://blog.getform.io/building-a-gatsby-contact-form-using-getform/
 
 export default function ContactPage() {
