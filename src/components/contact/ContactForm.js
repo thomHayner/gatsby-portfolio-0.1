@@ -26,7 +26,7 @@ export default function ContactForm({
 
       <FloatingLabel
         controlId='floatingInputContactName'
-        label='Name'
+        label='Name*'
         className='mb-3'
       >
         <Form.Control
@@ -42,7 +42,7 @@ export default function ContactForm({
 
       <FloatingLabel
         controlId='floatingInputContactEmail'
-        label='Email'
+        label='Email*'
         className='mb-3'
       >
         <Form.Control
@@ -103,7 +103,7 @@ export default function ContactForm({
 
       <FloatingLabel
         controlId='floatingTextareaContactMessage'
-        label='Message'
+        label='Message*'
         className='mb-3'
       >
         <Form.Control
