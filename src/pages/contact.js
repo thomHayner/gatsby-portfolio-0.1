@@ -1,13 +1,12 @@
 import * as React from 'react';
 import '../index.scss';
 import axios from 'axios';
-import { Link } from 'gatsby';
 import Seo from '../components/seo';
 import Layout from '../components/layout';
 import { Container, Form, Button, Row, Col, FloatingLabel } from 'react-bootstrap';
-import ReturnAddress from '../components/contact/ReturnAddress';
-import CheckCircle from '../assets/icons/green-check-circle.svg'
 import contentData from '../assets/content/contact-info.json';
+import ThankYou from '../components/contact/ThankYou';
+import ReturnAddress from '../components/contact/ReturnAddress';
 
 export default function ContactPage() {
   //// [START: Form Values] ////
@@ -149,52 +148,6 @@ export default function ContactPage() {
 
     </Form>
   );
-
-  const SubmittedDisplay = () => (
-    <Container className='h-100 p-2 py-auto bg-light-navy border border-success rounded shadow-lg'>
-      <Row className='d-flex justify-content-center mt-5 mb-3'>
-        <CheckCircle className='' style={{ height: '75px', width: '75px' }} />
-      </Row>
-      <Row>
-        <p className='text-center'>
-          {`Your message has been sent successfully`}
-        </p>
-      </Row>
-      <Row>
-        <p className='text-center'>
-          {`We'll get back to you as soon as possible`}
-        </p>
-      </Row>
-      <Row className='d-flex justify-content-center mt-3 mb-5'>
-        <Col className='d-flex justify-content-end'>
-          <Link
-            to={'/'}
-            className='nav-link'
-            activeClassName='active'
-          >
-            <Button
-              variant='lightest-navy'
-              type='link'
-              className='border border-dark-navy shadow text-lightest-slate'
-            >
-              {`Go To Portfolio`}
-            </Button>
-          </Link>
-        </Col>
-
-        <Col className='d-flex'>
-          <Button
-            variant='lightest-navy'
-            type='reset'
-            className='border border-dark-navy shadow text-lightest-slate'
-            onClick={(e) => handleClearSubmitted(e)}
-          >
-            {`New Message`}
-          </Button>
-        </Col>
-      </Row>
-    </Container>
-  );
   //// [END: Page Components] ////
 
   return (
@@ -204,7 +157,10 @@ export default function ContactPage() {
         <Row><hr/></Row>
         <Row>
           <Col className='col-12 col-md-8 col-lg-9 col-xl-10'>
-            {isSubmitted ? <SubmittedDisplay  /> : <FormDisplay />}
+            {isSubmitted ?
+              <ThankYou handleClearSubmitted={handleClearSubmitted} />
+            :
+              <FormDisplay />}
           </Col>
           <Col className='col-5 col-md-4 col-lg-3 col-xl-2'>
             <ReturnAddress />
