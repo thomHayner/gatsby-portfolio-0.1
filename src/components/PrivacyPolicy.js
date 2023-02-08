@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { Nav } from 'react-bootstrap';
 import PrivacyIcon from '../assets/icons/shield-check.svg';
 
 export default function PrivacyPolicy() {
