@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { Container, Navbar, Nav } from 'react-bootstrap';
+import { Container, Navbar, Nav, OverlayTrigger, Tooltip } from 'react-bootstrap';
 import contentData from '../assets/content/header-footer.json';
 import PrivacyPolicy from './PrivacyPolicy';
 import GitHub from '../assets/icons/github-original-wordmark.svg';
@@ -16,7 +16,14 @@ export default function Footer() {
             <span classname='align-text-top'><PrivacyPolicy /></span>
           </Navbar.Brand>
           <Nav as='ul'>
-              <Nav.Item as='li' key={'FooterLink_'}>
+            <Nav.Item as='li' key={'FooterLink_'}>
+              <OverlayTrigger
+                overlay={
+                  <Tooltip id={`tooltip-Contact`}>
+                    Contact
+                  </Tooltip>
+                }
+              >
                 <Link
                   to={'/contact'}
                   className='nav-link'
@@ -25,8 +32,16 @@ export default function Footer() {
                 >
                   <Email style={{ width: '30px', height: '30px'}} />
                 </Link>
-              </Nav.Item>
-              <Nav.Item as='li'>
+              </OverlayTrigger>
+            </Nav.Item>
+            <Nav.Item as='li'>
+              <OverlayTrigger
+                overlay={
+                  <Tooltip id={`tooltip-Github`}>
+                    GitHub
+                  </Tooltip>
+                }
+              >
                 <a
                   href={contentData.socialMedia[1].url}
                   target='_blank'
@@ -36,8 +51,16 @@ export default function Footer() {
                 >
                   <GitHub style={{ width: '30px', height: '30px' }} />
                 </a>
-              </Nav.Item>
-              <Nav.Item as='li'>
+              </OverlayTrigger>
+            </Nav.Item>
+            <Nav.Item as='li'>
+              <OverlayTrigger
+                overlay={
+                  <Tooltip id={`tooltip-LinkedIn`}>
+                    LinkedIn
+                  </Tooltip>
+                }
+              >
                 <a
                   href={contentData.socialMedia[2].url}
                   target='_blank'
@@ -47,7 +70,8 @@ export default function Footer() {
                 >
                   <LinkedIn style={{ width: '30px', height: '30px'}} />
                 </a>
-              </Nav.Item>
+              </OverlayTrigger>
+            </Nav.Item>
           </Nav>
       </Container>
     </Navbar>
