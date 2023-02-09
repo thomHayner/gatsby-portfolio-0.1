@@ -78,7 +78,7 @@ export default function ContactForm({
       >
         <Form.Control
           aria-describedby='floatingInputContactWebsite'
-          type='url'
+          type='text'
           name='Website'
           placeholder='Website'
           value={website}
