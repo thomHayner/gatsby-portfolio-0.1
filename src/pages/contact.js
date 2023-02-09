@@ -41,13 +41,13 @@ export default function ContactPage() {
   //// [START: GetForm Functions] ////
   const [serverState, setServerState] = React.useState({
     isSubmitting: false,
-    status: null
+    status: null,
   });
 
   const handleServerResponse = (ok, msg) => {
     setServerState({
       isSubmitting: false,
-      status: { ok, msg }
+      status: { ok, msg },
     });
     if (ok) {
       handleFormReset();
@@ -61,7 +61,7 @@ export default function ContactPage() {
     axios({
       method: 'post',
       url: 'https://getform.io/f/0cb59c9b-7396-48c6-a967-f947e62882e0',
-      data: new FormData(form)
+      data: new FormData(form),
     })
       .then(r => {
         handleServerResponse(true, 'Thanks!', form);
