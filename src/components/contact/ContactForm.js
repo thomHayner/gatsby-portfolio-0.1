@@ -133,7 +133,7 @@ export default function ContactForm({
             </Button>
           </Col>
           <Col className='col-6 d-flex justify-content-end align-items-end pe-0 text-green-tetrad'>
-            <PrivacyPolicy />
+            <PrivacyPolicy parentName='ContactForm' />
           </Col>
         </Row>
       </Container>
