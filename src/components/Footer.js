@@ -13,7 +13,7 @@ export default function Footer() {
       <Container>
           <Navbar.Brand className='d-inline-flex p-0 fs-6 text-lightest-slate'>
             <span className='me-2'>{`©${contentData.copyrightYear}`}{` - All Rights Reserved`}</span>
-            <span classname='align-text-top'><PrivacyPolicy parentName='Footer' /></span>
+            <span><PrivacyPolicy parentName='Footer' /></span>
           </Navbar.Brand>
           <Nav as='ul'>
             <Nav.Item as='li' key={'FooterLink_'}>
