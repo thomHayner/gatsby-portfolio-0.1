@@ -19,7 +19,7 @@ export default function TechStackPamphlet() {
       <Row className='px-4'>
         <Col className='col-12 col-lg-4 my-auto ps-0'>
           {contentData.techBulletPoint.map(bulletPoint => (
-            <Card key={'bulletPoint_' + bulletPoint.id} className='m-3 p-3 bg-dark-navy border border-blue-tetrad border-opacity-50 rounded shadow-lg'>
+            <Card key={'bulletPoint_' + bulletPoint.id} className='m-3 p-3 bg-navy border border-blue-tetrad border-opacity-50 rounded shadow-lg'>
               <Card.Title className='text-lightest-slate'>
                 {bulletPoint.title}
               </Card.Title>
