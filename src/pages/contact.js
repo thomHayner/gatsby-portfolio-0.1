@@ -1,6 +1,7 @@
 import * as React from 'react';
 import '../index.scss';
 import axios from 'axios';
+import { GoogleReCaptchaProvider } from 'react-google-recaptcha-v3';
 import Seo from '../components/seo';
 import Layout from '../components/layout';
 import { Container, Row, Col } from 'react-bootstrap';
@@ -9,9 +10,11 @@ import ContactForm from '../components/contact/ContactForm';
 import ThankYou from '../components/contact/ThankYou';
 import ReturnAddress from '../components/contact/ReturnAddress';
 
-// DEVNOTE: https://docs.getform.io/
-// DEVNOTE: https://docs.getform.io/guides/gatsby/
-// DEVNOTE: https://blog.getform.io/building-a-gatsby-contact-form-using-getform/
+// DEVNOTE: GetForm: https://docs.getform.io/
+// DEVNOTE: GetForm: https://docs.getform.io/guides/gatsby/
+// DEVNOTE: GetForm: https://blog.getform.io/building-a-gatsby-contact-form-using-getform/
+
+// DEVNOTE: reCAPTCHA v3: https://www.npmjs.com/package/react-google-recaptcha-v3
 
 export default function ContactPage() {
   //// [START: Form Values] ////
@@ -74,6 +77,7 @@ export default function ContactPage() {
 
   return (
     <Layout>
+      <GoogleReCaptchaProvider reCaptchaKey="6LdTZGMkAAAAAPCy_Qp7bBjlPm4v8j9Y4V182dOU">
       <Container>
         <Row><h1>{contentData.title}</h1></Row> 
         <Row><hr /></Row>
@@ -105,6 +109,7 @@ export default function ContactPage() {
           </Col>
         </Row>
       </Container>
+      </GoogleReCaptchaProvider>
     </Layout>
   )
 };
