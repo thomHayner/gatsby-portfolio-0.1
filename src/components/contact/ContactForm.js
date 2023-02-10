@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Form, FloatingLabel, Container, Row, Col, Button, } from 'react-bootstrap';
+import RecaptchaButton from './RecaptchaButton';
 import PrivacyPolicy from '../PrivacyPolicy';
 
 export default function ContactForm({
@@ -119,6 +120,7 @@ export default function ContactForm({
       </FloatingLabel>
 
       <Form.Control type="hidden" name="_gotcha" style={{ display: 'none !important' }} />
+      <RecaptchaButton />
       
       <Container>
         <Row>
