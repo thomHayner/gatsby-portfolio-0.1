@@ -63,7 +63,7 @@ export default function ContactPage() {
     setServerState({ ...serverState, isSubmitting: true });
     axios({
       method: 'post',
-      url: 'https://getform.io/f/0cb59c9b-7396-48c6-a967-f947e62882e0',
+      url: `${process.env.GETFORM_ENDPOINT}`,
       data: new FormData(form),
     })
       .then(r => {
@@ -77,7 +77,7 @@ export default function ContactPage() {
 
   return (
     <Layout>
-      <GoogleReCaptchaProvider reCaptchaKey="6LdTZGMkAAAAAPCy_Qp7bBjlPm4v8j9Y4V182dOU">
+      <GoogleReCaptchaProvider reCaptchaKey={`${process.env.GOOGLE_CAPTCHA_V3_SITEKEY}`}>
       <Container>
         <Row><h1>{contentData.title}</h1></Row> 
         <Row><hr /></Row>
