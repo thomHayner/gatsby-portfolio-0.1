@@ -64,7 +64,7 @@ export default function ContactPage() {
     setServerState({ ...serverState, isSubmitting: true });
     axios({
       method: 'post',
-      url: `${process.env.GETFORM_ENDPOINT}`,
+      url: `${process.env.GATSBY_GETFORM_ENDPOINT}`,
       data: new FormData(form),
     })
       .then(r => {
