@@ -25,6 +25,7 @@ export default function ContactPage() {
   const [subject, setSubject] = React.useState('');
   const [message, setMessage] = React.useState('');
   const [isSubmitted, setIsSubmitted] = React.useState(false);
+  const [isInErrorState, setIsInErrorState] = React.useState(false);
 
   const handleFormReset = () => {
     setName('');
@@ -77,7 +78,7 @@ export default function ContactPage() {
 
   return (
     <Layout>
-      <GoogleReCaptchaProvider reCaptchaKey={`${process.env.GOOGLE_CAPTCHA_V3_SITEKEY}`}>
+      <GoogleReCaptchaProvider reCaptchaKey={`${process.env.GATSBY_GOOGLE_CAPTCHA_V3_SITEKEY}`}>
       <Container>
         <Row><h1>{contentData.title}</h1></Row> 
         <Row><hr /></Row>
