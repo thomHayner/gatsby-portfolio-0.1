@@ -20,7 +20,7 @@ export default function CertificationsPamphlet() {
         {contentData.certifications.map((certificate) => (
           <Card
             key={'certification_' + certificate.id}
-            className='p-2 pe-md-4 d-inline-flex bg-dark-navy border border-pink-tetrad border-opacity-50 rounded shadow-lg'
+            className='p-2 pe-md-4 d-inline-flex bg-navy border border-2 border-green border-opacity-50 rounded shadow'
           >
             <Row className='g-0'>
               <Col className='col-12 col-md-4 col-lg-3 d-flex align-items-center justify-content-center justify-content-md-start'>
