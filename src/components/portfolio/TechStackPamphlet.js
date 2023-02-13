@@ -29,7 +29,7 @@ export default function TechStackPamphlet() {
                     {bulletPoint.text}
                   </p>
                 </ListGroup.Item>
-                {i < a.length-1 ? <div className='mx-5 mb-2 border-bottom border-2 border-green border-opacity-50' /> : <div />}
+                {i < a.length-1 ? <div className='mx-5 mb-2 border-bottom border-2 border-green' /> : <div />}
               </div>
             ))}
           </ListGroup>
