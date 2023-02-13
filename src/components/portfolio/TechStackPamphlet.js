@@ -16,12 +16,12 @@ export default function TechStackPamphlet() {
           <h3 className='text-light-slate'>{contentData.subTitle}</h3>
         </Col>
       </Row>
-      <Row className='shadow rounded'>
-        <Col className='col-12 col-lg-4 my-auto ps-0 mb-3'>
+      <Row className='bg-light-navy rounded shadow-lg'>
+        <Col className='col-12 col-lg-4 my-auto ps-0 height-100'>
           <ListGroup className=''>
             {contentData.techBulletPoint.map((bulletPoint, i, a) => (
               <div>
-                <ListGroup.Item key={'bulletPoint_' + bulletPoint.id} className='px-5 bg-navy border-0' as='li' disabled>
+                <ListGroup.Item key={'bulletPoint_' + bulletPoint.id} className='px-5 pb-0 bg-light-navy border-0' as='li' disabled>
                   <h5 className='text-lightest-slate'>
                     {bulletPoint.title}
                   </h5>
@@ -29,14 +29,12 @@ export default function TechStackPamphlet() {
                     {bulletPoint.text}
                   </p>
                 </ListGroup.Item>
-                {i < a.length-1 ? <div className='mx-5 mb-2 border-bottom border-2 border-green' /> : <div />}
+                {i < a.length-1 ? <div className='mx-5 mb-2 border-bottom border-2 border-green border-opacity-75' /> : <div />}
               </div>
             ))}
           </ListGroup>
         </Col>
-        <Col
-          className='col-12 col-lg-8 d-flex flex-wrap justify-content-center bg-light-navy rounded'
-        >
+        <Col className='col-12 col-lg-8 d-flex flex-wrap justify-content-center bg-lightest-navy rounded'>
           {DevIcons.map((DevIcon, i) => (
             <DevIcon key={'devIcon_' + i} className='m-1 m-sm-2 m-md-3' style={{ height: '75px', width: '75px' }} />
           ))}
