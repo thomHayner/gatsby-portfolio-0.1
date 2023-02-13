@@ -17,7 +17,7 @@ export default function TechStackPamphlet() {
         </Col>
       </Row>
       <Row className='shadow rounded'>
-        <Col className='col-12 col-lg-4 my-auto ps-0 mb-3 rounded-start'>
+        <Col className='col-12 col-lg-4 my-auto ps-0 mb-3'>
           <ListGroup className=''>
             {contentData.techBulletPoint.map((bulletPoint, i, a) => (
               <div>
@@ -37,7 +37,7 @@ export default function TechStackPamphlet() {
         <Col
           className='col-12 col-lg-8 
             d-flex flex-wrap justify-content-center 
-            bg-light-navy  bordr border-orange-tetrad border-opacity-50 rounded-end'
+            bg-light-navy  bordr border-orange-tetrad border-opacity-50 rounded'
         >
           {DevIcons.map((DevIcon, i) => (
             <DevIcon key={'devIcon_' + i} className='m-1 m-sm-2 m-md-3' style={{ height: '75px', width: '75px' }} />
