@@ -25,7 +25,7 @@ export default function ContactPage() {
   const [subject, setSubject] = React.useState('');
   const [message, setMessage] = React.useState('');
   const [isSubmitted, setIsSubmitted] = React.useState(false);
-  // const [isInErrorState, setIsInErrorState] = React.useState(false); // DEVNOTE: This should probably be implemented to handle errors, such as captcha not connected, or GetForm error to alert user that message was not dent
+  // const [isInErrorState, setIsInErrorState] = React.useState(false); // TODO: This should probably be implemented to handle errors, such as captcha not connected, or GetForm error to alert user that message was not dent
 
   const handleFormReset = () => {
     setName('');
