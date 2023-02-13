@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col, Card, ListGroup, ListGroupItem, } from 'react-bootstrap';
+import { Container, Row, Col, ListGroup, } from 'react-bootstrap';
 import contentData from '../../assets/content/tech-stack-pamphlet.json';
 import { DevIcons } from './techStackIcons';
 
