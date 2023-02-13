@@ -1,4 +1,5 @@
 import * as React from 'react';
+import './portfolio.scss';
 import { Container, Col, Row, CardGroup, Card } from 'react-bootstrap';
 import HackReactor from '../../assets/images/HackReactorLogo.png';
 import contentData from '../../assets/content/certifications-pamphlet.json';
@@ -20,7 +21,7 @@ export default function CertificationsPamphlet() {
         {contentData.certifications.map((certificate) => (
           <Card
             key={'certification_' + certificate.id}
-            className='p-2 pe-md-4 d-inline-flex bg-light-navy border border-2 border-green border-opacity-50 rounded shadow'
+            className='p-2 pe-md-4 d-inline-flex bg-dark-navy rounded shadow' // TODO: Add border-box similar to gatsby-plugin-image effect
           >
             <Row className='g-0'>
               <Col className='col-12 col-md-4 col-lg-3 d-flex align-items-center justify-content-center justify-content-md-start'>
