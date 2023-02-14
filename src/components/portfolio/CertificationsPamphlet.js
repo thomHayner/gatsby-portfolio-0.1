@@ -1,5 +1,4 @@
 import * as React from 'react';
-import './portfolio.scss';
 import { Container, Col, Row, CardGroup, Card } from 'react-bootstrap';
 import HackReactor from '../../assets/images/HackReactorLogo.png';
 import contentData from '../../assets/content/certifications-pamphlet.json';
